@@ -99,7 +99,7 @@ class AbstractOperateTarget:
                     element = WebDriverWait(GlobalEnvStorage.browser.driver, 20).until(expected_conditions.presence_of_all_elements_located((
                      By.CSS_SELECTOR, GlobalEnvStorage.searchButtom)))[0]
                     GlobalEnvStorage.browserWrapper.locateAndClick(element)
-                if GlobalEnvStorage.customerKeyword.searchEngine == '∞Ÿ∂»' and GlobalEnvStorage.customerKeyword.terminalType == 'PC' and GlobalEnvStorage.entryUrl != 'https://www.baidu.com':
+                if GlobalEnvStorage.customerKeyword.searchEngine == 'ÁôæÂ∫¶' and GlobalEnvStorage.customerKeyword.terminalType == 'PC' and GlobalEnvStorage.entryUrl != 'https://www.baidu.com':
                     self.initPageSize()
                     time.sleep(2)
                 self.zhanneiSearch()
@@ -130,13 +130,13 @@ class AbstractOperateTarget:
 
             if targetRowObject != None:
                 GlobalEnvStorage.Porder += rowObjects.index(targetRowObject) + 1
-                GlobalEnvStorage.infoLogger.info('µ±«∞≈≈√˚ «:%s', GlobalEnvStorage.Porder)
-                GlobalEnvStorage.infoLogger.info('’“µΩ')
+                GlobalEnvStorage.infoLogger.info('ÂΩìÂâçÊéíÂêçÊòØ:%s', GlobalEnvStorage.Porder)
+                GlobalEnvStorage.infoLogger.info('ÊâæÂà∞')
                 n = randint(1, 100)
-                if GlobalEnvStorage.customerKeyword.searchEngine != '…Ò¬Ì' or GlobalEnvStorage.customerKeyword.terminalType != 'Phone' and GlobalEnvStorage.customerKeyword.searchEngine != 'À—π∑':
+                if GlobalEnvStorage.customerKeyword.searchEngine != 'Á•ûÈ©¨' or GlobalEnvStorage.customerKeyword.terminalType != 'Phone' and GlobalEnvStorage.customerKeyword.searchEngine != 'ÊêúÁãó':
                     if self.hasNextPage():
                         if n <= int(GlobalEnvStorage.FindFlip_nextPage) and pageNo < totalPageCount:
-                            GlobalEnvStorage.infoLogger.info('«∞Õ˘œ¬“ª“≥‘Ÿ∑µªÿ')
+                            GlobalEnvStorage.infoLogger.info('ÂâçÂæÄ‰∏ã‰∏ÄÈ°µÂÜçËøîÂõû')
                             self.decideFile(pageNo + 1)
                             ServiceProxy.updatePageNo(pageNo=pageNo + 1)
                             if GlobalEnvStorage.customerKeyword.terminalType == 'PC':
@@ -152,7 +152,7 @@ class AbstractOperateTarget:
                             if rowObjects != None:
                                 targetRowObject = self.comparison(rowObjects)
                                 if targetRowObject == None:
-                                    GlobalEnvStorage.exceptionlogger.exception('÷ÿ–¬±»∂‘∫Û ß»•ƒø±Í')
+                                    GlobalEnvStorage.exceptionlogger.exception('ÈáçÊñ∞ÊØîÂØπÂêéÂ§±ÂéªÁõÆÊ†á')
                                     return
                     if GlobalEnvStorage.customerKeyword.terminalType == 'PC':
                         self.clickxiaoxiala(targetRowObject)
@@ -174,11 +174,11 @@ class AbstractOperateTarget:
             if GlobalEnvStorage.customerKeyword.title != None and GlobalEnvStorage.customerKeyword.title != '':
                 if rowSummaryInfo.title != None and GlobalEnvStorage.customerKeyword.title in rowSummaryInfo.title:
                     targetRowObject = rowObject
-                    GlobalEnvStorage.infoLogger.info('title’“µΩ--')
+                    GlobalEnvStorage.infoLogger.info('titleÊâæÂà∞--')
                     break
             elif rowSummaryInfo.url != None and GlobalEnvStorage.customerKeyword.url in rowSummaryInfo.url:
                 targetRowObject = rowObject
-                GlobalEnvStorage.infoLogger.info('url’“µΩ--')
+                GlobalEnvStorage.infoLogger.info('urlÊâæÂà∞--')
                 break
 
         return targetRowObject
@@ -190,7 +190,7 @@ class AbstractOperateTarget:
              By.CSS_SELECTOR, 'li.more-result a')))[0]
             GlobalEnvStorage.browserWrapper.locateAndClick(moreResultElement)
         except Exception as e:
-            GlobalEnvStorage.infoLogger.info('√ª”–≤Èø¥»´≤øΩ·π˚%s', e)
+            GlobalEnvStorage.infoLogger.info('Ê≤°ÊúâÊü•ÁúãÂÖ®ÈÉ®ÁªìÊûú%s', e)
 
         totalPageCount = GlobalEnvStorage.customerKeyword.page
         pageNo = 1
@@ -212,8 +212,8 @@ class AbstractOperateTarget:
                         break
 
         if targetRowObject != None:
-            GlobalEnvStorage.infoLogger.info('’“µΩ')
-            if GlobalEnvStorage.customerKeyword.keyword in '‘∆ºØŒ¢µÍ\t“⁄¬∑¥Ô◊‚≥µ(≥§«‡µÍ)π≈‘œ–˘Œ‰…Ãƒ¶∂˚π˙º µÁ”∞≥«Pubtopæ∆∞…(∫˛±±æ≠º√—ß‘∫µÍ)∞ŸÀºÕºBASTO(Œ‰∫∫Mº”π∫ŒÔ÷––ƒµÍ)¬Ã◊ÃÎ»':
+            GlobalEnvStorage.infoLogger.info('ÊâæÂà∞')
+            if GlobalEnvStorage.customerKeyword.keyword in '‰∫ëÈõÜÂæÆÂ∫ó\t‰∫øË∑ØËææÁßüËΩ¶(ÈïøÈùíÂ∫ó)Âè§ÈüµËΩ©Ê≠¶ÂïÜÊë©Â∞îÂõΩÈôÖÁîµÂΩ±ÂüéPubtopÈÖíÂêß(ÊπñÂåóÁªèÊµéÂ≠¶Èô¢Â∫ó)ÁôæÊÄùÂõæBASTO(Ê≠¶Ê±âMÂä†Ë¥≠Áâ©‰∏≠ÂøÉÂ∫ó)ÁªøÊªãËÇ¥':
                 GlobalEnvStorage.baiduMapOrder = 30
             else:
                 GlobalEnvStorage.baiduMapOrder = targetRowObject.order
@@ -236,7 +236,7 @@ class AbstractOperateTarget:
                 if rowSummaryInfo.title != None and GlobalEnvStorage.customerKeyword.title in rowSummaryInfo.title:
                     targetRowObject = rowObject
                     targetRowObject.order = rowSummaryInfo.order
-                    GlobalEnvStorage.infoLogger.info('title’“µΩ--')
+                    GlobalEnvStorage.infoLogger.info('titleÊâæÂà∞--')
                     break
                 else:
                     continue
@@ -271,7 +271,7 @@ class AbstractOperateTarget:
                     break
 
         if targetRowObject != None:
-            GlobalEnvStorage.infoLogger.info('’“µΩ')
+            GlobalEnvStorage.infoLogger.info('ÊâæÂà∞')
             self.simpleClick(targetRowObject)
             time.sleep(2)
             GlobalEnvStorage.browser.windows.current = GlobalEnvStorage.browser.windows[1]
@@ -293,7 +293,7 @@ class AbstractOperateTarget:
             if GlobalEnvStorage.customerKeyword.title != None and GlobalEnvStorage.customerKeyword.title != '':
                 if rowSummaryInfo.title != None and GlobalEnvStorage.customerKeyword.title in rowSummaryInfo.title:
                     targetRowObject = rowObject.find_elements_by_css_selector('div.v-thumb')[0]
-                    GlobalEnvStorage.infoLogger.info('title’“µΩ--')
+                    GlobalEnvStorage.infoLogger.info('titleÊâæÂà∞--')
                     break
                 else:
                     continue
@@ -309,11 +309,11 @@ class AbstractOperateTarget:
                 adTime = GlobalEnvStorage.browser.evaluate_script("$('.spv-ad-count span').text()")
                 break
             except Exception as e:
-                GlobalEnvStorage.infoLogger.info('µ⁄%¥Œ≥¢ ‘', attempts)
+                GlobalEnvStorage.infoLogger.info('Á¨¨%Ê¨°Â∞ùËØï', attempts)
 
             attempts += 1
 
-        GlobalEnvStorage.infoLogger.info('π„∏Ê ±º‰Œ™%s', adTime)
+        GlobalEnvStorage.infoLogger.info('ÂπøÂëäÊó∂Èó¥‰∏∫%s', adTime)
         return adTime
 
     def otherOperate(self):
@@ -338,13 +338,13 @@ class AbstractOperateTarget:
                 break
 
         if targetRowObject != None:
-            GlobalEnvStorage.infoLogger.info('’“µΩ')
+            GlobalEnvStorage.infoLogger.info('ÊâæÂà∞')
             precent = randint(1, 100)
             if precent < GlobalEnvStorage.customerKeyword.zhanwaiPercent:
-                GlobalEnvStorage.infoLogger.info('∞Ÿ∑÷÷Æ%s∏≈¬ µ„ª˜', GlobalEnvStorage.customerKeyword.zhanwaiPercent)
+                GlobalEnvStorage.infoLogger.info('ÁôæÂàÜ‰πã%sÊ¶ÇÁéáÁÇπÂáª', GlobalEnvStorage.customerKeyword.zhanwaiPercent)
                 self.multiClick(targetRowObject)
             else:
-                GlobalEnvStorage.infoLogger.info('∞Ÿ∑÷÷Æ%s∏≈¬ ≤ªµ„ª˜', 100 - GlobalEnvStorage.customerKeyword.zhanwaiPercent)
+                GlobalEnvStorage.infoLogger.info('ÁôæÂàÜ‰πã%sÊ¶ÇÁéá‰∏çÁÇπÂáª', 100 - GlobalEnvStorage.customerKeyword.zhanwaiPercent)
             GlobalEnvStorage.optimizeCount = 1
             GlobalEnvStorage.optimizeStatus = 'succ'
         else:

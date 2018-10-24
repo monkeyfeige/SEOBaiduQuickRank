@@ -36,7 +36,7 @@ class ServiceProxy:
                 get.close()
 
     def updateOptimizeResult(self, clientID, freeSpace, city):
-        GlobalEnvStorage.infoLogger.info('¿ªÊ¼¸üĞÂÊ±¼ä:%s', datetime.now())
+        GlobalEnvStorage.infoLogger.info('å¼€å§‹æ›´æ–°æ—¶é—´:%s', datetime.now())
         Result = False
         get = None
         try:
@@ -53,9 +53,9 @@ class ServiceProxy:
                 Result = True
             else:
                 Result = False
-            GlobalEnvStorage.infoLogger.info('¸üĞÂ³É¹¦Ê±¼ä:%s', datetime.now())
+            GlobalEnvStorage.infoLogger.info('æ›´æ–°æˆåŠŸæ—¶é—´:%s', datetime.now())
         except Exception as e:
-            GlobalEnvStorage.infoLogger.info('¸üĞÂÊ§°Ü %s', e)
+            GlobalEnvStorage.infoLogger.info('æ›´æ–°å¤±è´¥ %s', e)
             Result = False
         finally:
             if get:
@@ -72,9 +72,9 @@ class ServiceProxy:
              'keyword': GlobalEnvStorage.customerKeyword.keyword}
             get = requests.get(url, params=param, timeout=10)
             text = get.text
-            GlobalEnvStorage.infoLogger.info('»ñÈ¡¸ºÃæÇåµ¥³É¹¦')
+            GlobalEnvStorage.infoLogger.info('è·å–è´Ÿé¢æ¸…å•æˆåŠŸ')
         except Exception as e:
-            GlobalEnvStorage.infoLogger.info('¸ºÃæÇåµ¥»ñÈ¡Ê§°Ü %s', e)
+            GlobalEnvStorage.infoLogger.info('è´Ÿé¢æ¸…å•è·å–å¤±è´¥ %s', e)
         finally:
             if get:
                 get.close()
@@ -92,7 +92,7 @@ class ServiceProxy:
             get = requests.get(url, params=param, timeout=5)
             text = get.text
         except Exception as e:
-            GlobalEnvStorage.infoLogger.info('¸üĞÂpageNoÊ§°Ü %s', e)
+            GlobalEnvStorage.infoLogger.info('æ›´æ–°pageNoå¤±è´¥ %s', e)
         finally:
             if get:
                 get.close()
@@ -110,7 +110,7 @@ class ServiceProxy:
             get.close()
             return negativeSupportingDataList
         except Exception as e:
-            GlobalEnvStorage.infoLogger.info('¸ºÃæÇåµ¥ÁĞ±í»ñÈ¡Ê§°Ü %s', e)
+            GlobalEnvStorage.infoLogger.info('è´Ÿé¢æ¸…å•åˆ—è¡¨è·å–å¤±è´¥ %s', e)
         finally:
             if get:
                 get.close()
@@ -120,13 +120,13 @@ class ServiceProxy:
     def checkUpgrade(timeout=10):
         get = None
         try:
-            GlobalEnvStorage.infoLogger.info('µ±Ç°°æ±¾ÊÇ%s', GlobalEnvStorage.version)
+            GlobalEnvStorage.infoLogger.info('å½“å‰ç‰ˆæœ¬æ˜¯%s', GlobalEnvStorage.version)
             url = GlobalEnvStorage.customerKeywordServerHost + '/external/clientstatus/checkUpgrade'
             param = {'username': GlobalEnvStorage.customerKeywordServerUser,  'password': GlobalEnvStorage.customerKeywordServerPassword, 
              'clientID': GlobalEnvStorage.clientID}
             get = requests.get(url, timeout=timeout, params=param)
             version = get.text
-            GlobalEnvStorage.infoLogger.info('Ä¿±êversion:%s', version)
+            GlobalEnvStorage.infoLogger.info('ç›®æ ‡version:%s', version)
             if get.status_code == requests.codes.ok and version != '' and version != '0':
                 cf = ConfigParser()
                 cf.read('C:\\working\\env.conf', encoding='utf-8-sig')
@@ -140,9 +140,9 @@ class ServiceProxy:
                 os.system('taskkill /f /pid ' + str(os.getpid()))
                 os.system('taskkill /f /pid ' + str(os.getppid()))
             else:
-                GlobalEnvStorage.infoLogger.info('ÒÑ¾­ÊÇ×îĞÂ°æ±¾')
+                GlobalEnvStorage.infoLogger.info('å·²ç»æ˜¯æœ€æ–°ç‰ˆæœ¬')
         except Exception as e:
-            GlobalEnvStorage.infoLogger.info('»ñÈ¡ÊÇ·ñ¸üĞÂÊ§°Ü %s', e)
+            GlobalEnvStorage.infoLogger.info('è·å–æ˜¯å¦æ›´æ–°å¤±è´¥ %s', e)
         finally:
             if get:
                 get.close()

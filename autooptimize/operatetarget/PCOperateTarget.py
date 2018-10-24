@@ -19,10 +19,10 @@ from autooptimize.util.util import profileIDKeywordCount
 class PCOperatetarget(AbstractOperateTarget):
 
     def getRowObjects(self, errorTime=0):
-        if GlobalEnvStorage.customerKeyword.searchEngine == '∞Ÿ∂»' and GlobalEnvStorage.browser.driver.find_elements_by_css_selector('div.content_none') != []:
+        if GlobalEnvStorage.customerKeyword.searchEngine == 'ÁôæÂ∫¶' and GlobalEnvStorage.browser.driver.find_elements_by_css_selector('div.content_none') != []:
             time.sleep(uniform(2, 4))
             return
-        if GlobalEnvStorage.customerKeyword.searchEngine == 'À—π∑' and GlobalEnvStorage.browser.driver.find_elements_by_css_selector('div#noresult_part1_container') != []:
+        if GlobalEnvStorage.customerKeyword.searchEngine == 'ÊêúÁãó' and GlobalEnvStorage.browser.driver.find_elements_by_css_selector('div#noresult_part1_container') != []:
             time.sleep(uniform(2, 4))
             return
         if GlobalEnvStorage.customerKeyword.searchEngine == '360' and GlobalEnvStorage.browser.driver.find_elements_by_css_selector('div#no-result') != []:
@@ -30,7 +30,7 @@ class PCOperatetarget(AbstractOperateTarget):
             return
         try:
             RowObjects = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((
-             By.CSS_SELECTOR, GlobalEnvStorage.selector['rowobjects'])), message='elementªÒ»°≥¨ ±')
+             By.CSS_SELECTOR, GlobalEnvStorage.selector['rowobjects'])), message='elementËé∑ÂèñË∂ÖÊó∂')
             for RowObject in RowObjects:
                 if RowObject.text == '':
                     RowObjects.remove(RowObject)
@@ -41,14 +41,14 @@ class PCOperatetarget(AbstractOperateTarget):
             if 'Message: timeout: Timed out receiving message from renderer' in str(e):
                 errorTime += 1
                 if errorTime <= 2:
-                    GlobalEnvStorage.exceptionlogger.exception('µ⁄%s¥Œ÷ÿ–¬º”‘ÿ', errorTime)
+                    GlobalEnvStorage.exceptionlogger.exception('Á¨¨%sÊ¨°ÈáçÊñ∞Âä†ËΩΩ', errorTime)
                     GlobalEnvStorage.browser.reload()
                     self.getRowObjects(errorTime)
                 else:
-                    raise Exception('≥¨π˝÷ÿ–¬º”‘ÿµƒ¥Œ ˝')
+                    raise Exception('Ë∂ÖËøáÈáçÊñ∞Âä†ËΩΩÁöÑÊ¨°Êï∞')
 
     def nextPage(self, pageNo=0):
-        GlobalEnvStorage.infoLogger.info('œ¬“ª“≥')
+        GlobalEnvStorage.infoLogger.info('‰∏ã‰∏ÄÈ°µ')
         doNext = False
         try:
             if self.hasNextPage():
@@ -61,9 +61,9 @@ class PCOperatetarget(AbstractOperateTarget):
                     nextPageElement = element.find_element(By.LINK_TEXT, str(pageNo))
                     GlobalEnvStorage.browserWrapper.locateAndClick(nextPageElement)
             else:
-                GlobalEnvStorage.infoLogger.info('µÁƒ‘∂À√ª”–œ¬“ª“≥¡À,≥Ã–ÚΩ´ºÃ–¯')
+                GlobalEnvStorage.infoLogger.info('ÁîµËÑëÁ´ØÊ≤°Êúâ‰∏ã‰∏ÄÈ°µ‰∫Ü,Á®ãÂ∫èÂ∞ÜÁªßÁª≠')
         except Exception as e:
-            GlobalEnvStorage.infoLogger.info('µÁƒ‘∂À√ª”–œ¬“ª“≥¡À,≥Ã–ÚΩ´ÕÀ≥ˆ%s', e)
+            GlobalEnvStorage.infoLogger.info('ÁîµËÑëÁ´ØÊ≤°Êúâ‰∏ã‰∏ÄÈ°µ‰∫Ü,Á®ãÂ∫èÂ∞ÜÈÄÄÂá∫%s', e)
         finally:
             return doNext
 
@@ -73,22 +73,22 @@ class PCOperatetarget(AbstractOperateTarget):
             element = None
             if pageNo == 1:
                 if n <= int(GlobalEnvStorage.NoResultClick_FirstPageThree):
-                    GlobalEnvStorage.infoLogger.info('÷ª «ÀÊª˙µ„ª˜')
+                    GlobalEnvStorage.infoLogger.info('Âè™ÊòØÈöèÊú∫ÁÇπÂáª')
                     targetRowObject = targetRowObjects[randint(0, 2)]
                     element = self.isNotNagetive(targetRowObject)
                 elif n <= int(GlobalEnvStorage.NoResultClick_FirstPageTen):
-                    GlobalEnvStorage.infoLogger.info('÷ª «ÀÊª˙µ„ª˜')
+                    GlobalEnvStorage.infoLogger.info('Âè™ÊòØÈöèÊú∫ÁÇπÂáª')
                     targetRowObject = targetRowObjects[randint(0, len(targetRowObjects) - 1)]
                     element = self.isNotNagetive(targetRowObject)
                 else:
                     return
             if pageNo == 2:
                 if n <= int(GlobalEnvStorage.NoResultClick_SecondPageThree):
-                    GlobalEnvStorage.infoLogger.info('÷ª «ÀÊª˙µ„ª˜')
+                    GlobalEnvStorage.infoLogger.info('Âè™ÊòØÈöèÊú∫ÁÇπÂáª')
                     targetRowObject = targetRowObjects[randint(0, 2)]
                     element = self.isNotNagetive(targetRowObject)
                 elif n <= int(GlobalEnvStorage.NoResultClick_SecondPageTen):
-                    GlobalEnvStorage.infoLogger.info('÷ª «ÀÊª˙µ„ª˜')
+                    GlobalEnvStorage.infoLogger.info('Âè™ÊòØÈöèÊú∫ÁÇπÂáª')
                     targetRowObject = targetRowObjects[randint(0, len(targetRowObjects) - 1)]
                     element = self.isNotNagetive(targetRowObject)
                 else:
@@ -104,7 +104,7 @@ class PCOperatetarget(AbstractOperateTarget):
                             break
 
     def insideClick(self):
-        GlobalEnvStorage.infoLogger.info('ƒ⁄“≥µ„ª˜%s', GlobalEnvStorage.customerKeyword.waitTimeAfterClick)
+        GlobalEnvStorage.infoLogger.info('ÂÜÖÈ°µÁÇπÂáª%s', GlobalEnvStorage.customerKeyword.waitTimeAfterClick)
         time.sleep(GlobalEnvStorage.customerKeyword.waitTimeAfterClick)
         entryPageCount = randint(GlobalEnvStorage.customerKeyword.entryPageMinCount, GlobalEnvStorage.customerKeyword.entryPageMaxCount)
         hrefList = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR, 'a')))
@@ -126,7 +126,7 @@ class PCOperatetarget(AbstractOperateTarget):
     def jingjiaClick(self):
         percentage = randint(1, 100)
         if percentage <= GlobalEnvStorage.customerKeyword.baiduSemPercent:
-            GlobalEnvStorage.infoLogger.info('π„∏Êµ„ª˜')
+            GlobalEnvStorage.infoLogger.info('ÂπøÂëäÁÇπÂáª')
             try:
                 current_window_title = GlobalEnvStorage.browser.windows.current.title
                 jingjia = GlobalEnvStorage.browser.driver.find_elements_by_css_selector(GlobalEnvStorage.selector['jingjia'])
@@ -141,10 +141,10 @@ class PCOperatetarget(AbstractOperateTarget):
                         break
 
             except:
-                GlobalEnvStorage.infoLogger.info('√ª”–π„∏Ê')
+                GlobalEnvStorage.infoLogger.info('Ê≤°ÊúâÂπøÂëä')
 
     def multiClick(self, targetRowObject):
-        GlobalEnvStorage.infoLogger.info('’“µΩ_______')
+        GlobalEnvStorage.infoLogger.info('ÊâæÂà∞_______')
         clickNumPercentage = randint(1, 100)
         if clickNumPercentage <= GlobalEnvStorage.MutiClick_one:
             clickNum = 1
@@ -191,7 +191,7 @@ class PCOperatetarget(AbstractOperateTarget):
         try:
             element = targetRowObject.find_element(By.CSS_SELECTOR, GlobalEnvStorage.selector['image'])
         except:
-            GlobalEnvStorage.infoLogger.info('≤ª¥Ê‘⁄Õº∆¨')
+            GlobalEnvStorage.infoLogger.info('‰∏çÂ≠òÂú®ÂõæÁâá')
 
         percentage = randint(1, 100)
         if element == None or percentage > int(GlobalEnvStorage.clickTarget_image):
@@ -232,7 +232,7 @@ class PCOperatetarget(AbstractOperateTarget):
                         break
 
             except:
-                GlobalEnvStorage.infoLogger.info('√ª”–’“µΩ')
+                GlobalEnvStorage.infoLogger.info('Ê≤°ÊúâÊâæÂà∞')
 
     def disturbOperate(self):
         if GlobalEnvStorage.entryUrl != 'https://www.baidu.com' and GlobalEnvStorage.entryUrl != 'https://www.sogou.com' and GlobalEnvStorage.entryUrl != 'https://www.so.com' and GlobalEnvStorage.entryUrl != 'http://www.soku.com':
@@ -257,7 +257,7 @@ class PCOperatetarget(AbstractOperateTarget):
                  By.CSS_SELECTOR, GlobalEnvStorage.searchButtom)))[0]
                 GlobalEnvStorage.browserWrapper.locateAndClick(element)
             time.sleep(2)
-            if GlobalEnvStorage.customerKeyword.searchEngine == '∞Ÿ∂»' and GlobalEnvStorage.customerKeyword.terminalType == 'PC' and GlobalEnvStorage.entryUrl != 'https://www.baidu.com':
+            if GlobalEnvStorage.customerKeyword.searchEngine == 'ÁôæÂ∫¶' and GlobalEnvStorage.customerKeyword.terminalType == 'PC' and GlobalEnvStorage.entryUrl != 'https://www.baidu.com':
                 self.initPageSize()
                 time.sleep(2)
             searchEngineWindowTitle = GlobalEnvStorage.browser.windows.current.title
@@ -273,7 +273,7 @@ class PCOperatetarget(AbstractOperateTarget):
                             if GlobalEnvStorage.hasNextWord:
                                 for windowIdx in range(len(GlobalEnvStorage.browser.windows)):
                                     if GlobalEnvStorage.browser.windows[windowIdx].title == searchEngineWindowTitle:
-                                        GlobalEnvStorage.infoLogger.info(' «µ⁄%s∏ˆwindow', windowIdx + 1)
+                                        GlobalEnvStorage.infoLogger.info('ÊòØÁ¨¨%s‰∏™window', windowIdx + 1)
                                         KeywordInputFactory.Ctrl_Number(windowIdx + 1)
                                         break
 
@@ -352,7 +352,7 @@ class PCOperatetarget(AbstractOperateTarget):
                         self.tjOperate()
                     except:
                         traceback.print_exc()
-                        GlobalEnvStorage.infoLogger.info('“≥√Ê≥¨ ±ºÃ–¯÷¥––')
+                        GlobalEnvStorage.infoLogger.info('È°µÈù¢Ë∂ÖÊó∂ÁªßÁª≠ÊâßË°å')
 
                 if needBack:
                     for windowIdx in range(len(GlobalEnvStorage.browser.windows)):
@@ -371,13 +371,13 @@ class PCOperatetarget(AbstractOperateTarget):
                         self.tjOperate()
                     except:
                         traceback.print_exc()
-                        GlobalEnvStorage.infoLogger.info('“≥√Ê≥¨ ±ºÃ–¯÷¥––')
+                        GlobalEnvStorage.infoLogger.info('È°µÈù¢Ë∂ÖÊó∂ÁªßÁª≠ÊâßË°å')
 
         return searchEngineWindowTitle
 
     def clearInput(self):
         GlobalEnvStorage.relocation = False
-        GlobalEnvStorage.infoLogger.info('ø™ º…æ≥˝◊÷')
+        GlobalEnvStorage.infoLogger.info('ÂºÄÂßãÂà†Èô§Â≠ó')
         GlobalEnvStorage.searchText = GlobalEnvStorage.selector['searchText']
         GlobalEnvStorage.searchButtom = GlobalEnvStorage.selector['searchButtom']
         previousPageInput = WebDriverWait(GlobalEnvStorage.browser.driver, 10).until(expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR, GlobalEnvStorage.searchText)))[0]
@@ -496,7 +496,7 @@ class PCOperatetarget(AbstractOperateTarget):
                         continue
 
         if len(list) > 0:
-            GlobalEnvStorage.infoLogger.info('ÀÊª˙µ„ª˜“ª¥Œ')
+            GlobalEnvStorage.infoLogger.info('ÈöèÊú∫ÁÇπÂáª‰∏ÄÊ¨°')
             self.moveToTargetElementAndClick(list[randint(0, len(list) - 1)])
             time.sleep(2)
             rowObjects = self.getRowObjects()
@@ -524,12 +524,12 @@ class PCOperatetarget(AbstractOperateTarget):
             else:
                 title = rowSummaryInfo.title
             if title not in GlobalEnvStorage.specifiedKeywordNegativeLists:
-                GlobalEnvStorage.infoLogger.info('%s,≤ª «∏∫√Ê', title)
+                GlobalEnvStorage.infoLogger.info('%s,‰∏çÊòØË¥üÈù¢', title)
                 element = self.decideClickElement(targetRowObject)
             else:
-                GlobalEnvStorage.infoLogger.info('%s, «∏∫√Ê', title)
+                GlobalEnvStorage.infoLogger.info('%s,ÊòØË¥üÈù¢', title)
         except Exception as e:
-            GlobalEnvStorage.infoLogger.info('ÀÊª˙µ„µƒƒø±Í√ª”–±ÍÃ‚ªÚ’ﬂurl %s', e)
+            GlobalEnvStorage.infoLogger.info('ÈöèÊú∫ÁÇπÁöÑÁõÆÊ†áÊ≤°ÊúâÊ†áÈ¢òÊàñËÄÖurl %s', e)
             element = self.decideClickElement(targetRowObject)
         finally:
             return element
@@ -539,7 +539,7 @@ class PCOperatetarget(AbstractOperateTarget):
         GlobalEnvStorage.browserWrapper.locateAndMove(parentElement)
         element = GlobalEnvStorage.browser.driver.find_elements_by_css_selector(GlobalEnvStorage.selector['page'])[0]
         GlobalEnvStorage.dmFactory.wheel(3, type='DOWN')
-        nextPageElement = element.find_element(By.LINK_TEXT, 'œ¬“ª“≥>')
+        nextPageElement = element.find_element(By.LINK_TEXT, '‰∏ã‰∏ÄÈ°µ>')
         GlobalEnvStorage.browserWrapper.locateAndClick(nextPageElement)
 
     def getBaiduMapRowSummaryInfo(self, rowObject, pageNo):
@@ -558,7 +558,7 @@ class PCOperatetarget(AbstractOperateTarget):
     def getYoukuRowSummaryInfo(self, rowObject):
         try:
             title = rowObject.find_elements(By.CSS_SELECTOR, 'div.v-meta-title a')[0].text
-            if title == '≤•µ•':
+            if title == 'Êí≠Âçï':
                 title = rowObject.find_elements(By.CSS_SELECTOR, 'div.v-meta-title a')[1].text
             title = title.lstrip()
             title = title.rstrip()
@@ -574,7 +574,7 @@ class PCOperatetarget(AbstractOperateTarget):
         try:
             WebDriverWait(GlobalEnvStorage.browser.driver, 5).until(expected_conditions.presence_of_all_elements_located((
              By.CSS_SELECTOR, '.buttons-fav-icon.has-faved')))
-            GlobalEnvStorage.infoLogger.info('“—æ≠±ª ’≤ÿ')
+            GlobalEnvStorage.infoLogger.info('Â∑≤ÁªèË¢´Êî∂Ëóè')
         except Exception as e:
             saveButton = WebDriverWait(GlobalEnvStorage.browser.driver, 5).until(expected_conditions.presence_of_all_elements_located((
              By.CSS_SELECTOR, '.generalInfo-function-buttons-fav')))[0]
@@ -585,7 +585,7 @@ class PCOperatetarget(AbstractOperateTarget):
             GlobalEnvStorage.cookiesProfileList[str(GlobalEnvStorage.profileID)].append(GlobalEnvStorage.customerKeyword.keyword)
 
     def timesClick(self, targetRowObject, clickNum=4):
-        GlobalEnvStorage.infoLogger.info('’“µΩ_______')
+        GlobalEnvStorage.infoLogger.info('ÊâæÂà∞_______')
         GlobalEnvStorage.infoLogger.info('clickNum %s', clickNum)
         searchEngineWindowTitle = GlobalEnvStorage.browser.windows.current.title
         if clickNum == 0:

@@ -44,16 +44,16 @@ class KeywordInputFactory:
             self.inputOneWord(word, MapVirtualKey)
             idx += 1
             if idx % 2 == 0:
-                GlobalEnvStorage.infoLogger.info('¿ªÊ¼ÏÂÀ­¿òµÄ²Ù×÷¡£')
+                GlobalEnvStorage.infoLogger.info('å¼€å§‹ä¸‹æ‹‰æ¡†çš„æ“ä½œã€‚')
                 if GlobalEnvStorage.customerKeyword.sleepPer2Words:
                     time.sleep(uniform(0.3, 0.6))
                 try:
                     flag = self.dropDownList(keyword)
                     if flag:
                         return
-                    GlobalEnvStorage.infoLogger.info('ÏÂÀ­Ã»ÕÒµ½,¼ÌĞø')
+                    GlobalEnvStorage.infoLogger.info('ä¸‹æ‹‰æ²¡æ‰¾åˆ°,ç»§ç»­')
                 except:
-                    GlobalEnvStorage.infoLogger.info('ÏÂÀ­³öÏÖÒì³£,Ã»ÕÒµ½,¼ÌĞø')
+                    GlobalEnvStorage.infoLogger.info('ä¸‹æ‹‰å‡ºç°å¼‚å¸¸,æ²¡æ‰¾åˆ°,ç»§ç»­')
 
                 continue
 
@@ -155,7 +155,7 @@ class KeywordInputFactory:
                     percentage = randint(1, 100)
                     if percentage <= int(GlobalEnvStorage.search_click):
                         GlobalEnvStorage.browserWrapper.locateAndClick(keywords[i])
-                        GlobalEnvStorage.infoLogger.info('ÏÂÀ­ÕÒµ½£¬Êó±êµã½â')
+                        GlobalEnvStorage.infoLogger.info('ä¸‹æ‹‰æ‰¾åˆ°ï¼Œé¼ æ ‡ç‚¹è§£')
                     else:
                         nowPosition = -1
                         while i > nowPosition:
@@ -165,7 +165,7 @@ class KeywordInputFactory:
 
                         time.sleep(uniform(0.1, 0.3))
                         self.Enter()
-                        GlobalEnvStorage.infoLogger.info('ÏÂÀ­ÕÒµ½£¬enter¼ü')
+                        GlobalEnvStorage.infoLogger.info('ä¸‹æ‹‰æ‰¾åˆ°ï¼Œenteré”®')
                     return True
                 return False
 
@@ -180,10 +180,10 @@ class KeywordInputFactory:
 
     def intoBaidu(self, skipPosition):
         time.sleep(2)
-        GlobalEnvStorage.infoLogger.info('½øÈë°Ù¶ÈËÑË÷Ò³Ãæ')
+        GlobalEnvStorage.infoLogger.info('è¿›å…¥ç™¾åº¦æœç´¢é¡µé¢')
         from autooptimize.operatetarget.baiduPCOperateTarget import BaiduPCOperateTarget
         baiduPCOperateTarget = BaiduPCOperateTarget()
-        element = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((By.PARTIAL_LINK_TEXT, 'È¥ÍøÒ³ËÑË÷')))[0]
+        element = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((By.PARTIAL_LINK_TEXT, 'å»ç½‘é¡µæœç´¢')))[0]
         baiduPCOperateTarget.scrolledIntoView(element)
         GlobalEnvStorage.browserWrapper.locateAndClick(element)
 
@@ -211,9 +211,9 @@ class KeywordInputFactory:
                     break
 
             if disturbword is None:
-                GlobalEnvStorage.infoLogger.info('ÏÂÀ­´Ê²»´æÔÚ')
+                GlobalEnvStorage.infoLogger.info('ä¸‹æ‹‰è¯ä¸å­˜åœ¨')
                 return False
-            GlobalEnvStorage.infoLogger.info('ÏÂÀ­´Ê*' + disturbword + '*')
+            GlobalEnvStorage.infoLogger.info('ä¸‹æ‹‰è¯*' + disturbword + '*')
             self.inputDisturbString(disturbword)
         else:
             if '_3grade' in GlobalEnvStorage.customerKeyword.operationType:
@@ -235,9 +235,9 @@ class KeywordInputFactory:
                     break
 
             if disturbword is None:
-                GlobalEnvStorage.infoLogger.info('Ïà¹ØËÑË÷´Ê²»´æÔÚ')
+                GlobalEnvStorage.infoLogger.info('ç›¸å…³æœç´¢è¯ä¸å­˜åœ¨')
                 return False
-            GlobalEnvStorage.infoLogger.info('Ïà¹ØËÑË÷´Ê*' + disturbword + '*')
+            GlobalEnvStorage.infoLogger.info('ç›¸å…³æœç´¢è¯*' + disturbword + '*')
             self.inputDisturbString(disturbword)
 
     def inputDisturbString(self, keyword):

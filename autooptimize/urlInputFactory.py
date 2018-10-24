@@ -14,11 +14,11 @@ class UrlInputFactory:
 
     def __init__(self, start=1, end=100):
         if GlobalEnvStorage.customerKeyword.terminalType == 'PC':
-            if GlobalEnvStorage.customerKeyword.searchEngine == '百度':
+            if GlobalEnvStorage.customerKeyword.searchEngine == '鐧惧害':
                 entryUrlPercentage = GlobalEnvStorage.BaiduPCEntryUrl
                 GlobalEnvStorage.selector = GlobalEnvStorage.baiduPC_selector
             else:
-                if GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
+                if GlobalEnvStorage.customerKeyword.searchEngine == '鎼滅嫍':
                     entryUrlPercentage = GlobalEnvStorage.SogouPCEntryUrl
                     GlobalEnvStorage.selector = GlobalEnvStorage.sogouPC_selector
                 else:
@@ -37,11 +37,11 @@ class UrlInputFactory:
                             break
 
         else:
-            if GlobalEnvStorage.customerKeyword.searchEngine == '百度':
+            if GlobalEnvStorage.customerKeyword.searchEngine == '鐧惧害':
                 entryUrl = json.loads(GlobalEnvStorage.BaiduPhoneEntryUrl, object_hook=EntryUrl)[0]
                 GlobalEnvStorage.selector = GlobalEnvStorage.baiduPhone_selector
             else:
-                if GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
+                if GlobalEnvStorage.customerKeyword.searchEngine == '鎼滅嫍':
                     entryUrl = json.loads(GlobalEnvStorage.SogouPhoneEntryUrl, object_hook=EntryUrl)[0]
                     GlobalEnvStorage.selector = GlobalEnvStorage.sogouPhone_selector
                 else:
@@ -49,7 +49,7 @@ class UrlInputFactory:
                         entryUrl = json.loads(GlobalEnvStorage._360PhoneEntryUrl, object_hook=EntryUrl)[0]
                         GlobalEnvStorage.selector = GlobalEnvStorage._360Phone_selector
                     else:
-                        if GlobalEnvStorage.customerKeyword.searchEngine == '神马':
+                        if GlobalEnvStorage.customerKeyword.searchEngine == '绁為┈':
                             entryUrl = json.loads(GlobalEnvStorage.ShenmaPhoneEntryUrl, object_hook=EntryUrl)[0]
                             GlobalEnvStorage.selector = GlobalEnvStorage.shenmaPhone_selector
                         GlobalEnvStorage.entryUrl = entryUrl.url

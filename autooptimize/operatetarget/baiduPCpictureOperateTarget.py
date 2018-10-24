@@ -34,7 +34,7 @@ class BaiduPCpictureOperateTarget(PCOperatetarget):
                 break
 
         if targetRowObject != None:
-            GlobalEnvStorage.infoLogger.info('’“µΩ')
+            GlobalEnvStorage.infoLogger.info('ÊâæÂà∞')
             self.pictureClick(targetRowObject)
             GlobalEnvStorage.optimizeCount = 1
             GlobalEnvStorage.optimizeStatus = 'succ'
@@ -45,17 +45,17 @@ class BaiduPCpictureOperateTarget(PCOperatetarget):
     def getRowObjects(self, errorTime=0, pageNo=1):
         try:
             RowObjects = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((
-             By.CSS_SELECTOR, '.imgpage ul.imglist')), message='elementªÒ»°≥¨ ±')[pageNo - 1].find_elements_by_css_selector('li.imgitem')
+             By.CSS_SELECTOR, '.imgpage ul.imglist')), message='elementËé∑ÂèñË∂ÖÊó∂')[pageNo - 1].find_elements_by_css_selector('li.imgitem')
             return RowObjects
         except TimeoutException as e:
             if 'Message: timeout: Timed out receiving message from renderer' in str(e):
                 errorTime += 1
                 if errorTime <= 2:
-                    GlobalEnvStorage.exceptionlogger.exception('µ⁄%s¥Œ÷ÿ–¬º”‘ÿ', errorTime)
+                    GlobalEnvStorage.exceptionlogger.exception('Á¨¨%sÊ¨°ÈáçÊñ∞Âä†ËΩΩ', errorTime)
                     GlobalEnvStorage.browser.reload()
                     self.getRowObjects(errorTime)
                 else:
-                    raise Exception('≥¨π˝÷ÿ–¬º”‘ÿµƒ¥Œ ˝')
+                    raise Exception('Ë∂ÖËøáÈáçÊñ∞Âä†ËΩΩÁöÑÊ¨°Êï∞')
 
     def getRowSummaryInfo(self, rowObject):
         try:
@@ -77,7 +77,7 @@ class BaiduPCpictureOperateTarget(PCOperatetarget):
                 continue
             if rowSummaryInfo.url != None and GlobalEnvStorage.customerKeyword.url in rowSummaryInfo.url:
                 targetRowObject = rowObject
-                GlobalEnvStorage.infoLogger.info('url’“µΩ--')
+                GlobalEnvStorage.infoLogger.info('urlÊâæÂà∞--')
                 break
 
         return targetRowObject
@@ -87,9 +87,9 @@ class BaiduPCpictureOperateTarget(PCOperatetarget):
             GlobalEnvStorage.dmFactory.wheel(count=randint(4, 6))
             time.sleep(2)
             RowObjects = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((
-             By.CSS_SELECTOR, '.imgpage ul.imglist')), message='elementªÒ»°≥¨ ±')
+             By.CSS_SELECTOR, '.imgpage ul.imglist')), message='elementËé∑ÂèñË∂ÖÊó∂')
             if len(RowObjects) >= pageNo:
-                GlobalEnvStorage.infoLogger.info('œ¬“ª“≥ÕÍ≥…')
+                GlobalEnvStorage.infoLogger.info('‰∏ã‰∏ÄÈ°µÂÆåÊàê')
                 break
 
     def pictureClick(self, targetRowObject):
@@ -110,14 +110,14 @@ class BaiduPCpictureOperateTarget(PCOperatetarget):
         passLog = GlobalEnvStorage.browser.driver.find_elements_by_css_selector('#passLog')
         if passLog == []:
             favo = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((
-             By.CSS_SELECTOR, '.bar-btn.btn-favo')), message='elementªÒ»°≥¨ ±')[0]
+             By.CSS_SELECTOR, '.bar-btn.btn-favo')), message='elementËé∑ÂèñË∂ÖÊó∂')[0]
             GlobalEnvStorage.browserWrapper.locateAndClick(favo)
             okbtn = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((
-             By.CSS_SELECTOR, '.pop-okbtn')), message='elementªÒ»°≥¨ ±')[0]
+             By.CSS_SELECTOR, '.pop-okbtn')), message='elementËé∑ÂèñË∂ÖÊó∂')[0]
             GlobalEnvStorage.browserWrapper.locateAndClick(okbtn)
             time.sleep(1)
         if randint(1, 100) <= 50:
             download = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((
-             By.CSS_SELECTOR, '.bar-btn.btn-download')), message='elementªÒ»°≥¨ ±')[0]
+             By.CSS_SELECTOR, '.bar-btn.btn-download')), message='elementËé∑ÂèñË∂ÖÊó∂')[0]
             GlobalEnvStorage.browserWrapper.locateAndClick(download)
         time.sleep(uniform(4, 6))

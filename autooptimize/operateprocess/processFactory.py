@@ -22,7 +22,7 @@ class ProcessFactory:
         if '_xl' in GlobalEnvStorage.customerKeyword.operationType or '_xg' in GlobalEnvStorage.customerKeyword.operationType:
             process = XialaXiangguanProcess()
         else:
-            if GlobalEnvStorage.customerKeyword.searchEngine == '百度':
+            if GlobalEnvStorage.customerKeyword.searchEngine == '鐧惧害':
                 if '_tj' in GlobalEnvStorage.customerKeyword.operationType:
                     process = BaiduNegetiveProcess()
                 elif '_pm_map' in GlobalEnvStorage.customerKeyword.operationType:
@@ -34,7 +34,7 @@ class ProcessFactory:
                 else:
                     process = BaiduSnapshotProcess()
             else:
-                if GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
+                if GlobalEnvStorage.customerKeyword.searchEngine == '鎼滅嫍':
                     if '_zhannei_sogou' in GlobalEnvStorage.customerKeyword.operationType:
                         process = SogouOtherProcess()
                     else:
@@ -46,7 +46,7 @@ class ProcessFactory:
                         else:
                             process = _360SnapshotProcess()
                     else:
-                        if GlobalEnvStorage.customerKeyword.searchEngine == '神马':
+                        if GlobalEnvStorage.customerKeyword.searchEngine == '绁為┈':
                             process = ShenmaSnapshotProcess()
                         if process != None:
                             process.execute()

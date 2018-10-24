@@ -26,7 +26,7 @@ class BaiduMapProcess(AbstractProcess):
                 GlobalEnvStorage.profileID = 0
                 count += 1
                 if count > 301:
-                    GlobalEnvStorage.exceptionlogger.error('%s“—æ≠À¢ÕÍ', GlobalEnvStorage.customerKeyword.keyword)
+                    GlobalEnvStorage.exceptionlogger.error('%sÂ∑≤ÁªèÂà∑ÂÆå', GlobalEnvStorage.customerKeyword.keyword)
                     break
             else:
                 GlobalEnvStorage.profileID += 1
@@ -40,7 +40,7 @@ class BaiduMapProcess(AbstractProcess):
         GlobalEnvStorage.searchButtom = '#search-button'
         GlobalEnvStorage.dropDownList = '.ui3-suggest-item'
         GlobalEnvStorage.selector['rowobjects'] = '.search-item'
-        GlobalEnvStorage.selector['page_text'] = 'ÃÌº”∏√µÿµ„'
+        GlobalEnvStorage.selector['page_text'] = 'Ê∑ªÂä†ËØ•Âú∞ÁÇπ'
         GlobalEnvStorage.selector['title'] = 'div.row a'
         GlobalEnvStorage.selector['page'] = 'p.page'
         GlobalEnvStorage.browser.visit('http://map.baidu.com')

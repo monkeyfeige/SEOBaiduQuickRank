@@ -6,7 +6,7 @@
 
 class CustomerKeyword:
     terminalType = None
-    searchEngine = '°Ù¶È'
+    searchEngine = 'ç™¾åº¦'
     keyword = None
     uuid = None
     url = None

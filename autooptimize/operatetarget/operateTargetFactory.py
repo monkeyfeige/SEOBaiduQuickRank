@@ -18,7 +18,7 @@ class OperateTargetFactory:
 
     def operate(self):
         operateTarget = None
-        if GlobalEnvStorage.customerKeyword.searchEngine == '百度':
+        if GlobalEnvStorage.customerKeyword.searchEngine == '鐧惧害':
             if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
                 operateTarget = BaiduPhoneOperateTarget()
             elif '_picture' in GlobalEnvStorage.customerKeyword.operationType:
@@ -26,7 +26,7 @@ class OperateTargetFactory:
             else:
                 operateTarget = BaiduPCOperateTarget()
         else:
-            if GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
+            if GlobalEnvStorage.customerKeyword.searchEngine == '鎼滅嫍':
                 if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
                     operateTarget = SogouPhoneOperateTarget()
                 else:
@@ -38,7 +38,7 @@ class OperateTargetFactory:
                     else:
                         operateTarget = _360PCOperateTarget()
                 else:
-                    if GlobalEnvStorage.customerKeyword.searchEngine == '神马':
+                    if GlobalEnvStorage.customerKeyword.searchEngine == '绁為┈':
                         if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
                             operateTarget = ShenmaPhoneOperateTarget()
                     if operateTarget != None:
@@ -61,13 +61,13 @@ class OperateTargetFactory:
 
     def disturbOperate(self):
         operateTarget = None
-        if GlobalEnvStorage.customerKeyword.searchEngine == '百度':
+        if GlobalEnvStorage.customerKeyword.searchEngine == '鐧惧害':
             if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
                 operateTarget = BaiduPhoneOperateTarget()
             else:
                 operateTarget = BaiduPCOperateTarget()
         else:
-            if GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
+            if GlobalEnvStorage.customerKeyword.searchEngine == '鎼滅嫍':
                 if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
                     operateTarget = SogouPhoneOperateTarget()
                 else:
@@ -79,7 +79,7 @@ class OperateTargetFactory:
                     else:
                         operateTarget = _360PCOperateTarget()
                 else:
-                    if GlobalEnvStorage.customerKeyword.searchEngine == '神马':
+                    if GlobalEnvStorage.customerKeyword.searchEngine == '绁為┈':
                         if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
                             operateTarget = ShenmaPhoneOperateTarget()
                     if operateTarget != None:

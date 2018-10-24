@@ -19,7 +19,7 @@ class BaiduPhoneOperateTarget(PhoneOperateTarget):
     def getRowObjects(self, errorTime=0):
         try:
             RowObjects = WebDriverWait(GlobalEnvStorage.browser.driver, 60).until(expected_conditions.presence_of_all_elements_located((
-             By.CSS_SELECTOR, 'div:not([tpl=recommend_list]).result.c-result')), message='elementªÒ»°≥¨ ±')
+             By.CSS_SELECTOR, 'div:not([tpl=recommend_list]).result.c-result')), message='elementËé∑ÂèñË∂ÖÊó∂')
             for RowObject in RowObjects:
                 if RowObject.text == '':
                     RowObjects.remove(RowObject)
@@ -30,18 +30,18 @@ class BaiduPhoneOperateTarget(PhoneOperateTarget):
             if 'Message: timeout: Timed out receiving message from renderer' in str(e):
                 errorTime += 1
                 if errorTime <= 2:
-                    GlobalEnvStorage.exceptionlogger.exception('µ⁄%s¥Œ÷ÿ–¬º”‘ÿ', errorTime)
+                    GlobalEnvStorage.exceptionlogger.exception('Á¨¨%sÊ¨°ÈáçÊñ∞Âä†ËΩΩ', errorTime)
                     GlobalEnvStorage.browser.reload()
                     self.getRowObjects(errorTime)
                 else:
-                    raise Exception('≥¨π˝÷ÿ–¬º”‘ÿµƒ¥Œ ˝')
+                    raise Exception('Ë∂ÖËøáÈáçÊñ∞Âä†ËΩΩÁöÑÊ¨°Êï∞')
 
     def getRowSummaryInfo(self, rowObject):
         try:
             if rowObject.find_elements(By.TAG_NAME, 'h3') == []:
                 return
             photoTitle = rowObject.find_elements(By.TAG_NAME, 'h3')[0].text
-            if photoTitle.endswith('πŸÕ¯'):
+            if photoTitle.endswith('ÂÆòÁΩë'):
                 photoTitle = photoTitle[0:-2]
             if photoTitle.endswith('....'):
                 photoTitle = photoTitle[0:-4]
@@ -85,7 +85,7 @@ class BaiduPhoneOperateTarget(PhoneOperateTarget):
             self.scrolledIntoView(element, GlobalEnvStorage.PageMargin_PhoneTopMargin, GlobalEnvStorage.PageMargin_PCBottomMargin)
             GlobalEnvStorage.browserWrapper.locateAndClick(element)
         except BaseException as e:
-            GlobalEnvStorage.infoLogger.info('√ª”–’“µΩ…œ“ª“≥')
+            GlobalEnvStorage.infoLogger.info('Ê≤°ÊúâÊâæÂà∞‰∏ä‰∏ÄÈ°µ')
             GlobalEnvStorage.infoLogger.info('%s', e)
 
     def jingjiaClick(self):
@@ -100,18 +100,18 @@ class BaiduPhoneOperateTarget(PhoneOperateTarget):
                 try:
                     KeywordInputFactory().UrlBack(url=searchEngineurl)
                 except:
-                    GlobalEnvStorage.infoLogger.info('“≥√Ê≥¨ ±ºÃ–¯÷¥––')
+                    GlobalEnvStorage.infoLogger.info('È°µÈù¢Ë∂ÖÊó∂ÁªßÁª≠ÊâßË°å')
 
             except BaseException as e:
-                GlobalEnvStorage.infoLogger.info('√ª”–π„∏Ê')
+                GlobalEnvStorage.infoLogger.info('Ê≤°ÊúâÂπøÂëä')
                 GlobalEnvStorage.infoLogger.info('%s', e)
 
     def hasNextPage(self):
         return GlobalEnvStorage.browser.is_element_present_by_css('i.c-icon.icon-nextpage') or GlobalEnvStorage.browser.is_element_present_by_css('a.new-nextpage')
 
     def closeApp(self):
-        if GlobalEnvStorage.browser.is_element_present_by_text('¥Úø™'):
-            element = GlobalEnvStorage.browser.find_by_text('¥Úø™')[0]._element.find_element(By.XPATH, './../..').find_elements(By.TAG_NAME, 'div')[0]
+        if GlobalEnvStorage.browser.is_element_present_by_text('ÊâìÂºÄ'):
+            element = GlobalEnvStorage.browser.find_by_text('ÊâìÂºÄ')[0]._element.find_element(By.XPATH, './../..').find_elements(By.TAG_NAME, 'div')[0]
             if element.size['width'] != 0:
                 GlobalEnvStorage.browserWrapper.locateAndClick(element)
 

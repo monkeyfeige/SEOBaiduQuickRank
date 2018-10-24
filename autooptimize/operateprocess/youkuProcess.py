@@ -22,7 +22,7 @@ class YoukuProcess(AbstractProcess):
         GlobalEnvStorage.searchButtom = '.btn.btn_search'
         GlobalEnvStorage.dropDownList = 'ul.autolist a'
         GlobalEnvStorage.selector['rowobjects'] = 'div.v'
-        GlobalEnvStorage.selector['page_text'] = '��һҳ'
+        GlobalEnvStorage.selector['page_text'] = '下一页'
         GlobalEnvStorage.selector['title'] = 'div.v-meta-title a'
         GlobalEnvStorage.selector['page'] = 'li.next'
         urlInputFactory.input('http://www.soku.com')

@@ -38,7 +38,7 @@ class PhoneOperateTarget(AbstractOperateTarget):
                         if GlobalEnvStorage.hasNextWord:
                             KeywordInputFactory().UrlBack(url=searchEngineUrl)
                     except:
-                        GlobalEnvStorage.infoLogger.info('Ò³Ãæ³¬Ê±¼ÌĞøÖ´ĞĞ')
+                        GlobalEnvStorage.infoLogger.info('é¡µé¢è¶…æ—¶ç»§ç»­æ‰§è¡Œ')
 
                     break
                 else:
@@ -51,7 +51,7 @@ class PhoneOperateTarget(AbstractOperateTarget):
                 self.clearInput()
 
     def nextPage(self):
-        GlobalEnvStorage.infoLogger.info('ÏÂÒ»Ò³')
+        GlobalEnvStorage.infoLogger.info('ä¸‹ä¸€é¡µ')
         doNext = False
         try:
             if self.hasNextPage():
@@ -60,14 +60,14 @@ class PhoneOperateTarget(AbstractOperateTarget):
                 GlobalEnvStorage.browserWrapper.locateAndClick(self.getNextPageObject())
                 doNext = True
             else:
-                GlobalEnvStorage.infoLogger.info('%s', 'ÊÖ»úÒÑ¾­Ã»ÓĞÏÂÒ»Ò³,³ÌĞò½«¼ÌĞø')
+                GlobalEnvStorage.infoLogger.info('%s', 'æ‰‹æœºå·²ç»æ²¡æœ‰ä¸‹ä¸€é¡µ,ç¨‹åºå°†ç»§ç»­')
         except:
-            GlobalEnvStorage.infoLogger.info('%s', 'ÊÖ»úÒÑ¾­Ã»ÓĞÏÂÒ»Ò³,³ÌĞò½«ÍË³ö')
+            GlobalEnvStorage.infoLogger.info('%s', 'æ‰‹æœºå·²ç»æ²¡æœ‰ä¸‹ä¸€é¡µ,ç¨‹åºå°†é€€å‡º')
         finally:
             return doNext
 
     def moveToTargetElementAndClick(self, targetRowObject):
-        GlobalEnvStorage.infoLogger.info('ÕÒµ½_______')
+        GlobalEnvStorage.infoLogger.info('æ‰¾åˆ°_______')
         self.scrolledIntoView(targetRowObject, GlobalEnvStorage.TargetMargin_PhoneTopMargin, GlobalEnvStorage.TargetMargin_PhoneBottomMargin)
         GlobalEnvStorage.browserWrapper.locateAndClick(targetRowObject, minTime=GlobalEnvStorage.customerKeyword.titleRemainMinTime, maxTime=GlobalEnvStorage.customerKeyword.titleRemainMaxTime)
 
@@ -96,22 +96,22 @@ class PhoneOperateTarget(AbstractOperateTarget):
             n = randint(start, end)
         if pageNo == 1:
             if n <= int(GlobalEnvStorage.NoResultClick_FirstPageThree):
-                GlobalEnvStorage.infoLogger.info('Ö»ÊÇËæ»úµã»÷')
+                GlobalEnvStorage.infoLogger.info('åªæ˜¯éšæœºç‚¹å‡»')
                 targetRowObject = targetRowObjects[randint(0, 2)]
                 element = self.isNotNegative(targetRowObject)
             elif n <= int(GlobalEnvStorage.NoResultClick_FirstPageTen):
-                GlobalEnvStorage.infoLogger.info('Ö»ÊÇËæ»úµã»÷')
+                GlobalEnvStorage.infoLogger.info('åªæ˜¯éšæœºç‚¹å‡»')
                 targetRowObject = targetRowObjects[randint(0, len(targetRowObjects) - 1)]
                 element = self.isNotNegative(targetRowObject)
             else:
                 return
-        if pageNo == 2 and GlobalEnvStorage.customerKeyword.searchEngine != 'ÉñÂí':
+        if pageNo == 2 and GlobalEnvStorage.customerKeyword.searchEngine != 'ç¥é©¬':
             if n <= int(GlobalEnvStorage.NoResultClick_SecondPageThree):
-                GlobalEnvStorage.infoLogger.info('Ö»ÊÇËæ»úµã»÷')
+                GlobalEnvStorage.infoLogger.info('åªæ˜¯éšæœºç‚¹å‡»')
                 targetRowObject = targetRowObjects[randint(0, 2)]
                 element = self.isNotNegative(targetRowObject)
             elif n <= int(GlobalEnvStorage.NoResultClick_SecondPageTen):
-                GlobalEnvStorage.infoLogger.info('Ö»ÊÇËæ»úµã»÷')
+                GlobalEnvStorage.infoLogger.info('åªæ˜¯éšæœºç‚¹å‡»')
                 targetRowObject = targetRowObjects[randint(0, len(targetRowObjects) - 1)]
                 element = self.isNotNegative(targetRowObject)
             else:
@@ -127,7 +127,7 @@ class PhoneOperateTarget(AbstractOperateTarget):
                 if needBack:
                     KeywordInputFactory().UrlBack(url=searchEngineurl)
             except:
-                GlobalEnvStorage.infoLogger.info('Ò³Ãæ³¬Ê±¼ÌĞøÖ´ĞĞ')
+                GlobalEnvStorage.infoLogger.info('é¡µé¢è¶…æ—¶ç»§ç»­æ‰§è¡Œ')
 
     def multiClick(self, targetRowObject):
         n = randint(1, 100)
@@ -141,7 +141,7 @@ class PhoneOperateTarget(AbstractOperateTarget):
                     clickNum = 3
                 else:
                     clickNum = 4
-                if GlobalEnvStorage.customerKeyword.searchEngine == 'ÉñÂí':
+                if GlobalEnvStorage.customerKeyword.searchEngine == 'ç¥é©¬':
                     clickNum = 1
                 GlobalEnvStorage.infoLogger.info('clickNum %s', clickNum)
                 searchEngineurl = GlobalEnvStorage.browser.windows.current.url
@@ -155,7 +155,7 @@ class PhoneOperateTarget(AbstractOperateTarget):
                         try:
                             KeywordInputFactory().UrlBack(url=searchEngineurl)
                         except:
-                            GlobalEnvStorage.infoLogger.info('Ò³Ãæ³¬Ê±¼ÌĞøÖ´ĞĞ')
+                            GlobalEnvStorage.infoLogger.info('é¡µé¢è¶…æ—¶ç»§ç»­æ‰§è¡Œ')
 
                         rowObjects = self.getRowObjects()
                         GlobalEnvStorage.infoLogger.info('%s', len(rowObjects))
@@ -172,12 +172,12 @@ class PhoneOperateTarget(AbstractOperateTarget):
             else:
                 title = rowSummaryInfo.title
             if title not in GlobalEnvStorage.specifiedKeywordNegativeLists:
-                GlobalEnvStorage.infoLogger.info('%s,²»ÊÇ¸ºÃæ', title)
+                GlobalEnvStorage.infoLogger.info('%s,ä¸æ˜¯è´Ÿé¢', title)
                 element = targetRowObject
             else:
-                GlobalEnvStorage.infoLogger.info('%s,ÊÇ¸ºÃæ', title)
+                GlobalEnvStorage.infoLogger.info('%s,æ˜¯è´Ÿé¢', title)
         except Exception as e:
-            GlobalEnvStorage.infoLogger.info('Ëæ»úµãµÄÄ¿±êÃ»ÓĞ±êÌâ»òÕßurl %s', e)
+            GlobalEnvStorage.infoLogger.info('éšæœºç‚¹çš„ç›®æ ‡æ²¡æœ‰æ ‡é¢˜æˆ–è€…url %s', e)
             element = targetRowObject
         finally:
             return element
@@ -224,13 +224,13 @@ class PhoneOperateTarget(AbstractOperateTarget):
                             self.tjOperate()
                     except:
                         traceback.print_exc()
-                        GlobalEnvStorage.infoLogger.info('Ò³Ãæ³¬Ê±¼ÌĞøÖ´ĞĞ')
+                        GlobalEnvStorage.infoLogger.info('é¡µé¢è¶…æ—¶ç»§ç»­æ‰§è¡Œ')
 
                 if needBack:
                     try:
                         KeywordInputFactory().UrlBack(url=searchEngineurl)
                     except:
-                        GlobalEnvStorage.infoLogger.info('Ò³Ãæ³¬Ê±¼ÌĞøÖ´ĞĞ')
+                        GlobalEnvStorage.infoLogger.info('é¡µé¢è¶…æ—¶ç»§ç»­æ‰§è¡Œ')
 
             else:
                 if isKeyword and '_tj' in GlobalEnvStorage.customerKeyword.operationType:
@@ -239,7 +239,7 @@ class PhoneOperateTarget(AbstractOperateTarget):
                         self.tjOperate()
                     except:
                         traceback.print_exc()
-                        GlobalEnvStorage.infoLogger.info('Ò³Ãæ³¬Ê±¼ÌĞøÖ´ĞĞ')
+                        GlobalEnvStorage.infoLogger.info('é¡µé¢è¶…æ—¶ç»§ç»­æ‰§è¡Œ')
 
     def clearInput(self):
         GlobalEnvStorage.relocation = False
@@ -340,7 +340,7 @@ class PhoneOperateTarget(AbstractOperateTarget):
 
             searchEngineurl = GlobalEnvStorage.browser.windows.current.url
             if len(list) > 0:
-                GlobalEnvStorage.infoLogger.info('Ëæ»úµã»÷Ò»´Î')
+                GlobalEnvStorage.infoLogger.info('éšæœºç‚¹å‡»ä¸€æ¬¡')
                 self.closeApp()
                 self.moveToTargetElementAndClick(list[randint(0, len(list) - 1)])
                 time.sleep(2)

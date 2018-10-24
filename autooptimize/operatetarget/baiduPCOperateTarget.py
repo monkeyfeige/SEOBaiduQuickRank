@@ -43,7 +43,7 @@ class BaiduPCOperateTarget(PCOperatetarget):
                 pass
 
             GlobalEnvStorage.profileIDCountList[str(GlobalEnvStorage.profileID)]['pageSize'] = GlobalEnvStorage.customerKeyword.pageSize
-            GlobalEnvStorage.infoLogger.info('设置一页多少条成功')
+            GlobalEnvStorage.infoLogger.info('璁剧疆涓�椤靛灏戞潯鎴愬姛')
 
     def getRowSummaryInfo(self, rowObject):
         try:
@@ -90,7 +90,7 @@ class BaiduPCOperateTarget(PCOperatetarget):
                 GlobalEnvStorage.browserWrapper.locateAndClick(xiaoxiala, click=False)
                 time.sleep(uniform(0.2, 0.5))
             except:
-                GlobalEnvStorage.infoLogger.info('没有找到')
+                GlobalEnvStorage.infoLogger.info('娌℃湁鎵惧埌')
 
     def zhanneiSearch(self):
         if GlobalEnvStorage.customerKeyword.url is None or GlobalEnvStorage.customerKeyword.url == '':

@@ -37,7 +37,7 @@ class SogouPCOperateTarget(PCOperatetarget):
             GlobalEnvStorage.browserWrapper.locateAndClick(save)
             time.sleep(uniform(1, 2))
             GlobalEnvStorage.profileIDCountList[str(GlobalEnvStorage.profileID)]['pageSize'] = GlobalEnvStorage.customerKeyword.pageSize
-            GlobalEnvStorage.infoLogger.info('设置一页多少条成功')
+            GlobalEnvStorage.infoLogger.info('璁剧疆涓�椤靛灏戞潯鎴愬姛')
 
     def getRowSummaryInfo(self, rowObject):
         try:

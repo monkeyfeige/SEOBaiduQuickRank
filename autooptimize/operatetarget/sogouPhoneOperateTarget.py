@@ -28,7 +28,7 @@ class SogouPhoneOperateTarget(PhoneOperateTarget):
             phoneTitle = rowObject.find_elements(By.CSS_SELECTOR, '.resultLink')[0].text
             if '\n' in phoneTitle:
                 phoneTitle = phoneTitle[0:phoneTitle.find('\n')]
-            if phoneTitle.endswith('πŸÕ¯'):
+            if phoneTitle.endswith('ÂÆòÁΩë'):
                 phoneTitle = phoneTitle[0:-2]
             if phoneTitle.endswith('....'):
                 phoneTitle = phoneTitle[0:-4]
@@ -70,7 +70,7 @@ class SogouPhoneOperateTarget(PhoneOperateTarget):
              By.CSS_SELECTOR, '.sp-rslt-bar')))[-1]
             self.scrolledIntoView(element, GlobalEnvStorage.PageMargin_PhoneTopMargin, GlobalEnvStorage.PageMargin_PCBottomMargin)
         except BaseException as e:
-            GlobalEnvStorage.infoLogger.info('√ª”–’“µΩ…œ“ª“≥')
+            GlobalEnvStorage.infoLogger.info('Ê≤°ÊúâÊâæÂà∞‰∏ä‰∏ÄÈ°µ')
             GlobalEnvStorage.infoLogger.info('%s', e)
 
     def jingjiaClick(self):
@@ -80,7 +80,7 @@ class SogouPhoneOperateTarget(PhoneOperateTarget):
                 jingjia = GlobalEnvStorage.browser.evaluate_script('$(".ad_result")')
                 n = randint(0, len(jingjia) - 1)
                 if jingjia[n].size['width'] == 0:
-                    GlobalEnvStorage.infoLogger.info('π„∏Ê «none')
+                    GlobalEnvStorage.infoLogger.info('ÂπøÂëäÊòØnone')
                     return
                 searchEngineurl = GlobalEnvStorage.browser.windows.current.url
                 self.moveToTargetElementAndClick(jingjia[n])
@@ -96,10 +96,10 @@ class SogouPhoneOperateTarget(PhoneOperateTarget):
                     keywordInputFactory.Enter()
                     time.sleep(2)
                 except:
-                    GlobalEnvStorage.infoLogger.info('“≥√Ê≥¨ ±ºÃ–¯÷¥––')
+                    GlobalEnvStorage.infoLogger.info('È°µÈù¢Ë∂ÖÊó∂ÁªßÁª≠ÊâßË°å')
 
             except BaseException as e:
-                GlobalEnvStorage.infoLogger.info('√ª”–π„∏Ê')
+                GlobalEnvStorage.infoLogger.info('Ê≤°ÊúâÂπøÂëä')
                 GlobalEnvStorage.infoLogger.info('%s', e)
 
     def hasNextPage(self):
