@@ -23,12 +23,6 @@ from autooptimize.util.util import changeCustomerKeyword, initResolution, reConn
 from autooptimize.util.util import getCity, get_free_space_mb, getLogger
 from autooptimize.util.webRedirect import webServerRun
 
-"""
-【clearSystem.bat】       清空系统日志
-【logging.conf】          日志looger的配置
-【server.ini】            宽带拨号和服务器的配置
-【env.conf】              程序运行环境和参数配置
-"""
 
 if __name__ == '__main__':
     if GlobalEnvStorage.env != "Development":
