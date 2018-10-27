@@ -13,7 +13,7 @@ class Env:
     def initGlobalEnvStorage(self):
         try:
             _Env__cf = ConfigParser()
-            if GlobalEnvStorage.env == 'Development':
+            if GlobalEnvStorage.env != 'Development':
                 _Env__cf.read('../config/dev/server.ini', encoding='utf-8-sig')
             else:
                 _Env__cf.read('C:\\working' + '\\server.ini', encoding='utf-8-sig')
@@ -25,7 +25,7 @@ class Env:
             GlobalEnvStorage.connectUserName = _Env__cf.get('Connect', 'username')
             GlobalEnvStorage.connectPassword = _Env__cf.get('Connect', 'password')
             _Env__cf.clear()
-            if GlobalEnvStorage.env == 'Development':
+            if GlobalEnvStorage.env != 'Development':
                 _Env__cf.read('../config/dev/env.conf', encoding='utf-8-sig')
             else:
                 _Env__cf.read('C:\\working\\env.conf', encoding='utf-8-sig')
@@ -44,6 +44,7 @@ class Env:
             GlobalEnvStorage.cookiesProfileList = eval(_Env__cf.get('cookiesProfileList', 'list'))
             GlobalEnvStorage.chromeExeFilePath = _Env__cf.get('ChromePath', 'exe_file_path')
             GlobalEnvStorage.chromeUserDataDir = _Env__cf.get('ChromePath', 'user_data_dir')
+            GlobalEnvStorage.chromeDriverFilePath = _Env__cf.get('ChromePath', 'driver_file_path')
             GlobalEnvStorage.PelsWidth = int(_Env__cf.get('Resolution', 'PelsWidth'))
             GlobalEnvStorage.PelsHeight = int(_Env__cf.get('Resolution', 'PelsHeight'))
             GlobalEnvStorage.BitsPerPel = int(_Env__cf.get('Resolution', 'BitsPerPel'))

@@ -19,22 +19,21 @@ class _360OtherProcess(AbstractProcess):
         GlobalEnvStorage.customerKeyword.zhanneiPercent = 0
         urlInputFactory = UrlInputFactory()
         n = randint(1, 5)
+
         if n == 1:
             url = 'https://www.so.com/s?src=se7_toolbar'
+        elif n == 2:
+            url = 'https://www.so.com/s?src=hao_360so_button'
+        elif n == 3:
+            url = 'https://www.so.com/s?src=srp&fr=so.com'
+        elif n == 4:
+            url = 'https://www.so.com/s?src=srp&fr=so.com'
         else:
-            if n == 2:
-                url = 'https://www.so.com/s?src=hao_360so_button'
-            else:
-                if n == 3:
-                    url = 'https://www.so.com/s?src=srp&fr=so.com'
-                else:
-                    if n == 4:
-                        url = 'https://www.so.com/s?src=srp&fr=so.com'
-                    else:
-                        url = 'https://www.so.com/s?src=so.com'
-                    zhangneiurl = zhangneiUrl(GlobalEnvStorage.customerKeyword.url)
-                    url = url + '&q=' + GlobalEnvStorage.customerKeyword.keyword + '&rg=1' + '&site=' + zhangneiurl
-                    urlInputFactory.input(url)
-                    operateTargetFactory = OperateTargetFactory()
-                    operateTargetFactory.operate()
-                    clearCookie()
+            url = 'https://www.so.com/s?src=so.com'
+
+        zhangneiurl = zhangneiUrl(GlobalEnvStorage.customerKeyword.url)
+        url = url + '&q=' + GlobalEnvStorage.customerKeyword.keyword + '&rg=1' + '&site=' + zhangneiurl
+        urlInputFactory.input(url)
+        operateTargetFactory = OperateTargetFactory()
+        operateTargetFactory.operate()
+        clearCookie()

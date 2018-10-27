@@ -61,7 +61,7 @@ if __name__ == '__main__':
     serviceProxy = ServiceProxy()
 
     clearLastMain()
-
+    GlobalEnvStorage.infoLogger.info("####失败次数:%s", GlobalEnvStorage.fail_num)
     keywordCount = 0
     WebDriverExceptionNum = 0
     if GetTickCount() / 1000 <= 5 * 60:
@@ -226,6 +226,7 @@ if __name__ == '__main__':
 
             if "_picture" in GlobalEnvStorage.customerKeyword.operationType:
                 GlobalEnvStorage.customerKeyword.url = GlobalEnvStorage.customerKeyword.remarks
+
             initCookies()
 
             GlobalEnvStorage.optimizeKeywordCountPerIP = customerKeyword.optimizeKeywordCountPerIP
@@ -241,6 +242,7 @@ if __name__ == '__main__':
                 # if GlobalEnvStorage.negativeSupportingDataList is None or GlobalEnvStorage.negativeSupportingDataList == []:
                 #     GlobalEnvStorage.negativeSupportingDataList = ServiceProxy.getNegativeSupportingDataList()
 
+            GlobalEnvStorage.infoLogger.info("开始执行processFactory...")
             processFactory = ProcessFactory()
             processFactory.excecute()
 
@@ -287,7 +289,7 @@ if __name__ == '__main__':
             # 9. 更新操作结果
             # 8. 关闭浏览器
             cf = ConfigParser()
-            if GlobalEnvStorage.env == "Development":
+            if GlobalEnvStorage.env != "Development":
                 cf.read("../config/dev/env.conf", encoding="utf-8-sig")
                 cf.set("Basic", "last_profileID", str(GlobalEnvStorage.profileID))
                 cf.set("Basic", "fail_num", str(GlobalEnvStorage.fail_num))
@@ -318,9 +320,9 @@ if __name__ == '__main__':
                     GlobalEnvStorage.profileID = 0
                 else:
                     GlobalEnvStorage.profileID += 1
-                GlobalEnvStorage.infoLogger.info("%s",
-                                                 serviceProxy.updateOptimizeResult(GlobalEnvStorage.clientID,
-                                                                                   memoryFreeSpace, city))
+                # GlobalEnvStorage.infoLogger.info("%s",
+                #                                  serviceProxy.updateOptimizeResult(GlobalEnvStorage.clientID,
+                #                                                                    memoryFreeSpace, city))
             else:
                 GlobalEnvStorage.infoLogger.info("没取词,不更新")
     while True:

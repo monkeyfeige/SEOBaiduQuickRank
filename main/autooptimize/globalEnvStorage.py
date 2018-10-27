@@ -5,7 +5,7 @@
 
 
 class GlobalEnvStorage:
-    env = 'op'
+    env = 'Development'
     dmFactory = None
     browser = None
     browserWrapper = None
@@ -89,6 +89,7 @@ class GlobalEnvStorage:
     fail_num = 0
     chromeExeFilePath = None
     chromeUserDataDir = None
+    chromeDriverFilePath = None
     customerKeywordServerHost = None
     customerKeywordServerUser = None
     customerKeywordServerPassword = None

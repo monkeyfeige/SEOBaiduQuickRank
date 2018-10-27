@@ -11,6 +11,7 @@ requests
 
 selenium
 splinter
+six
 
 2. 配置文件
 """

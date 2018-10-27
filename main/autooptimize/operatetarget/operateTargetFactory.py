@@ -25,39 +25,37 @@ class OperateTargetFactory:
                 operateTarget = BaiduPCpictureOperateTarget()
             else:
                 operateTarget = BaiduPCOperateTarget()
-        else:
-            if GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
-                if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
-                    operateTarget = SogouPhoneOperateTarget()
-                else:
-                    operateTarget = SogouPCOperateTarget()
+        elif GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
+            if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
+                operateTarget = SogouPhoneOperateTarget()
             else:
-                if GlobalEnvStorage.customerKeyword.searchEngine == '360':
-                    if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
-                        pass
-                    else:
-                        operateTarget = _360PCOperateTarget()
-                else:
-                    if GlobalEnvStorage.customerKeyword.searchEngine == '神马':
-                        if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
-                            operateTarget = ShenmaPhoneOperateTarget()
-                    if operateTarget != None:
-                        if '_xl' in GlobalEnvStorage.customerKeyword.operationType or '_xg' in GlobalEnvStorage.customerKeyword.operationType:
-                            operateTarget.xialaOperate()
-                        elif '_tj' in GlobalEnvStorage.customerKeyword.operationType:
-                            operateTarget.tjOperate()
-                        elif '_pm_map' in GlobalEnvStorage.customerKeyword.operationType:
-                            operateTarget.mapOperate()
-                        elif '_zhannei_sogou' in GlobalEnvStorage.customerKeyword.operationType:
-                            operateTarget.otherOperate()
-                        elif '_zhannei_360' in GlobalEnvStorage.customerKeyword.operationType:
-                            operateTarget.otherOperate()
-                        elif '_youku' in GlobalEnvStorage.customerKeyword.operationType:
-                            operateTarget.youkuOperate()
-                        else:
-                            operateTarget.operate()
-                    else:
-                        GlobalEnvStorage.infoLogger.info('Wrong searchEngine or terminalType')
+                operateTarget = SogouPCOperateTarget()
+        elif GlobalEnvStorage.customerKeyword.searchEngine == '360':
+            if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
+                pass
+            else:
+                operateTarget = _360PCOperateTarget()
+        elif GlobalEnvStorage.customerKeyword.searchEngine == '神马':
+            if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
+                operateTarget = ShenmaPhoneOperateTarget()
+                
+        if operateTarget != None:
+            if '_xl' in GlobalEnvStorage.customerKeyword.operationType or '_xg' in GlobalEnvStorage.customerKeyword.operationType:
+                operateTarget.xialaOperate()
+            elif '_tj' in GlobalEnvStorage.customerKeyword.operationType:
+                operateTarget.tjOperate()
+            elif '_pm_map' in GlobalEnvStorage.customerKeyword.operationType:
+                operateTarget.mapOperate()
+            elif '_zhannei_sogou' in GlobalEnvStorage.customerKeyword.operationType:
+                operateTarget.otherOperate()
+            elif '_zhannei_360' in GlobalEnvStorage.customerKeyword.operationType:
+                operateTarget.otherOperate()
+            elif '_youku' in GlobalEnvStorage.customerKeyword.operationType:
+                operateTarget.youkuOperate()
+            else:
+                operateTarget.operate()
+        else:
+            GlobalEnvStorage.infoLogger.info('Wrong searchEngine or terminalType')
 
     def disturbOperate(self):
         operateTarget = None

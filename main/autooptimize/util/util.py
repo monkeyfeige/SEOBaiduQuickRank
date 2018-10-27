@@ -87,22 +87,21 @@ def changeCustomerKeyword(customerKeyword):
     customerKeyword.zhanwaiPercent = valueToPercentage(customerKeyword.zhanwaiPercent)
     if customerKeyword.pageSize == 0:
         customerKeyword.pageSize = 10
+    elif customerKeyword.pageSize == 1:
+        customerKeyword.pageSize = 20
     else:
-        if customerKeyword.pageSize == 1:
-            customerKeyword.pageSize = 20
-        else:
-            customerKeyword.pageSize = 50
-        customerKeyword.pageRemainMinTime = customerKeyword.pageRemainMinTime / 1000
-        customerKeyword.pageRemainMaxTime = customerKeyword.pageRemainMaxTime / 1000
-        customerKeyword.inputDelayMinTime = customerKeyword.inputDelayMinTime / 1000
-        customerKeyword.inputDelayMaxTime = customerKeyword.inputDelayMaxTime / 1000
-        customerKeyword.slideDelayMinTime = customerKeyword.slideDelayMinTime / 1000
-        customerKeyword.slideDelayMaxTime = customerKeyword.slideDelayMaxTime / 1000
-        customerKeyword.waitTimeAfterOpenBaidu = customerKeyword.waitTimeAfterOpenBaidu / 1000
-        customerKeyword.waitTimeBeforeClick = customerKeyword.waitTimeBeforeClick / 1000
-        customerKeyword.waitTimeAfterClick = customerKeyword.waitTimeAfterClick / 1000
-        customerKeyword.titleRemainMinTime = customerKeyword.titleRemainMinTime / 1000
-        customerKeyword.titleRemainMaxTime = customerKeyword.titleRemainMaxTime / 1000
+        customerKeyword.pageSize = 50
+    customerKeyword.pageRemainMinTime = customerKeyword.pageRemainMinTime / 1000
+    customerKeyword.pageRemainMaxTime = customerKeyword.pageRemainMaxTime / 1000
+    customerKeyword.inputDelayMinTime = customerKeyword.inputDelayMinTime / 1000
+    customerKeyword.inputDelayMaxTime = customerKeyword.inputDelayMaxTime / 1000
+    customerKeyword.slideDelayMinTime = customerKeyword.slideDelayMinTime / 1000
+    customerKeyword.slideDelayMaxTime = customerKeyword.slideDelayMaxTime / 1000
+    customerKeyword.waitTimeAfterOpenBaidu = customerKeyword.waitTimeAfterOpenBaidu / 1000
+    customerKeyword.waitTimeBeforeClick = customerKeyword.waitTimeBeforeClick / 1000
+    customerKeyword.waitTimeAfterClick = customerKeyword.waitTimeAfterClick / 1000
+    customerKeyword.titleRemainMinTime = customerKeyword.titleRemainMinTime / 1000
+    customerKeyword.titleRemainMaxTime = customerKeyword.titleRemainMaxTime / 1000
     return customerKeyword
 
 
@@ -213,7 +212,7 @@ def UAconf():
 
 def getUA():
     cf = ConfigParser()
-    if GlobalEnvStorage.env == 'Development':
+    if GlobalEnvStorage.env != 'Development':
         cf.read('..//config//dev//UAList.conf', encoding='utf-8-sig')
     else:
         cf.read('C:\\working' + '\\UAList.conf', encoding='utf-8-sig')
@@ -221,29 +220,23 @@ def getUA():
     if GlobalEnvStorage.customerKeyword.terminalType == 'PC':
         if n <= 10:
             PCList = eval(cf.get('PCList', 'pc_lv1'))
-        else:
-            if n <= 55:
-                PCList = eval(cf.get('PCList', 'pc_lv2'))
-            else:
-                if n <= 90:
-                    PCList = eval(cf.get('PCList', 'pc_lv3'))
-                else:
-                    if n <= 100:
-                        PCList = eval(cf.get('PCList', 'pc_lv4'))
-                    UA = PCList[randint(0, len(PCList) - 1)]
+        elif n <= 55:
+            PCList = eval(cf.get('PCList', 'pc_lv2'))
+        elif n <= 90:
+            PCList = eval(cf.get('PCList', 'pc_lv3'))
+        elif n <= 100:
+            PCList = eval(cf.get('PCList', 'pc_lv4'))
+        UA = PCList[randint(0, len(PCList) - 1)]
     else:
         if n <= 5:
             PhoneList = eval(cf.get('PhoneList', 'phone_lv1'))
-        else:
-            if n <= 45:
-                PhoneList = eval(cf.get('PhoneList', 'phone_lv2'))
-            else:
-                if n <= 85:
-                    PhoneList = eval(cf.get('PhoneList', 'phone_lv3'))
-                else:
-                    if n <= 100:
-                        PhoneList = eval(cf.get('PhoneList', 'phone_lv4'))
-                    UA = PhoneList[randint(0, len(PhoneList) - 1)]
+        elif n <= 45:
+            PhoneList = eval(cf.get('PhoneList', 'phone_lv2'))
+        elif n <= 85:
+            PhoneList = eval(cf.get('PhoneList', 'phone_lv3'))
+        elif n <= 100:
+            PhoneList = eval(cf.get('PhoneList', 'phone_lv4'))
+        UA = PhoneList[randint(0, len(PhoneList) - 1)]
     return UA
 
 
@@ -497,7 +490,7 @@ def getExePath():
 
 
 def getLogger(loggname):
-    if GlobalEnvStorage.env != 'Development':
+    if GlobalEnvStorage.env == 'Development':
         logging.config.fileConfig('C:\\working\\logging.conf')
     else:
         logging.config.fileConfig('../config/dev/logging.conf')

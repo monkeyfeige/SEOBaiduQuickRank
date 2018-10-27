@@ -148,43 +148,41 @@ class PCOperatetarget(AbstractOperateTarget):
         clickNumPercentage = randint(1, 100)
         if clickNumPercentage <= GlobalEnvStorage.MutiClick_one:
             clickNum = 1
+        elif clickNumPercentage <= GlobalEnvStorage.MutiClick_two:
+            clickNum = 2
+        elif clickNumPercentage <= GlobalEnvStorage.MutiClick_three:
+            clickNum = 3
         else:
-            if clickNumPercentage <= GlobalEnvStorage.MutiClick_two:
-                clickNum = 2
-            else:
-                if clickNumPercentage <= GlobalEnvStorage.MutiClick_three:
-                    clickNum = 3
-                else:
-                    clickNum = 4
-                GlobalEnvStorage.infoLogger.info('clickNum %s', clickNum)
-                searchEngineWindowTitle = GlobalEnvStorage.browser.windows.current.title
-                for clickNumIdx in range(clickNum):
-                    BrowserFactory.closeLast(searchEngineWindowTitle)
-                    finalWindowIdx = 0
-                    element = self.decideClickElement(targetRowObject)
-                    self.moveToTargetElementAndClick(element)
-                    time.sleep(uniform(GlobalEnvStorage.customerKeyword.pageRemainMinTime, GlobalEnvStorage.customerKeyword.pageRemainMaxTime))
-                    if GlobalEnvStorage.hasNextWord:
-                        for windowIdx in range(len(GlobalEnvStorage.browser.windows)):
-                            if GlobalEnvStorage.browser.windows[windowIdx].title == searchEngineWindowTitle:
-                                KeywordInputFactory.Ctrl_Number(windowIdx + 1)
-                                finalWindowIdx = windowIdx
-                                if clickNumIdx == clickNum - 1:
-                                    self.clearInput()
-                                break
+            clickNum = 4
 
-                    elif clickNumIdx == clickNum - 1:
-                        if clickNum == 1:
-                            KeywordInputFactory.Ctrl_Number(finalWindowIdx + 2)
-                        else:
-                            KeywordInputFactory.Ctrl_Number(finalWindowIdx + clickNum)
-                        GlobalEnvStorage.browser.windows.current = GlobalEnvStorage.browser.windows[finalWindowIdx]
-                    else:
-                        for windowIdx in range(len(GlobalEnvStorage.browser.windows)):
-                            if GlobalEnvStorage.browser.windows[windowIdx].title == searchEngineWindowTitle:
-                                KeywordInputFactory.Ctrl_Number(windowIdx + 1)
-                                finalWindowIdx = windowIdx
-                                break
+        GlobalEnvStorage.infoLogger.info('clickNum %s', clickNum)
+        searchEngineWindowTitle = GlobalEnvStorage.browser.windows.current.title
+        for clickNumIdx in range(clickNum):
+            BrowserFactory.closeLast(searchEngineWindowTitle)
+            finalWindowIdx = 0
+            element = self.decideClickElement(targetRowObject)
+            self.moveToTargetElementAndClick(element)
+            time.sleep(uniform(GlobalEnvStorage.customerKeyword.pageRemainMinTime, GlobalEnvStorage.customerKeyword.pageRemainMaxTime))
+            if GlobalEnvStorage.hasNextWord:
+                for windowIdx in range(len(GlobalEnvStorage.browser.windows)):
+                    if GlobalEnvStorage.browser.windows[windowIdx].title == searchEngineWindowTitle:
+                        KeywordInputFactory.Ctrl_Number(windowIdx + 1)
+                        finalWindowIdx = windowIdx
+                        if clickNumIdx == clickNum - 1:
+                            self.clearInput()
+                        break
+            elif clickNumIdx == clickNum - 1:
+                if clickNum == 1:
+                    KeywordInputFactory.Ctrl_Number(finalWindowIdx + 2)
+                else:
+                    KeywordInputFactory.Ctrl_Number(finalWindowIdx + clickNum)
+                GlobalEnvStorage.browser.windows.current = GlobalEnvStorage.browser.windows[finalWindowIdx]
+            else:
+                for windowIdx in range(len(GlobalEnvStorage.browser.windows)):
+                    if GlobalEnvStorage.browser.windows[windowIdx].title == searchEngineWindowTitle:
+                        KeywordInputFactory.Ctrl_Number(windowIdx + 1)
+                        finalWindowIdx = windowIdx
+                        break
 
     def decideClickElement(self, targetRowObject):
         element = None

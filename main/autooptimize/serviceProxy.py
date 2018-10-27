@@ -19,7 +19,6 @@ class ServiceProxy:
     def getCustomerKeyword(self, text):
         get = None
         customerKeyword = None
-        GlobalEnvStorage.infoLogger.info('%s', text)
         try:
             # url = self.host + '/external/customerkeyword/getCustomerKeyword'
             # param = {'username': self.user,  'password': self.password,  'clientID': clientID,  'version': GlobalEnvStorage.version}
@@ -27,7 +26,7 @@ class ServiceProxy:
             # text = get.text
             if text != '':
                 customerKeyword = CustomerKeyword()
-                customerKeyword.__dict__ = json.loads(json.dumps(text))
+                customerKeyword.__dict__ = json.loads(text)
                 GlobalEnvStorage.infoLogger.info('%s', customerKeyword.keyword)
             return customerKeyword
         except Exception as e:

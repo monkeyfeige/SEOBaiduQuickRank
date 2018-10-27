@@ -25,7 +25,9 @@ class AbstractBrowser:
         self.chrome_options.add_argument('enable-quic')
         self.chrome_options.add_argument('dns-prefetch-disable')
         self.chrome_options.add_argument('disk-cache-dir=C:\\working\\cache')
-        GlobalEnvStorage.browser = Browser(driver_name='chrome', options=self.chrome_options)
+        # GlobalEnvStorage.infoLogger.info('exe: %s', self.chrome_options.binary_location)
+        # GlobalEnvStorage.infoLogger.info('dirver: %s', GlobalEnvStorage.chromeDriverFilePath)
+        GlobalEnvStorage.browser = Browser(driver_name='chrome', options=self.chrome_options, executable_path=GlobalEnvStorage.chromeDriverFilePath)
         GlobalEnvStorage.infoLogger.info('%s', GlobalEnvStorage.browser)
 
     def getElementLocationInfo(self, element):

@@ -14,7 +14,7 @@ class PCBrowser(AbstractBrowser):
         pcUA = None
         try:
             cf = ConfigParser()
-            if GlobalEnvStorage.env == 'Development':
+            if GlobalEnvStorage.env != 'Development':
                 cf.read('../config/dev/PCUA.conf', encoding='utf-8-sig')
             else:
                 cf.read('C:\\working\\PCUA.conf', encoding='utf-8-sig')
@@ -32,7 +32,7 @@ class PCBrowser(AbstractBrowser):
             GlobalEnvStorage.infoLogger.info('%s', e)
         finally:
             GlobalEnvStorage.UA = pcUA
-            if GlobalEnvStorage.env == 'Development':
+            if GlobalEnvStorage.env != 'Development':
                 GlobalEnvStorage.innerHeight = 970
                 GlobalEnvStorage.innerWidth = GlobalEnvStorage.PelsWidth
                 cf.write(open('../config/dev/PCUA.conf', 'w'))

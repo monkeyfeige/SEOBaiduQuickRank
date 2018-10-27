@@ -13,6 +13,7 @@ from autooptimize.util.util import clearCookie, profileIDKeywordCount, zhangneiU
 class SogouOtherProcess(AbstractProcess):
 
     def execute(self):
+        GlobalEnvStorage.infoLogger.info('开始执行SogouOtherProcess...')
         browserFactory = BrowserFactory()
         browserFactory.initBrowser()
         profileIDKeywordCount()

@@ -13,7 +13,7 @@ class DMFactory:
 
     def __init__(self):
         try:
-            if GlobalEnvStorage.env == 'Development':
+            if GlobalEnvStorage.env != 'Development':
                 GlobalEnvStorage.infoLogger.info(os.system('regsvr32 /s  "..\\bin\\dmcj\\dm.dll"'))
             else:
                 GlobalEnvStorage.infoLogger.info(os.system('regsvr32 /s c:\\working\\dm.dll'))

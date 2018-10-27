@@ -70,6 +70,7 @@ class AbstractOperateTarget:
         GlobalEnvStorage.infoLogger.info('Please implement closeApp')
 
     def operate(self):
+        GlobalEnvStorage.infoLogger.info('AbstractOperateTarget-->operate')
         if GlobalEnvStorage.entryUrl != 'https://www.baidu.com' and GlobalEnvStorage.entryUrl != 'https://www.sogou.com' and GlobalEnvStorage.entryUrl != 'https://www.so.com' and GlobalEnvStorage.entryUrl != 'http://www.soku.com':
             if GlobalEnvStorage.customerKeyword.terminalType == 'PC':
                 GlobalEnvStorage.newTarget = True

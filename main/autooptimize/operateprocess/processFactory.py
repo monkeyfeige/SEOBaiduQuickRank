@@ -48,7 +48,8 @@ class ProcessFactory:
                     else:
                         if GlobalEnvStorage.customerKeyword.searchEngine == '神马':
                             process = ShenmaSnapshotProcess()
-                        if process != None:
-                            process.execute()
-                        else:
-                            GlobalEnvStorage.infoLogger.info('Wrong searchEngine or operationType')
+
+        if process != None:
+            process.execute()
+        else:
+            GlobalEnvStorage.infoLogger.info('Wrong searchEngine or operationType')

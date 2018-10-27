@@ -88,24 +88,34 @@ class UrlInputFactory:
                 keywordInputFactory.pasteFromClipboard()
                 time.sleep(uniform(0.1, 0.3))
                 keywordInputFactory.Enter()
-            GlobalEnvStorage.dmFactory.dm.MoveTo(randint(int(int(GlobalEnvStorage.PelsWidth) * 0.5), int(int(GlobalEnvStorage.PelsWidth) * 0.8)), randint(int(int(GlobalEnvStorage.PelsHeight) * 0.6), int(int(GlobalEnvStorage.PelsHeight) * 0.8)))
-            if GlobalEnvStorage.customerKeyword.terminalType == 'PC':
-                GlobalEnvStorage.browser.driver.set_page_load_timeout(20)
-            else:
-                GlobalEnvStorage.browser.driver.set_page_load_timeout(20)
-            GlobalEnvStorage.browser.driver.set_script_timeout(20)
+        GlobalEnvStorage.dmFactory.dm.MoveTo(randint(int(int(GlobalEnvStorage.PelsWidth) * 0.5), int(int(GlobalEnvStorage.PelsWidth) * 0.8)), randint(int(int(GlobalEnvStorage.PelsHeight) * 0.6), int(int(GlobalEnvStorage.PelsHeight) * 0.8)))
+        if GlobalEnvStorage.customerKeyword.terminalType == 'PC':
+            GlobalEnvStorage.browser.driver.set_page_load_timeout(20)
+        else:
+            GlobalEnvStorage.browser.driver.set_page_load_timeout(20)
+        GlobalEnvStorage.browser.driver.set_script_timeout(20)
         try:
+            GlobalEnvStorage.infoLogger.info('url: %s', url)
+            GlobalEnvStorage.infoLogger.info('entryUrl: %s', GlobalEnvStorage.entryUrl)
             if url:
                 GlobalEnvStorage.browser.visit(url)
             else:
                 GlobalEnvStorage.browser.visit(GlobalEnvStorage.entryUrl)
             try:
-                if '.baidu.com' in GlobalEnvStorage.entryUrl and ('_cookies' in GlobalEnvStorage.customerKeyword.operationType or '_pm_map' in GlobalEnvStorage.customerKeyword.operationType):
+                GlobalEnvStorage.infoLogger.info('profileID: %s', GlobalEnvStorage.profileID)
+                GlobalEnvStorage.infoLogger.info('sleeptime: %s', GlobalEnvStorage.customerKeyword.waitTimeAfterOpenBaidu)
+                if (GlobalEnvStorage.entryUrl and '.baidu.com' in GlobalEnvStorage.entryUrl) and ('_cookies' in GlobalEnvStorage.customerKeyword.operationType or '_pm_map' in GlobalEnvStorage.customerKeyword.operationType):
                     if not GlobalEnvStorage.profileIDCountList[str(GlobalEnvStorage.profileID)]['baiduCookies']:
-                        cookies = [
-                         {'name': 'BDUSS',  'domain': '.baidu.com',  'path': '/',  'httpOnly': False,  'expiry': str(time.time() + randint(1000000, 10000000)), 
-                          'secure': False, 
-                          'value': GlobalEnvStorage.cookies[GlobalEnvStorage.profileID]}]
+                        cookies = [{
+                            'name': 'BDUSS',  
+                            'domain': '.baidu.com',  
+                            'path': '/',  
+                            'httpOnly': False,  
+                            'expiry': str(time.time() + randint(1000000, 10000000)), 
+                            'secure': False, 
+                            'value': GlobalEnvStorage.cookies[GlobalEnvStorage.profileID]
+                        }]
+                        GlobalEnvStorage.infoLogger.info('cookies: %s', cookies)
                         for cookie in cookies:
                             GlobalEnvStorage.browser.driver.add_cookie(cookie)
 
