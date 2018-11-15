@@ -74,18 +74,18 @@ if __name__ == '__main__':
         customerKeyword = None
         text = """
         {
-          "keyword" : "优化推广",
+          "keyword" : "为什么拍照是个坏习惯",
           "uuid" : 2118603,
-          "url" : "www.scdzic.com",
+          "url" : "yinwang.org",
           "group" : "sogou_pm_paiming",
           "entryType" : "qz",
-          "operationType" : "pc_zhannei_sogou",
+          "operationType" : "pc",
           "relatedKeyword" : "",
           "currentPosition" : 10,
-          "originalUrl" : "www.scdzic.com/",
+          "originalUrl" : "www.yinwang.org/",
           "title" : "",
           "baiduAdUrl" : "",
-          "page" : 5,
+          "page" : 10,
           "pageSize" : 0,
           "kuaizhaoPercent" : 0,
           "baiduSemPercent" : 0,
@@ -128,7 +128,7 @@ if __name__ == '__main__':
           "waitTimeAfterClick" : 5000,
           "maxUserCount" : 300,
           "currentTime" : "2018-04-07 17:02",
-          "searchEngine" : "搜狗",
+          "searchEngine" : "百度",
           "terminalType" : "PC",
           "broadbandAccount" : "059908029559",
           "broadbandPassword" : "100100",
@@ -156,7 +156,7 @@ if __name__ == '__main__':
         #     time.sleep(5 * 60)
         #     GlobalEnvStorage.alive = datetime.now()
         try:
-            if GlobalEnvStorage.env != "Development":
+            if GlobalEnvStorage.env == "Development":
                 # 1. 拨号  isOnline() 0联网,1断网
                 if GlobalEnvStorage.optimizeKeywordCountPerIP == None or (
                                     keywordCount % GlobalEnvStorage.optimizeKeywordCountPerIP == 0 and GlobalEnvStorage.isConncet == 1):

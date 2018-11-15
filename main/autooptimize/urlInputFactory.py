@@ -17,46 +17,43 @@ class UrlInputFactory:
             if GlobalEnvStorage.customerKeyword.searchEngine == '百度':
                 entryUrlPercentage = GlobalEnvStorage.BaiduPCEntryUrl
                 GlobalEnvStorage.selector = GlobalEnvStorage.baiduPC_selector
-            else:
-                if GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
-                    entryUrlPercentage = GlobalEnvStorage.SogouPCEntryUrl
-                    GlobalEnvStorage.selector = GlobalEnvStorage.sogouPC_selector
-                else:
-                    if GlobalEnvStorage.customerKeyword.searchEngine == '360':
-                        entryUrlPercentage = GlobalEnvStorage._360PCEntryUrl
-                        GlobalEnvStorage.selector = GlobalEnvStorage._360PC_selector
-                    entryUrls = json.loads(entryUrlPercentage, object_hook=EntryUrl)
-                    randValue = randint(start, end)
-                    for entryUrl in entryUrls:
-                        if randValue >= entryUrl.durationStart and randValue <= entryUrl.durationEnd:
-                            GlobalEnvStorage.entryUrl = entryUrl.url
-                            GlobalEnvStorage.searchText = entryUrl.searchText
-                            GlobalEnvStorage.searchButtom = entryUrl.searchButtom
-                            GlobalEnvStorage.dropDownList = entryUrl.dropDownList
-                            GlobalEnvStorage.skipPosition = entryUrl.skipPosition
-                            break
+            elif GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
+                entryUrlPercentage = GlobalEnvStorage.SogouPCEntryUrl
+                GlobalEnvStorage.selector = GlobalEnvStorage.sogouPC_selector
+            elif GlobalEnvStorage.customerKeyword.searchEngine == '360':
+                entryUrlPercentage = GlobalEnvStorage._360PCEntryUrl
+                GlobalEnvStorage.selector = GlobalEnvStorage._360PC_selector
+
+            entryUrls = json.loads(entryUrlPercentage, object_hook=EntryUrl)
+            randValue = randint(start, end)
+            for entryUrl in entryUrls:
+                if randValue >= entryUrl.durationStart and randValue <= entryUrl.durationEnd:
+                    GlobalEnvStorage.entryUrl = entryUrl.url
+                    GlobalEnvStorage.searchText = entryUrl.searchText
+                    GlobalEnvStorage.searchButtom = entryUrl.searchButtom
+                    GlobalEnvStorage.dropDownList = entryUrl.dropDownList
+                    GlobalEnvStorage.skipPosition = entryUrl.skipPosition
+                    break
 
         else:
             if GlobalEnvStorage.customerKeyword.searchEngine == '百度':
                 entryUrl = json.loads(GlobalEnvStorage.BaiduPhoneEntryUrl, object_hook=EntryUrl)[0]
                 GlobalEnvStorage.selector = GlobalEnvStorage.baiduPhone_selector
-            else:
-                if GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
-                    entryUrl = json.loads(GlobalEnvStorage.SogouPhoneEntryUrl, object_hook=EntryUrl)[0]
-                    GlobalEnvStorage.selector = GlobalEnvStorage.sogouPhone_selector
-                else:
-                    if GlobalEnvStorage.customerKeyword.searchEngine == '360':
-                        entryUrl = json.loads(GlobalEnvStorage._360PhoneEntryUrl, object_hook=EntryUrl)[0]
-                        GlobalEnvStorage.selector = GlobalEnvStorage._360Phone_selector
-                    else:
-                        if GlobalEnvStorage.customerKeyword.searchEngine == '神马':
-                            entryUrl = json.loads(GlobalEnvStorage.ShenmaPhoneEntryUrl, object_hook=EntryUrl)[0]
-                            GlobalEnvStorage.selector = GlobalEnvStorage.shenmaPhone_selector
-                        GlobalEnvStorage.entryUrl = entryUrl.url
-                        GlobalEnvStorage.searchText = entryUrl.searchText
-                        GlobalEnvStorage.searchButtom = entryUrl.searchButtom
-                        GlobalEnvStorage.dropDownList = entryUrl.dropDownList
-                    GlobalEnvStorage.infoLogger.info('%s', GlobalEnvStorage.entryUrl)
+            elif GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
+                entryUrl = json.loads(GlobalEnvStorage.SogouPhoneEntryUrl, object_hook=EntryUrl)[0]
+                GlobalEnvStorage.selector = GlobalEnvStorage.sogouPhone_selector
+            elif GlobalEnvStorage.customerKeyword.searchEngine == '360':
+                entryUrl = json.loads(GlobalEnvStorage._360PhoneEntryUrl, object_hook=EntryUrl)[0]
+                GlobalEnvStorage.selector = GlobalEnvStorage._360Phone_selector
+            elif GlobalEnvStorage.customerKeyword.searchEngine == '神马':
+                entryUrl = json.loads(GlobalEnvStorage.ShenmaPhoneEntryUrl, object_hook=EntryUrl)[0]
+                GlobalEnvStorage.selector = GlobalEnvStorage.shenmaPhone_selector
+
+            GlobalEnvStorage.entryUrl = entryUrl.url
+            GlobalEnvStorage.searchText = entryUrl.searchText
+            GlobalEnvStorage.searchButtom = entryUrl.searchButtom
+            GlobalEnvStorage.dropDownList = entryUrl.dropDownList
+            GlobalEnvStorage.infoLogger.info('%s', GlobalEnvStorage.entryUrl)
 
     def input(self, url=None, newProfile=True):
         keywordInputFactory = KeywordInputFactory()
@@ -95,6 +92,8 @@ class UrlInputFactory:
             GlobalEnvStorage.browser.driver.set_page_load_timeout(20)
         GlobalEnvStorage.browser.driver.set_script_timeout(20)
         try:
+            GlobalEnvStorage.browser.driver.maximize_window()
+            GlobalEnvStorage.browser.windows.current.close_others()
             GlobalEnvStorage.infoLogger.info('url: %s', url)
             GlobalEnvStorage.infoLogger.info('entryUrl: %s', GlobalEnvStorage.entryUrl)
             if url:

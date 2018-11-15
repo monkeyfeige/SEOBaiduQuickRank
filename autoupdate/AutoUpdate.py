@@ -281,9 +281,6 @@ def hotKeys():
 
 
 def clearLastAutoUpdate():
-    """
-    :return:
-    """
     pid = os.getpid()
     ppid = os.getppid()
     psutil.process_iter()
@@ -445,8 +442,10 @@ if __name__ == '__main__':
         if os.path.exists(installer_path):
             if not os.path.exists("c:\change"):
                 os.makedirs("c:\change")
+                # 添加系统文件、隐藏文件属性
                 subprocess.call("attrib +h +s c:\change", shell=True)
             shutil.move(installer_path, "c:\change\Installer2.exe")
+        # 根据是否存在main.exe区分新老版本
         if os.path.exists(os.path.join(parentAbspath, "main.exe")):
             versionEXE = "new"
         else:

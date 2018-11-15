@@ -254,7 +254,7 @@ class PCOperatetarget(AbstractOperateTarget):
                 element = WebDriverWait(GlobalEnvStorage.browser.driver, 20).until(expected_conditions.presence_of_all_elements_located((
                  By.CSS_SELECTOR, GlobalEnvStorage.searchButtom)))[0]
                 GlobalEnvStorage.browserWrapper.locateAndClick(element)
-            time.sleep(2)
+                time.sleep(2)
             if GlobalEnvStorage.customerKeyword.searchEngine == '百度' and GlobalEnvStorage.customerKeyword.terminalType == 'PC' and GlobalEnvStorage.entryUrl != 'https://www.baidu.com':
                 self.initPageSize()
                 time.sleep(2)
@@ -263,6 +263,7 @@ class PCOperatetarget(AbstractOperateTarget):
                 if randint(1, 50) <= 50:
                     randomTarget = self.getRowObjects()
                     for idx in range(len(randomTarget)):
+                        GlobalEnvStorage.infoLogger.info('idx: %s', idx)
                         targetRowObject = randomTarget[randint(0, len(randomTarget)) - 1]
                         element = self.isNotNagetive(targetRowObject)
                         if element != None:
@@ -279,6 +280,7 @@ class PCOperatetarget(AbstractOperateTarget):
 
                 else:
                     for idx in range(randint(3, 5)):
+                        GlobalEnvStorage.infoLogger.info('idx: %s', idx)
                         GlobalEnvStorage.dmFactory.wheel(randint(2, 3))
                         if randint(1, 100) <= 70:
                             GlobalEnvStorage.dmFactory.simulateTrajectoryTwo(x=uniform(100, 400), y=uniform(100, 600))
@@ -380,6 +382,9 @@ class PCOperatetarget(AbstractOperateTarget):
         GlobalEnvStorage.searchButtom = GlobalEnvStorage.selector['searchButtom']
         previousPageInput = WebDriverWait(GlobalEnvStorage.browser.driver, 10).until(expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR, GlobalEnvStorage.searchText)))[0]
         length = len(previousPageInput.get_attribute('value'))
+        GlobalEnvStorage.infoLogger.info('len: %d', length)
+        if length == 0:
+            return
         self.scrolledIntoView(previousPageInput, topMargin=0, bottomMargin=GlobalEnvStorage.TargetMargin_PCBottomMargin)
         GlobalEnvStorage.browserWrapper.locateAndClick(previousPageInput)
         KeywordInputFactory.End()

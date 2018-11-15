@@ -36,6 +36,7 @@ class AbstractBrowser:
         width = element.size['width']
         height = element.size['height']
         locationInfo = {'x': x,  'y': y,  'width': width,  'height': height}
+        GlobalEnvStorage.infoLogger.info('element locationInfo: %s', locationInfo)
         return locationInfo
 
     def initUserAgent(self):

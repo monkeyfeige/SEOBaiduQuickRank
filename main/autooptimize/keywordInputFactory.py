@@ -67,6 +67,7 @@ class KeywordInputFactory:
             GlobalEnvStorage.browserWrapper.locateAndClick(GlobalEnvStorage.browser.driver.find_elements_by_css_selector('.callappbox-wrap-chose-close')[0])
             time.sleep(uniform(0.7, 1.2))
         if GlobalEnvStorage.relocation:
+            GlobalEnvStorage.infoLogger.info('inputKeyword->relocation:')
             element = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR, GlobalEnvStorage.searchText)))[0]
             GlobalEnvStorage.browserWrapper.locateAndClick(element)
             time.sleep(uniform(0.7, 1.2))
@@ -247,8 +248,8 @@ class KeywordInputFactory:
             GlobalEnvStorage.browserWrapper.locateAndClick(GlobalEnvStorage.browser.driver.find_elements_by_css_selector('.callappbox-wrap-chose-close')[0])
             time.sleep(uniform(0.7, 1.2))
         if GlobalEnvStorage.relocation:
-            search = GlobalEnvStorage.searchText
-            element = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR, search)))[0]
+            GlobalEnvStorage.infoLogger.info('inputDisturbString->relocation:')
+            element = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR, GlobalEnvStorage.searchText)))[0]
             GlobalEnvStorage.browserWrapper.locateAndClick(element)
             time.sleep(uniform(0.7, 1.2))
         MapVirtualKey = ctypes.windll.user32.MapVirtualKeyA

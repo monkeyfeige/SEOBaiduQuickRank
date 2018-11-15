@@ -103,30 +103,31 @@ class AbstractOperateTarget:
                 if GlobalEnvStorage.customerKeyword.searchEngine == '百度' and GlobalEnvStorage.customerKeyword.terminalType == 'PC' and GlobalEnvStorage.entryUrl != 'https://www.baidu.com':
                     self.initPageSize()
                     time.sleep(2)
-                self.zhanneiSearch()
-                targetRowObject = None
-                totalPageCount = GlobalEnvStorage.customerKeyword.page
-                GlobalEnvStorage.Porder = 0
-                pageNo = 1
-                while targetRowObject == None and pageNo < totalPageCount + 1:
-                    time.sleep(2)
-                    rowObjects = self.getRowObjects()
-                    if rowObjects != None:
-                        targetRowObject = self.comparison(rowObjects)
-                        self.closeApp()
-                        if targetRowObject == None and pageNo < totalPageCount:
-                            GlobalEnvStorage.Porder += len(rowObjects)
-                            self.jingjiaClick()
-                            self.NoResultClick(pageNo, rowObjects)
-                            pageNo = pageNo + 1
-                            if self.hasNextPage():
-                                self.decideFile(pageNo)
-                            else:
-                                break
-                            ServiceProxy.updatePageNo(pageNo=pageNo)
+
+            self.zhanneiSearch()
+            targetRowObject = None
+            totalPageCount = GlobalEnvStorage.customerKeyword.page
+            GlobalEnvStorage.Porder = 0
+            pageNo = 1
+            while targetRowObject == None and pageNo < totalPageCount + 1:
+                time.sleep(2)
+                rowObjects = self.getRowObjects()
+                if rowObjects != None:
+                    targetRowObject = self.comparison(rowObjects)
+                    self.closeApp()
+                    if targetRowObject == None and pageNo < totalPageCount:
+                        GlobalEnvStorage.Porder += len(rowObjects)
+                        self.jingjiaClick()
+                        self.NoResultClick(pageNo, rowObjects)
+                        pageNo = pageNo + 1
+                        if self.hasNextPage():
+                            self.decideFile(pageNo)
                         else:
                             break
+                        ServiceProxy.updatePageNo(pageNo=pageNo)
                     else:
+                        break
+                else:
                         break
 
             if targetRowObject != None:

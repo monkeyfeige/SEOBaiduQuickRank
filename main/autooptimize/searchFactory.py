@@ -19,6 +19,7 @@ class SearchFactory:
             searchButtom = GlobalEnvStorage.searchButtom
         if GlobalEnvStorage.customerKeyword.terminalType == 'PC':
             n = randint(1, 100)
+            GlobalEnvStorage.infoLogger.info('search: %d', n)
             if n <= int(GlobalEnvStorage.search_click):
                 element = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR, searchButtom)))[0]
                 time.sleep(uniform(0.5, 1.5))

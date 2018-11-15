@@ -64,23 +64,21 @@ class OperateTargetFactory:
                 operateTarget = BaiduPhoneOperateTarget()
             else:
                 operateTarget = BaiduPCOperateTarget()
-        else:
-            if GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
-                if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
-                    operateTarget = SogouPhoneOperateTarget()
-                else:
-                    operateTarget = SogouPCOperateTarget()
+        elif GlobalEnvStorage.customerKeyword.searchEngine == '搜狗':
+            if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
+                operateTarget = SogouPhoneOperateTarget()
             else:
-                if GlobalEnvStorage.customerKeyword.searchEngine == '360':
-                    if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
-                        pass
-                    else:
-                        operateTarget = _360PCOperateTarget()
-                else:
-                    if GlobalEnvStorage.customerKeyword.searchEngine == '神马':
-                        if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
-                            operateTarget = ShenmaPhoneOperateTarget()
-                    if operateTarget != None:
-                        operateTarget.disturbOperate()
-                    else:
-                        GlobalEnvStorage.infoLogger.info('Wrong searchEngine or terminalType')
+                operateTarget = SogouPCOperateTarget()
+        elif GlobalEnvStorage.customerKeyword.searchEngine == '360':
+            if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
+                pass
+            else:
+                operateTarget = _360PCOperateTarget()
+        elif GlobalEnvStorage.customerKeyword.searchEngine == '神马':
+            if GlobalEnvStorage.customerKeyword.terminalType == 'Phone':
+                operateTarget = ShenmaPhoneOperateTarget()
+
+        if operateTarget != None:
+            operateTarget.disturbOperate()
+        else:
+            GlobalEnvStorage.infoLogger.info('Wrong searchEngine or terminalType')

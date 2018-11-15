@@ -67,8 +67,8 @@ class DMFactory:
             else:
                 if trajectory <= 30:
                     break
-                self.dm.MoveTo(cursor_posX + (x - cursor_posX) * ((index + 1) / len) + add_x, cursor_posY + (y - cursor_posY) * ((index + 1) / len) + add_y)
-                time.sleep(interval)
+            self.dm.MoveTo(cursor_posX + (x - cursor_posX) * ((index + 1) / len) + add_x, cursor_posY + (y - cursor_posY) * ((index + 1) / len) + add_y)
+            time.sleep(interval)
 
     def wheel(self, count, type='DOWN', minTime=0.01, maxtTime=0.1):
         if type == 'UP':

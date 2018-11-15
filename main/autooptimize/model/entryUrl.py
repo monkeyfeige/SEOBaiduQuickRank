@@ -13,5 +13,5 @@ class EntryUrl:
     dropDownList = None
     skipPosition = None
 
-    def __init__(data, self):
+    def __init__(self, data):
         self.__dict__ = data

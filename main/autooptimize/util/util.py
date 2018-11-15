@@ -349,6 +349,7 @@ def fetchSuggestionsValue(cunstomerkeyword, terminalType):
     except Exception as e:
         GlobalEnvStorage.infoLogger.info('%s', e)
     finally:
+        GlobalEnvStorage.infoLogger.info('结束获得下拉相关的词: %s', str)
         return str
 
 
@@ -431,6 +432,7 @@ def fetchRelativeAndRecommendationValue(customerkeyword, terminalType):
     except Exception as e:
         GlobalEnvStorage.infoLogger.info('%s', e)
     finally:
+        GlobalEnvStorage.infoLogger.info('结束获得相关搜索的词: %s', str)
         return str
 
 
