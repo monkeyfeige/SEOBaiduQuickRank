@@ -1,0 +1,1994 @@
+2018-12-07 17:50:20,952 [dmFactory.py:19] 0
+2018-12-07 17:50:20,999 [dmFactory.py:22] 创建DM成功
+2018-12-07 17:50:21,014 [main.py:64] ####失败次数:0
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:48:31,281 [util.py:51] 拨号命令退出
+2018-12-07 17:48:31,281 [util.py:53] connect successful
+2018-12-07 17:48:31,281 [serviceProxy.py:30] 中建
+2018-12-07 17:48:31,281 [util.py:564] 加入host的url:[]
+2018-12-07 17:48:41,312 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x02E24290>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:48:41,312 [main.py:245] 开始执行processFactory...
+2018-12-07 17:48:41,328 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:48:41,328 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:48:45,011 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x02D19570>
+2018-12-07 17:48:46,368 [urlInputFactory.py:97] url: None
+2018-12-07 17:48:46,368 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 17:48:47,827 [urlInputFactory.py:104] profileID: 286
+2018-12-07 17:48:47,827 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:48:48,833 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 17:48:48,833 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 17:48:48,833 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 17:48:48,997 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 17:48:51,026 [keywordInputFactory.py:16] 中
+2018-12-07 17:48:51,089 [keywordInputFactory.py:16] 建
+2018-12-07 17:48:51,159 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 17:48:51,628 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 17:48:51,628 [searchFactory.py:22] search: 28
+2018-12-07 17:48:53,331 [abstractBrowser.py:39] element locationInfo: {'x': 561, 'y': 11, 'width': 100, 'height': 34}
+2018-12-07 17:48:53,851 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:48:53,851 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 17:48:56,701 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-7")>
+2018-12-07 17:48:56,881 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-8")>
+2018-12-07 17:48:56,999 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-9")>
+2018-12-07 17:48:57,030 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-10")>
+2018-12-07 17:48:57,124 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-11")>
+2018-12-07 17:48:57,223 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-12")>
+2018-12-07 17:48:57,350 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-13")>
+2018-12-07 17:48:57,475 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-14")>
+2018-12-07 17:48:57,584 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-15")>
+2018-12-07 17:48:57,750 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-16")>
+2018-12-07 17:48:57,843 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:48:57,875 [PCOperateTarget.py:474] pageNo:2
+2018-12-07 17:48:57,875 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:48:57,938 [PCOperateTarget.py:208] moving down
+2018-12-07 17:48:57,938 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:48:58,031 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:48:58,066 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:48:59,923 [PCOperateTarget.py:208] moving down
+2018-12-07 17:48:59,923 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:49:00,024 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:49:00,101 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:49:00,148 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:49:00,203 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:49:02,062 [PCOperateTarget.py:208] moving down
+2018-12-07 17:49:02,063 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:49:02,138 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:49:02,217 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:49:02,292 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:49:02,350 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:49:03,776 [abstractBrowser.py:39] element locationInfo: {'x': 571, 'y': 643, 'width': 88, 'height': 36}
+2018-12-07 17:49:07,524 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-37")>
+2018-12-07 17:49:07,758 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-38")>
+2018-12-07 17:49:07,993 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-39")>
+2018-12-07 17:49:08,246 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-40")>
+2018-12-07 17:49:08,528 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-41")>
+2018-12-07 17:49:08,784 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-42")>
+2018-12-07 17:49:09,093 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-43")>
+2018-12-07 17:49:09,343 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-44")>
+2018-12-07 17:49:09,593 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-45")>
+2018-12-07 17:49:09,844 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-46")>
+2018-12-07 17:49:10,094 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:49:10,110 [PCOperateTarget.py:474] pageNo:3
+2018-12-07 17:49:10,110 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:49:10,220 [PCOperateTarget.py:208] moving down
+2018-12-07 17:49:10,220 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:49:10,301 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:49:10,408 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:49:10,503 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:49:10,530 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:49:12,243 [PCOperateTarget.py:208] moving down
+2018-12-07 17:49:12,243 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:49:12,341 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:49:12,389 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:49:12,476 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:49:12,548 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:49:14,517 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 17:49:18,804 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-69")>
+2018-12-07 17:49:19,051 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-70")>
+2018-12-07 17:49:19,274 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-71")>
+2018-12-07 17:49:19,654 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-72")>
+2018-12-07 17:49:19,874 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-73")>
+2018-12-07 17:49:20,109 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-74")>
+2018-12-07 17:49:20,373 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-75")>
+2018-12-07 17:49:20,624 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-76")>
+2018-12-07 17:49:20,875 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-77")>
+2018-12-07 17:49:21,141 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-78")>
+2018-12-07 17:49:21,360 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:49:21,389 [PCOperateTarget.py:474] pageNo:4
+2018-12-07 17:49:21,389 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:49:21,452 [PCOperateTarget.py:208] moving down
+2018-12-07 17:49:21,452 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:49:21,493 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:49:21,508 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:49:21,572 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:49:22,750 [PCOperateTarget.py:208] moving down
+2018-12-07 17:49:22,750 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:49:22,849 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:49:22,933 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:49:23,028 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:49:24,614 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 618, 'width': 88, 'height': 36}
+2018-12-07 17:49:28,033 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-101")>
+2018-12-07 17:49:28,278 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-102")>
+2018-12-07 17:49:28,504 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-103")>
+2018-12-07 17:49:28,739 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-104")>
+2018-12-07 17:49:28,958 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-105")>
+2018-12-07 17:49:29,098 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-106")>
+2018-12-07 17:49:29,239 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="ecc2b7bec829d6ff48291ee68d7d6c0b", element="0.5553181185145761-107")>
+2018-12-07 17:49:29,364 [abstractOperateTarget.py:183] url找到--
+2018-12-07 17:49:29,364 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:49:29,364 [abstractOperateTarget.py:135] 当前排名是:37
+2018-12-07 17:49:29,364 [abstractOperateTarget.py:136] 找到
+2018-12-07 17:49:29,364 [PCOperateTarget.py:147] 找到_______
+2018-12-07 17:49:29,364 [PCOperateTarget.py:158] clickNum 2
+2018-12-07 17:49:29,442 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:49:29,504 [PCOperateTarget.py:208] moving down
+2018-12-07 17:49:29,504 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:49:29,572 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:49:29,597 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:49:29,659 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:49:29,732 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:49:30,998 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 233, 'width': 160, 'height': 18}
+2018-12-07 17:49:38,539 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:49:38,591 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 233, 'width': 160, 'height': 18}
+2018-12-07 17:49:44,852 [util.py:249] 随机清除cookies
+2018-12-07 17:49:45,003 [util.py:26] 36.248.129.117
+2018-12-07 17:49:45,079 [util.py:29] 宁德
+2018-12-07 17:49:48,152 [main.py:315] Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1870.2 Safari/537.36
+2018-12-07 17:49:48,152 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:49:53,402 [util.py:51] 拨号命令退出
+2018-12-07 17:49:53,402 [util.py:53] connect successful
+2018-12-07 17:49:53,402 [serviceProxy.py:30] 中建
+2018-12-07 17:49:53,402 [util.py:564] 加入host的url:[]
+2018-12-07 17:50:03,417 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x02E29190>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:50:03,417 [main.py:245] 开始执行processFactory...
+2018-12-07 17:50:03,433 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:50:03,433 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:50:07,215 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x01E95A70>
+2018-12-07 17:50:08,131 [urlInputFactory.py:97] url: None
+2018-12-07 17:50:08,131 [urlInputFactory.py:98] entryUrl: http://www.hao123.com
+2018-12-07 17:50:13,742 [urlInputFactory.py:104] profileID: 287
+2018-12-07 17:50:13,742 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:50:14,742 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#search-input
+2018-12-07 17:50:14,742 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:.button-hook
+2018-12-07 17:50:14,742 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 17:50:14,856 [abstractBrowser.py:39] element locationInfo: {'x': 294, 'y': 95, 'width': 448, 'height': 38}
+2018-12-07 17:50:16,702 [searchFactory.py:22] search: 51
+2018-12-07 17:50:16,702 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:50:16,703 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 17:50:16,709 [abstractOperateTarget.py:80] wait
+2018-12-07 17:50:17,227 [util.py:249] 随机清除cookies
+2018-12-07 17:50:17,376 [util.py:26] 36.248.133.230
+2018-12-07 17:50:17,466 [util.py:29] 宁德
+2018-12-07 17:50:20,543 [main.py:315] Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.11 YYE/3.9 Safari/537.36
+2018-12-07 17:50:20,543 [main.py:318] GlobalEnvStorage.optimizeCount:0,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:50:25,762 [util.py:51] 拨号命令退出
+2018-12-07 17:50:25,762 [util.py:53] connect successful
+2018-12-07 17:50:25,762 [serviceProxy.py:30] 中建
+2018-12-07 17:50:25,762 [util.py:564] 加入host的url:[]
+2018-12-07 17:50:35,778 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x03135A50>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:50:35,793 [main.py:245] 开始执行processFactory...
+2018-12-07 17:50:35,793 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:50:35,793 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:50:39,599 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x02E26FF0>
+2018-12-07 17:50:40,649 [urlInputFactory.py:97] url: None
+2018-12-07 17:50:40,649 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 17:50:43,423 [urlInputFactory.py:104] profileID: 288
+2018-12-07 17:50:43,423 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:50:44,423 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 17:50:44,423 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 17:50:44,423 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 17:50:44,533 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 17:50:46,741 [searchFactory.py:22] search: 95
+2018-12-07 17:50:46,741 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:50:46,741 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 17:50:49,895 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-2")>
+2018-12-07 17:50:50,145 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-3")>
+2018-12-07 17:50:50,256 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-4")>
+2018-12-07 17:50:50,303 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-5")>
+2018-12-07 17:50:50,548 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-6")>
+2018-12-07 17:50:50,710 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-7")>
+2018-12-07 17:50:50,898 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-8")>
+2018-12-07 17:50:51,039 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-9")>
+2018-12-07 17:50:51,291 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-10")>
+2018-12-07 17:50:51,401 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-11")>
+2018-12-07 17:50:51,557 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:50:51,573 [PCOperateTarget.py:474] pageNo:2
+2018-12-07 17:50:51,573 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:50:51,651 [PCOperateTarget.py:208] moving down
+2018-12-07 17:50:51,651 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:50:51,704 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:50:51,734 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:50:53,384 [PCOperateTarget.py:208] moving down
+2018-12-07 17:50:53,384 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:50:53,468 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:50:53,500 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:50:55,366 [PCOperateTarget.py:208] moving down
+2018-12-07 17:50:55,366 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:50:55,442 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:50:55,462 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:50:55,514 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:50:56,762 [PCOperateTarget.py:208] moving down
+2018-12-07 17:50:56,762 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:50:56,852 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:50:56,879 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:50:56,962 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:50:56,999 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:50:58,124 [abstractBrowser.py:39] element locationInfo: {'x': 571, 'y': 571, 'width': 88, 'height': 36}
+2018-12-07 17:51:01,456 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-32")>
+2018-12-07 17:51:01,565 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-33")>
+2018-12-07 17:51:01,674 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-34")>
+2018-12-07 17:51:01,799 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-35")>
+2018-12-07 17:51:01,988 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-36")>
+2018-12-07 17:51:02,195 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-37")>
+2018-12-07 17:51:02,382 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-38")>
+2018-12-07 17:51:02,507 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-39")>
+2018-12-07 17:51:02,648 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-40")>
+2018-12-07 17:51:02,835 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-41")>
+2018-12-07 17:51:02,929 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:51:02,992 [PCOperateTarget.py:474] pageNo:3
+2018-12-07 17:51:02,992 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:51:03,070 [PCOperateTarget.py:208] moving down
+2018-12-07 17:51:03,070 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:51:03,087 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:51:03,101 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:51:03,126 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:51:03,177 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:51:04,623 [PCOperateTarget.py:208] moving down
+2018-12-07 17:51:04,623 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:51:04,670 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:51:04,721 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:51:07,033 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 633, 'width': 88, 'height': 36}
+2018-12-07 17:51:11,756 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-64")>
+2018-12-07 17:51:12,041 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-65")>
+2018-12-07 17:51:12,291 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-66")>
+2018-12-07 17:51:12,526 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-67")>
+2018-12-07 17:51:12,729 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-68")>
+2018-12-07 17:51:12,932 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-69")>
+2018-12-07 17:51:13,151 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-70")>
+2018-12-07 17:51:13,338 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-71")>
+2018-12-07 17:51:13,557 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-72")>
+2018-12-07 17:51:13,878 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-73")>
+2018-12-07 17:51:14,128 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:51:14,144 [PCOperateTarget.py:474] pageNo:4
+2018-12-07 17:51:14,144 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:51:14,222 [PCOperateTarget.py:208] moving down
+2018-12-07 17:51:14,222 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:51:14,287 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:51:14,328 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:51:14,354 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:51:14,407 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:51:15,350 [PCOperateTarget.py:208] moving down
+2018-12-07 17:51:15,350 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:51:15,399 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:51:15,438 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:51:17,447 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 599, 'width': 88, 'height': 36}
+2018-12-07 17:51:21,907 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-96")>
+2018-12-07 17:51:22,141 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-97")>
+2018-12-07 17:51:22,371 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-98")>
+2018-12-07 17:51:22,622 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-99")>
+2018-12-07 17:51:22,900 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-100")>
+2018-12-07 17:51:23,227 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-101")>
+2018-12-07 17:51:23,461 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="f3ebd2beda6187e451b94b4ed6cf57e5", element="0.35329643854638926-102")>
+2018-12-07 17:51:23,696 [abstractOperateTarget.py:183] url找到--
+2018-12-07 17:51:23,696 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:51:23,696 [abstractOperateTarget.py:135] 当前排名是:37
+2018-12-07 17:51:23,696 [abstractOperateTarget.py:136] 找到
+2018-12-07 17:51:23,727 [PCOperateTarget.py:147] 找到_______
+2018-12-07 17:51:23,727 [PCOperateTarget.py:158] clickNum 2
+2018-12-07 17:51:23,821 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:51:23,883 [PCOperateTarget.py:208] moving down
+2018-12-07 17:51:23,883 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:51:23,958 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:51:24,008 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:51:24,040 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:51:25,397 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 333, 'width': 160, 'height': 18}
+2018-12-07 17:51:32,735 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:51:32,876 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 333, 'width': 160, 'height': 18}
+2018-12-07 17:51:38,127 [util.py:249] 随机清除cookies
+2018-12-07 17:51:38,284 [util.py:26] 36.248.132.106
+2018-12-07 17:51:38,377 [util.py:29] 宁德
+2018-12-07 17:51:41,440 [main.py:315] Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+2018-12-07 17:51:41,440 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:51:46,674 [util.py:51] 拨号命令退出
+2018-12-07 17:51:46,674 [util.py:53] connect successful
+2018-12-07 17:51:46,674 [serviceProxy.py:30] 中建
+2018-12-07 17:51:46,674 [util.py:564] 加入host的url:[]
+2018-12-07 17:51:56,674 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x031550B0>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:51:56,674 [main.py:245] 开始执行processFactory...
+2018-12-07 17:51:56,674 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:51:56,674 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:52:00,540 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x031554F0>
+2018-12-07 17:52:01,656 [urlInputFactory.py:97] url: None
+2018-12-07 17:52:01,657 [urlInputFactory.py:98] entryUrl: http://www.duba.com
+2018-12-07 17:52:09,320 [urlInputFactory.py:104] profileID: 289
+2018-12-07 17:52:09,320 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:52:10,329 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#search_keyword
+2018-12-07 17:52:10,329 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:.btn_search
+2018-12-07 17:52:10,329 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 17:52:10,455 [abstractBrowser.py:39] element locationInfo: {'x': 291, 'y': 426, 'width': 529, 'height': 40}
+2018-12-07 17:52:12,657 [searchFactory.py:22] search: 23
+2018-12-07 17:52:13,976 [abstractBrowser.py:39] element locationInfo: {'x': 821, 'y': 141, 'width': 120, 'height': 40}
+2018-12-07 17:52:14,558 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:52:14,558 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 17:52:14,586 [util.py:249] 随机清除cookies
+2018-12-07 17:52:14,746 [util.py:26] 36.248.132.236
+2018-12-07 17:52:14,837 [util.py:29] 宁德
+2018-12-07 17:52:17,916 [main.py:315] Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0
+2018-12-07 17:52:17,916 [main.py:318] GlobalEnvStorage.optimizeCount:0,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:52:23,260 [util.py:51] 拨号命令退出
+2018-12-07 17:52:23,260 [util.py:53] connect successful
+2018-12-07 17:52:23,276 [serviceProxy.py:30] 中建
+2018-12-07 17:52:23,276 [util.py:564] 加入host的url:[]
+2018-12-07 17:52:33,276 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x03170690>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:52:33,276 [main.py:245] 开始执行processFactory...
+2018-12-07 17:52:33,276 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:52:33,291 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:52:37,145 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x031709B0>
+2018-12-07 17:52:38,575 [urlInputFactory.py:97] url: None
+2018-12-07 17:52:38,575 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 17:52:40,304 [urlInputFactory.py:104] profileID: 290
+2018-12-07 17:52:40,304 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:52:41,312 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 17:52:41,312 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 17:52:41,312 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 17:52:41,467 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 17:52:43,046 [keywordInputFactory.py:16] 中
+2018-12-07 17:52:43,111 [keywordInputFactory.py:16] 建
+2018-12-07 17:52:43,182 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 17:52:43,616 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 17:52:43,616 [searchFactory.py:22] search: 43
+2018-12-07 17:52:43,616 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:52:43,616 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 17:52:46,447 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-6")>
+2018-12-07 17:52:46,556 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-7")>
+2018-12-07 17:52:46,697 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-8")>
+2018-12-07 17:52:46,728 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-9")>
+2018-12-07 17:52:46,822 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-10")>
+2018-12-07 17:52:46,900 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-11")>
+2018-12-07 17:52:47,000 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-12")>
+2018-12-07 17:52:47,094 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-13")>
+2018-12-07 17:52:47,204 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-14")>
+2018-12-07 17:52:47,282 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-15")>
+2018-12-07 17:52:47,424 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:52:47,458 [PCOperateTarget.py:474] pageNo:2
+2018-12-07 17:52:47,458 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:52:47,597 [PCOperateTarget.py:208] moving down
+2018-12-07 17:52:47,597 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:52:47,657 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:52:47,678 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:52:47,722 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:52:47,817 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:52:49,116 [PCOperateTarget.py:208] moving down
+2018-12-07 17:52:49,116 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:52:49,153 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:52:49,198 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:52:49,241 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:52:49,327 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:52:51,476 [PCOperateTarget.py:208] moving down
+2018-12-07 17:52:51,476 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:52:51,500 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:52:51,567 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:52:51,618 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:52:51,679 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:52:53,054 [abstractBrowser.py:39] element locationInfo: {'x': 571, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 17:52:56,586 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-36")>
+2018-12-07 17:52:56,778 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-37")>
+2018-12-07 17:52:56,903 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-38")>
+2018-12-07 17:52:57,098 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-39")>
+2018-12-07 17:52:57,254 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-40")>
+2018-12-07 17:52:57,348 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-41")>
+2018-12-07 17:52:57,442 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-42")>
+2018-12-07 17:52:57,554 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-43")>
+2018-12-07 17:52:57,761 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-44")>
+2018-12-07 17:52:57,886 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-45")>
+2018-12-07 17:52:58,089 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:52:58,105 [PCOperateTarget.py:474] pageNo:3
+2018-12-07 17:52:58,105 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:52:58,183 [PCOperateTarget.py:208] moving down
+2018-12-07 17:52:58,183 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:52:58,224 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:52:58,256 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:52:59,525 [PCOperateTarget.py:208] moving down
+2018-12-07 17:52:59,525 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:52:59,614 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:52:59,633 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:52:59,686 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:52:59,742 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:53:01,800 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 633, 'width': 88, 'height': 36}
+2018-12-07 17:53:05,619 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-68")>
+2018-12-07 17:53:05,726 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-69")>
+2018-12-07 17:53:05,867 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-70")>
+2018-12-07 17:53:06,011 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-71")>
+2018-12-07 17:53:06,167 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-72")>
+2018-12-07 17:53:06,359 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-73")>
+2018-12-07 17:53:06,531 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-74")>
+2018-12-07 17:53:06,734 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-75")>
+2018-12-07 17:53:06,984 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-76")>
+2018-12-07 17:53:07,219 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-77")>
+2018-12-07 17:53:07,486 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:53:07,517 [PCOperateTarget.py:474] pageNo:4
+2018-12-07 17:53:07,517 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:53:07,580 [PCOperateTarget.py:208] moving down
+2018-12-07 17:53:07,580 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:53:07,618 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:53:07,711 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:53:07,731 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:53:07,753 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:53:09,085 [PCOperateTarget.py:208] moving down
+2018-12-07 17:53:09,085 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:53:09,179 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:53:09,261 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:53:09,291 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:53:09,326 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:53:10,662 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 17:53:13,953 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-100")>
+2018-12-07 17:53:14,125 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-101")>
+2018-12-07 17:53:14,296 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-102")>
+2018-12-07 17:53:14,406 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-103")>
+2018-12-07 17:53:14,674 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-104")>
+2018-12-07 17:53:14,918 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-105")>
+2018-12-07 17:53:15,153 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="7b5703d5a6b6e5db941ea82b019b8ea4", element="0.4200779255390208-106")>
+2018-12-07 17:53:15,372 [abstractOperateTarget.py:183] url找到--
+2018-12-07 17:53:15,372 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:53:15,372 [abstractOperateTarget.py:135] 当前排名是:37
+2018-12-07 17:53:15,372 [abstractOperateTarget.py:136] 找到
+2018-12-07 17:53:15,403 [PCOperateTarget.py:147] 找到_______
+2018-12-07 17:53:15,403 [PCOperateTarget.py:158] clickNum 2
+2018-12-07 17:53:15,497 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:53:15,543 [PCOperateTarget.py:208] moving down
+2018-12-07 17:53:15,559 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:53:15,606 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:53:15,704 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:53:15,718 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:53:15,765 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:53:17,223 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 233, 'width': 160, 'height': 18}
+2018-12-07 17:53:24,025 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:53:24,150 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 233, 'width': 160, 'height': 18}
+2018-12-07 17:53:29,625 [util.py:249] 随机清除cookies
+2018-12-07 17:53:29,714 [util.py:26] 36.248.133.107
+2018-12-07 17:53:32,890 [main.py:315] Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36
+2018-12-07 17:53:32,890 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:53:38,156 [util.py:51] 拨号命令退出
+2018-12-07 17:53:38,156 [util.py:53] connect successful
+2018-12-07 17:53:38,156 [serviceProxy.py:30] 中建
+2018-12-07 17:53:38,156 [util.py:564] 加入host的url:[]
+2018-12-07 17:53:48,171 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x031555F0>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:53:48,171 [main.py:245] 开始执行processFactory...
+2018-12-07 17:53:48,171 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:53:48,171 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:53:51,890 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x03135730>
+2018-12-07 17:53:52,687 [urlInputFactory.py:97] url: None
+2018-12-07 17:53:52,687 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 17:53:55,340 [urlInputFactory.py:104] profileID: 291
+2018-12-07 17:53:55,340 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:53:56,350 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 17:53:56,350 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 17:53:56,350 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 17:53:56,491 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 17:53:57,893 [keywordInputFactory.py:16] 中
+2018-12-07 17:53:57,973 [keywordInputFactory.py:16] 建
+2018-12-07 17:53:58,039 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 17:53:58,603 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 17:53:58,603 [searchFactory.py:22] search: 27
+2018-12-07 17:53:59,734 [abstractBrowser.py:39] element locationInfo: {'x': 561, 'y': 11, 'width': 100, 'height': 34}
+2018-12-07 17:54:00,347 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:54:00,348 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 17:54:03,234 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-7")>
+2018-12-07 17:54:03,359 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-8")>
+2018-12-07 17:54:03,500 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-9")>
+2018-12-07 17:54:03,516 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-10")>
+2018-12-07 17:54:03,719 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-11")>
+2018-12-07 17:54:03,932 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-12")>
+2018-12-07 17:54:04,166 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-13")>
+2018-12-07 17:54:04,385 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-14")>
+2018-12-07 17:54:04,651 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-15")>
+2018-12-07 17:54:04,760 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-16")>
+2018-12-07 17:54:04,885 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:54:04,916 [PCOperateTarget.py:474] pageNo:2
+2018-12-07 17:54:04,932 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:54:05,010 [PCOperateTarget.py:208] moving down
+2018-12-07 17:54:05,010 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:54:05,108 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:54:05,137 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:54:05,155 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:54:06,903 [PCOperateTarget.py:208] moving down
+2018-12-07 17:54:06,903 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:54:06,931 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:54:06,969 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:54:06,981 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:54:08,563 [PCOperateTarget.py:208] moving down
+2018-12-07 17:54:08,564 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:54:08,623 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:54:08,705 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:54:09,680 [PCOperateTarget.py:208] moving down
+2018-12-07 17:54:09,696 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:54:09,767 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:54:09,848 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:54:09,941 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:54:10,035 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:54:11,350 [abstractBrowser.py:39] element locationInfo: {'x': 571, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 17:54:14,610 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-37")>
+2018-12-07 17:54:14,719 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-38")>
+2018-12-07 17:54:14,828 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-39")>
+2018-12-07 17:54:14,953 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-40")>
+2018-12-07 17:54:15,048 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-41")>
+2018-12-07 17:54:15,220 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-42")>
+2018-12-07 17:54:15,330 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-43")>
+2018-12-07 17:54:15,517 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-44")>
+2018-12-07 17:54:15,706 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-45")>
+2018-12-07 17:54:15,877 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-46")>
+2018-12-07 17:54:15,987 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:54:16,002 [PCOperateTarget.py:474] pageNo:3
+2018-12-07 17:54:16,002 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:54:16,086 [PCOperateTarget.py:208] moving down
+2018-12-07 17:54:16,086 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:54:16,108 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:54:16,204 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:54:17,078 [PCOperateTarget.py:208] moving down
+2018-12-07 17:54:17,078 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:54:17,096 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:54:17,156 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:54:18,011 [PCOperateTarget.py:208] moving down
+2018-12-07 17:54:18,011 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:54:18,063 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:54:18,164 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:54:19,667 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 17:54:23,472 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-69")>
+2018-12-07 17:54:23,626 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-70")>
+2018-12-07 17:54:23,802 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-71")>
+2018-12-07 17:54:23,958 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-72")>
+2018-12-07 17:54:24,130 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-73")>
+2018-12-07 17:54:24,304 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-74")>
+2018-12-07 17:54:24,507 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-75")>
+2018-12-07 17:54:24,710 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-76")>
+2018-12-07 17:54:24,948 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-77")>
+2018-12-07 17:54:25,214 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-78")>
+2018-12-07 17:54:25,487 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:54:25,502 [PCOperateTarget.py:474] pageNo:4
+2018-12-07 17:54:25,502 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:54:25,549 [PCOperateTarget.py:208] moving down
+2018-12-07 17:54:25,549 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:54:25,623 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:54:25,676 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:54:26,545 [PCOperateTarget.py:208] moving down
+2018-12-07 17:54:26,545 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:54:26,616 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:54:26,659 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:54:26,686 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:54:26,745 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:54:28,375 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 599, 'width': 88, 'height': 36}
+2018-12-07 17:54:32,735 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-101")>
+2018-12-07 17:54:32,985 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-102")>
+2018-12-07 17:54:33,211 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-103")>
+2018-12-07 17:54:33,478 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-104")>
+2018-12-07 17:54:33,691 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-105")>
+2018-12-07 17:54:33,800 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-106")>
+2018-12-07 17:54:33,988 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="e55f255eb73fc36d7b6ccc8c3a891500", element="0.43813160632984594-107")>
+2018-12-07 17:54:34,175 [abstractOperateTarget.py:183] url找到--
+2018-12-07 17:54:34,175 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:54:34,175 [abstractOperateTarget.py:135] 当前排名是:37
+2018-12-07 17:54:34,175 [abstractOperateTarget.py:136] 找到
+2018-12-07 17:54:34,191 [PCOperateTarget.py:147] 找到_______
+2018-12-07 17:54:34,191 [PCOperateTarget.py:158] clickNum 1
+2018-12-07 17:54:34,253 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:54:34,300 [PCOperateTarget.py:208] moving down
+2018-12-07 17:54:34,300 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:54:34,369 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:54:34,385 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:54:34,435 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:54:34,495 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:54:36,070 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 233, 'width': 160, 'height': 18}
+2018-12-07 17:54:41,571 [util.py:249] 随机清除cookies
+2018-12-07 17:54:41,658 [util.py:26] 36.248.133.183
+2018-12-07 17:54:44,796 [main.py:315] Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+2018-12-07 17:54:44,796 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:54:50,046 [util.py:51] 拨号命令退出
+2018-12-07 17:54:50,046 [util.py:53] connect successful
+2018-12-07 17:54:50,046 [serviceProxy.py:30] 中建
+2018-12-07 17:54:50,046 [util.py:564] 加入host的url:[]
+2018-12-07 17:55:00,062 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x031356F0>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:55:00,062 [main.py:245] 开始执行processFactory...
+2018-12-07 17:55:00,062 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:55:00,078 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:55:03,974 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x019F2AF0>
+2018-12-07 17:55:05,053 [urlInputFactory.py:97] url: None
+2018-12-07 17:55:05,053 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 17:55:07,902 [urlInputFactory.py:104] profileID: 292
+2018-12-07 17:55:07,902 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:55:08,914 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:55:08,914 [util.py:265] 开始获得下拉相关的词
+2018-12-07 17:55:08,992 [util.py:352] 结束获得下拉相关的词: 中建集团
+2018-12-07 17:55:08,992 [keywordInputFactory.py:217] 下拉词*中建集团*
+2018-12-07 17:55:08,992 [keywordInputFactory.py:245] GlobalEnvStorage.searchText:#kw
+2018-12-07 17:55:08,992 [keywordInputFactory.py:246] GlobalEnvStorage.searchButtom:#su
+2018-12-07 17:55:08,992 [keywordInputFactory.py:251] inputDisturbString->relocation:
+2018-12-07 17:55:09,180 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 17:55:11,024 [keywordInputFactory.py:16] 中
+2018-12-07 17:55:11,488 [keywordInputFactory.py:16] 建
+2018-12-07 17:55:11,543 [keywordInputFactory.py:16] 集
+2018-12-07 17:55:11,961 [keywordInputFactory.py:16] 团
+2018-12-07 17:55:12,412 [searchFactory.py:22] search: 8
+2018-12-07 17:55:13,880 [abstractBrowser.py:39] element locationInfo: {'x': 561, 'y': 11, 'width': 100, 'height': 34}
+2018-12-07 17:55:15,285 [PCOperateTarget.py:266] idx: 0
+2018-12-07 17:55:15,437 [PCOperateTarget.py:537] 随机点的目标没有标题或者url argument of type 'NoneType' is not iterable
+2018-12-07 17:55:15,459 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:55:15,480 [PCOperateTarget.py:540] 最终目标 <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-13")>
+2018-12-07 17:55:15,495 [PCOperateTarget.py:208] moving down
+2018-12-07 17:55:15,495 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:55:15,541 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:55:15,596 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:55:16,999 [PCOperateTarget.py:208] moving down
+2018-12-07 17:55:16,999 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:55:17,016 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:55:17,076 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:55:17,169 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:55:17,218 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:55:18,761 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 217, 'width': 214, 'height': 18}
+2018-12-07 17:55:23,282 [PCOperateTarget.py:275] 是第1个window
+2018-12-07 17:55:23,283 [PCOperateTarget.py:380] 开始删除字
+2018-12-07 17:55:23,367 [PCOperateTarget.py:385] len: 4
+2018-12-07 17:55:23,482 [abstractBrowser.py:39] element locationInfo: {'x': 129, 'y': 18, 'width': 395, 'height': 22}
+2018-12-07 17:55:24,552 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:55:24,552 [util.py:357] 开始获得相关搜索的词
+2018-12-07 17:55:26,110 [util.py:435] 结束获得相关搜索的词: 建筑公司网站
+2018-12-07 17:55:26,112 [keywordInputFactory.py:241] 相关搜索词*建筑公司网站*
+2018-12-07 17:55:26,112 [keywordInputFactory.py:245] GlobalEnvStorage.searchText:#kw
+2018-12-07 17:55:26,113 [keywordInputFactory.py:246] GlobalEnvStorage.searchButtom:#su
+2018-12-07 17:55:26,612 [searchFactory.py:22] search: 40
+2018-12-07 17:55:28,551 [abstractBrowser.py:39] element locationInfo: {'x': 561, 'y': 11, 'width': 100, 'height': 34}
+2018-12-07 17:55:30,307 [PCOperateTarget.py:266] idx: 0
+2018-12-07 17:55:30,671 [PCOperateTarget.py:537] 随机点的目标没有标题或者url argument of type 'NoneType' is not iterable
+2018-12-07 17:55:30,718 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:55:30,782 [PCOperateTarget.py:540] 最终目标 <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-25")>
+2018-12-07 17:55:30,813 [PCOperateTarget.py:208] moving down
+2018-12-07 17:55:30,813 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:55:30,844 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:55:30,888 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:55:30,920 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:55:30,997 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:55:32,653 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 415, 'width': 176, 'height': 18}
+2018-12-07 17:55:36,929 [PCOperateTarget.py:275] 是第1个window
+2018-12-07 17:55:36,930 [PCOperateTarget.py:380] 开始删除字
+2018-12-07 17:55:36,974 [PCOperateTarget.py:385] len: 6
+2018-12-07 17:55:37,018 [abstractBrowser.py:39] element locationInfo: {'x': 129, 'y': 18, 'width': 395, 'height': 22}
+2018-12-07 17:55:37,945 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 17:55:37,945 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 17:55:37,945 [keywordInputFactory.py:16] 中
+2018-12-07 17:55:38,000 [keywordInputFactory.py:16] 建
+2018-12-07 17:55:38,061 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 17:55:38,650 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 17:55:38,650 [searchFactory.py:22] search: 27
+2018-12-07 17:55:39,556 [abstractBrowser.py:39] element locationInfo: {'x': 561, 'y': 11, 'width': 100, 'height': 34}
+2018-12-07 17:55:40,062 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:55:40,062 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 17:55:42,524 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-31")>
+2018-12-07 17:55:42,625 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-32")>
+2018-12-07 17:55:42,721 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-33")>
+2018-12-07 17:55:42,739 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-34")>
+2018-12-07 17:55:42,844 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-35")>
+2018-12-07 17:55:42,919 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-36")>
+2018-12-07 17:55:43,018 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-37")>
+2018-12-07 17:55:43,116 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-38")>
+2018-12-07 17:55:43,216 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-39")>
+2018-12-07 17:55:43,324 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-40")>
+2018-12-07 17:55:43,425 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:55:43,448 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:55:43,499 [PCOperateTarget.py:208] moving down
+2018-12-07 17:55:43,499 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:55:43,579 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:55:43,664 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:55:43,708 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:55:43,782 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:55:44,834 [PCOperateTarget.py:208] moving down
+2018-12-07 17:55:44,834 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:55:44,894 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:55:44,964 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:55:44,976 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:55:45,031 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:55:46,425 [PCOperateTarget.py:208] moving down
+2018-12-07 17:55:46,427 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:55:46,456 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:55:46,554 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:55:46,621 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:55:48,190 [abstractBrowser.py:39] element locationInfo: {'x': 166, 'y': 613, 'width': 36, 'height': 66}
+2018-12-07 17:55:51,039 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-62")>
+2018-12-07 17:55:51,135 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-63")>
+2018-12-07 17:55:51,236 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-64")>
+2018-12-07 17:55:51,333 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-65")>
+2018-12-07 17:55:51,432 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-66")>
+2018-12-07 17:55:51,525 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-67")>
+2018-12-07 17:55:51,622 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-68")>
+2018-12-07 17:55:51,758 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-69")>
+2018-12-07 17:55:51,849 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-70")>
+2018-12-07 17:55:51,949 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-71")>
+2018-12-07 17:55:52,046 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:55:52,059 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:55:52,096 [PCOperateTarget.py:208] moving down
+2018-12-07 17:55:52,096 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:55:52,129 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:55:52,187 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:55:52,241 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:55:52,309 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:55:53,417 [PCOperateTarget.py:208] moving down
+2018-12-07 17:55:53,418 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:55:53,489 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:55:53,507 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:55:53,546 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:55:53,642 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:55:55,106 [abstractBrowser.py:39] element locationInfo: {'x': 308, 'y': 530, 'width': 36, 'height': 66}
+2018-12-07 17:55:58,174 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-95")>
+2018-12-07 17:55:58,268 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-96")>
+2018-12-07 17:55:58,362 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-97")>
+2018-12-07 17:55:58,440 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-98")>
+2018-12-07 17:55:58,534 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-99")>
+2018-12-07 17:55:58,643 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-100")>
+2018-12-07 17:55:58,752 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-101")>
+2018-12-07 17:55:58,893 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-102")>
+2018-12-07 17:55:58,986 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-103")>
+2018-12-07 17:55:59,095 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-104")>
+2018-12-07 17:55:59,205 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:55:59,220 [PCOperateTarget.py:474] pageNo:4
+2018-12-07 17:55:59,220 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:55:59,264 [PCOperateTarget.py:208] moving down
+2018-12-07 17:55:59,264 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:55:59,312 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:55:59,378 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:56:00,609 [PCOperateTarget.py:208] moving down
+2018-12-07 17:56:00,609 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:56:00,641 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:56:00,657 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:56:00,753 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:56:00,864 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:56:02,428 [PCOperateTarget.py:208] moving down
+2018-12-07 17:56:02,428 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:56:02,476 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:56:02,577 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:56:02,603 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:56:03,554 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 17:56:06,423 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-127")>
+2018-12-07 17:56:06,548 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-128")>
+2018-12-07 17:56:06,659 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-129")>
+2018-12-07 17:56:06,832 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-130")>
+2018-12-07 17:56:06,934 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-131")>
+2018-12-07 17:56:07,090 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-132")>
+2018-12-07 17:56:07,309 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8849f8b3fc6696785caf7e8fbd2106b1", element="0.9349518000267711-133")>
+2018-12-07 17:56:07,481 [abstractOperateTarget.py:183] url找到--
+2018-12-07 17:56:07,481 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:56:07,481 [abstractOperateTarget.py:135] 当前排名是:37
+2018-12-07 17:56:07,481 [abstractOperateTarget.py:136] 找到
+2018-12-07 17:56:07,498 [PCOperateTarget.py:147] 找到_______
+2018-12-07 17:56:07,498 [PCOperateTarget.py:158] clickNum 2
+2018-12-07 17:56:07,576 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:56:07,623 [PCOperateTarget.py:208] moving down
+2018-12-07 17:56:07,623 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:56:07,700 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:56:07,798 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:56:09,375 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 433, 'width': 160, 'height': 18}
+2018-12-07 17:56:16,444 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:56:16,585 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 433, 'width': 160, 'height': 18}
+2018-12-07 17:56:24,228 [util.py:249] 随机清除cookies
+2018-12-07 17:56:24,322 [util.py:26] 175.42.68.165
+2018-12-07 17:56:24,400 [util.py:29] 宁德
+2018-12-07 17:56:27,478 [main.py:315] Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36
+2018-12-07 17:56:27,478 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:56:32,712 [util.py:51] 拨号命令退出
+2018-12-07 17:56:32,712 [util.py:53] connect successful
+2018-12-07 17:56:32,712 [serviceProxy.py:30] 中建
+2018-12-07 17:56:32,712 [util.py:564] 加入host的url:[]
+2018-12-07 17:56:42,712 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x02E26770>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:56:42,712 [main.py:245] 开始执行processFactory...
+2018-12-07 17:56:42,712 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:56:42,712 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:56:46,370 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x02E265B0>
+2018-12-07 17:56:47,330 [urlInputFactory.py:97] url: None
+2018-12-07 17:56:47,330 [urlInputFactory.py:98] entryUrl: http://www.hao123.com
+2018-12-07 17:56:50,941 [urlInputFactory.py:104] profileID: 293
+2018-12-07 17:56:50,941 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:56:51,941 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#search-input
+2018-12-07 17:56:51,941 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:.button-hook
+2018-12-07 17:56:51,941 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 17:56:52,006 [abstractBrowser.py:39] element locationInfo: {'x': 294, 'y': 95, 'width': 448, 'height': 38}
+2018-12-07 17:56:54,019 [searchFactory.py:22] search: 93
+2018-12-07 17:56:54,019 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:56:54,019 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 17:56:54,022 [abstractOperateTarget.py:80] wait
+2018-12-07 17:56:54,528 [util.py:249] 随机清除cookies
+2018-12-07 17:56:54,668 [util.py:26] 36.250.156.117
+2018-12-07 17:56:54,803 [util.py:29] 宁德
+2018-12-07 17:56:57,850 [main.py:315] Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+2018-12-07 17:56:57,850 [main.py:318] GlobalEnvStorage.optimizeCount:0,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:57:03,069 [util.py:51] 拨号命令退出
+2018-12-07 17:57:03,069 [util.py:53] connect successful
+2018-12-07 17:57:03,069 [serviceProxy.py:30] 中建
+2018-12-07 17:57:03,069 [util.py:564] 加入host的url:[]
+2018-12-07 17:57:13,084 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x02E221F0>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:57:13,084 [main.py:245] 开始执行processFactory...
+2018-12-07 17:57:13,084 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:57:13,084 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:57:16,692 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x02E22DB0>
+2018-12-07 17:57:17,785 [urlInputFactory.py:97] url: None
+2018-12-07 17:57:17,785 [urlInputFactory.py:98] entryUrl: http://www.hao123.com
+2018-12-07 17:57:24,955 [urlInputFactory.py:104] profileID: 294
+2018-12-07 17:57:24,955 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:57:25,955 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:57:25,955 [util.py:265] 开始获得下拉相关的词
+2018-12-07 17:57:26,019 [util.py:352] 结束获得下拉相关的词: 中建三局
+2018-12-07 17:57:26,019 [keywordInputFactory.py:217] 下拉词*中建三局*
+2018-12-07 17:57:26,019 [keywordInputFactory.py:245] GlobalEnvStorage.searchText:#search-input
+2018-12-07 17:57:26,019 [keywordInputFactory.py:246] GlobalEnvStorage.searchButtom:.button-hook
+2018-12-07 17:57:26,020 [keywordInputFactory.py:251] inputDisturbString->relocation:
+2018-12-07 17:57:26,163 [abstractBrowser.py:39] element locationInfo: {'x': 294, 'y': 95, 'width': 448, 'height': 38}
+2018-12-07 17:57:27,643 [keywordInputFactory.py:16] 中
+2018-12-07 17:57:28,166 [keywordInputFactory.py:16] 建
+2018-12-07 17:57:28,820 [keywordInputFactory.py:16] 三
+2018-12-07 17:57:29,306 [keywordInputFactory.py:16] 局
+2018-12-07 17:57:29,383 [searchFactory.py:22] search: 27
+2018-12-07 17:57:30,369 [abstractBrowser.py:39] element locationInfo: {'x': 773, 'y': 92, 'width': 118, 'height': 44}
+2018-12-07 17:57:31,027 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:57:31,027 [util.py:357] 开始获得相关搜索的词
+2018-12-07 17:57:31,804 [util.py:435] 结束获得相关搜索的词: 中建一共有多少个局
+2018-12-07 17:57:31,806 [keywordInputFactory.py:241] 相关搜索词*中建一共有多少个局*
+2018-12-07 17:57:31,807 [keywordInputFactory.py:245] GlobalEnvStorage.searchText:#search-input
+2018-12-07 17:57:31,807 [keywordInputFactory.py:246] GlobalEnvStorage.searchButtom:.button-hook
+2018-12-07 17:57:31,807 [keywordInputFactory.py:251] inputDisturbString->relocation:
+2018-12-07 17:58:05,274 [util.py:26] 175.42.123.147
+2018-12-07 17:58:05,358 [util.py:29] 宁德
+2018-12-07 17:58:08,389 [main.py:315] Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36
+2018-12-07 17:58:08,389 [main.py:318] GlobalEnvStorage.optimizeCount:0,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:58:13,561 [util.py:51] 拨号命令退出
+2018-12-07 17:58:13,561 [util.py:53] connect successful
+2018-12-07 17:58:13,561 [serviceProxy.py:30] 中建
+2018-12-07 17:58:13,561 [util.py:564] 加入host的url:[]
+2018-12-07 17:58:23,577 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x031700D0>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:58:23,577 [main.py:245] 开始执行processFactory...
+2018-12-07 17:58:23,577 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:58:23,577 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:58:27,319 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x03170230>
+2018-12-07 17:58:28,442 [urlInputFactory.py:97] url: None
+2018-12-07 17:58:28,442 [urlInputFactory.py:98] entryUrl: http://www.hao123.com
+2018-12-07 17:58:34,345 [urlInputFactory.py:104] profileID: 295
+2018-12-07 17:58:34,345 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:58:35,345 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#search-input
+2018-12-07 17:58:35,345 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:.button-hook
+2018-12-07 17:58:35,346 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 17:58:35,433 [abstractBrowser.py:39] element locationInfo: {'x': 294, 'y': 95, 'width': 448, 'height': 38}
+2018-12-07 17:58:37,132 [searchFactory.py:22] search: 55
+2018-12-07 17:58:37,132 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:58:37,132 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 17:58:37,137 [abstractOperateTarget.py:80] wait
+2018-12-07 17:58:37,644 [util.py:249] 随机清除cookies
+2018-12-07 17:58:37,751 [util.py:26] 36.248.133.219
+2018-12-07 17:58:37,835 [util.py:29] 宁德
+2018-12-07 17:58:40,932 [main.py:315] Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2626.106 Safari/537.36 Yunhai Browser
+2018-12-07 17:58:40,932 [main.py:318] GlobalEnvStorage.optimizeCount:0,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 17:58:46,088 [util.py:51] 拨号命令退出
+2018-12-07 17:58:46,088 [util.py:53] connect successful
+2018-12-07 17:58:46,088 [serviceProxy.py:30] 中建
+2018-12-07 17:58:46,088 [util.py:564] 加入host的url:[]
+2018-12-07 17:58:56,088 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x02E24D90>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 17:58:56,088 [main.py:245] 开始执行processFactory...
+2018-12-07 17:58:56,088 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 17:58:56,088 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 17:58:59,742 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x03193DD0>
+2018-12-07 17:59:00,816 [urlInputFactory.py:97] url: None
+2018-12-07 17:59:00,817 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 17:59:03,395 [urlInputFactory.py:104] profileID: 296
+2018-12-07 17:59:03,395 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 17:59:04,404 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 17:59:04,404 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 17:59:04,404 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 17:59:04,466 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 17:59:06,012 [keywordInputFactory.py:16] 中
+2018-12-07 17:59:06,085 [keywordInputFactory.py:16] 建
+2018-12-07 17:59:06,163 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 17:59:06,691 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 17:59:06,691 [searchFactory.py:22] search: 15
+2018-12-07 17:59:07,283 [abstractBrowser.py:39] element locationInfo: {'x': 561, 'y': 11, 'width': 100, 'height': 34}
+2018-12-07 17:59:08,186 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 17:59:08,186 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 17:59:10,705 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-7")>
+2018-12-07 17:59:10,815 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-8")>
+2018-12-07 17:59:10,924 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-9")>
+2018-12-07 17:59:10,924 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-10")>
+2018-12-07 17:59:11,037 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-11")>
+2018-12-07 17:59:11,120 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-12")>
+2018-12-07 17:59:11,229 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-13")>
+2018-12-07 17:59:11,348 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-14")>
+2018-12-07 17:59:11,458 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-15")>
+2018-12-07 17:59:11,574 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-16")>
+2018-12-07 17:59:11,667 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:59:11,683 [PCOperateTarget.py:474] pageNo:2
+2018-12-07 17:59:11,683 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:59:11,746 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:11,746 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:11,804 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:11,918 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:11,942 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:59:13,709 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:13,709 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:13,817 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:13,905 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:14,001 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:59:15,505 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:15,505 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:15,523 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:15,552 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:17,212 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:17,212 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:17,235 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:17,301 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:18,606 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:18,622 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:18,718 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:18,753 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:19,873 [abstractBrowser.py:39] element locationInfo: {'x': 571, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 17:59:24,125 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-37")>
+2018-12-07 17:59:24,375 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-38")>
+2018-12-07 17:59:24,625 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-39")>
+2018-12-07 17:59:24,875 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-40")>
+2018-12-07 17:59:25,141 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-41")>
+2018-12-07 17:59:25,408 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-42")>
+2018-12-07 17:59:25,661 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-43")>
+2018-12-07 17:59:25,987 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-44")>
+2018-12-07 17:59:26,237 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-45")>
+2018-12-07 17:59:26,479 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-46")>
+2018-12-07 17:59:26,730 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:59:26,761 [PCOperateTarget.py:474] pageNo:3
+2018-12-07 17:59:26,761 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:59:26,877 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:26,877 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:26,930 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:26,956 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:28,611 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:28,611 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:28,626 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:28,719 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:28,754 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:59:30,671 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:30,672 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:30,709 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:30,738 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:31,733 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 17:59:36,302 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-69")>
+2018-12-07 17:59:36,516 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-70")>
+2018-12-07 17:59:36,721 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-71")>
+2018-12-07 17:59:36,831 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-72")>
+2018-12-07 17:59:37,002 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-73")>
+2018-12-07 17:59:37,206 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-74")>
+2018-12-07 17:59:37,412 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-75")>
+2018-12-07 17:59:37,613 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-76")>
+2018-12-07 17:59:37,864 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-77")>
+2018-12-07 17:59:38,098 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-78")>
+2018-12-07 17:59:38,349 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:59:38,365 [PCOperateTarget.py:474] pageNo:4
+2018-12-07 17:59:38,365 [PCOperateTarget.py:51] 下一页
+2018-12-07 17:59:38,458 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:38,458 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:38,516 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:38,584 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:40,473 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:40,473 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:40,519 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:40,580 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:40,673 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:59:42,291 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:42,291 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:42,391 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:42,417 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:43,908 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 17:59:47,193 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-101")>
+2018-12-07 17:59:47,308 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-102")>
+2018-12-07 17:59:47,402 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-103")>
+2018-12-07 17:59:47,511 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-104")>
+2018-12-07 17:59:47,622 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-105")>
+2018-12-07 17:59:47,731 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="071464eebbb5523151a80617171c5a88", element="0.09045405384444227-106")>
+2018-12-07 17:59:47,840 [abstractOperateTarget.py:183] url找到--
+2018-12-07 17:59:47,840 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 17:59:47,840 [abstractOperateTarget.py:135] 当前排名是:36
+2018-12-07 17:59:47,840 [abstractOperateTarget.py:136] 找到
+2018-12-07 17:59:47,856 [PCOperateTarget.py:147] 找到_______
+2018-12-07 17:59:47,856 [PCOperateTarget.py:158] clickNum 3
+2018-12-07 17:59:47,887 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:59:47,903 [PCOperateTarget.py:208] moving down
+2018-12-07 17:59:47,903 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 17:59:48,000 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 17:59:48,057 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 17:59:48,118 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 17:59:48,201 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 17:59:50,646 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 193, 'width': 160, 'height': 18}
+2018-12-07 17:59:58,053 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 17:59:58,118 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 193, 'width': 160, 'height': 18}
+2018-12-07 18:00:03,953 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 18:00:04,017 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 193, 'width': 160, 'height': 18}
+2018-12-07 18:00:09,353 [util.py:249] 随机清除cookies
+2018-12-07 18:00:09,501 [util.py:26] 36.248.132.105
+2018-12-07 18:00:09,626 [util.py:29] 宁德
+2018-12-07 18:00:12,689 [main.py:315] Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0
+2018-12-07 18:00:12,689 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 18:00:17,861 [util.py:51] 拨号命令退出
+2018-12-07 18:00:17,861 [util.py:53] connect successful
+2018-12-07 18:00:17,861 [serviceProxy.py:30] 中建
+2018-12-07 18:00:17,861 [util.py:564] 加入host的url:[]
+2018-12-07 18:00:27,861 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0319E470>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 18:00:27,861 [main.py:245] 开始执行processFactory...
+2018-12-07 18:00:27,876 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 18:00:27,876 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 18:00:31,707 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x02D192B0>
+2018-12-07 18:00:32,901 [urlInputFactory.py:97] url: None
+2018-12-07 18:00:32,901 [urlInputFactory.py:98] entryUrl: http://www.hao123.com
+2018-12-07 18:00:37,204 [urlInputFactory.py:104] profileID: 297
+2018-12-07 18:00:37,204 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 18:00:38,204 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:00:38,204 [util.py:265] 开始获得下拉相关的词
+2018-12-07 18:00:38,262 [util.py:352] 结束获得下拉相关的词: 中建二局
+2018-12-07 18:00:38,262 [keywordInputFactory.py:217] 下拉词*中建二局*
+2018-12-07 18:00:38,262 [keywordInputFactory.py:245] GlobalEnvStorage.searchText:#search-input
+2018-12-07 18:00:38,262 [keywordInputFactory.py:246] GlobalEnvStorage.searchButtom:.button-hook
+2018-12-07 18:00:38,262 [keywordInputFactory.py:251] inputDisturbString->relocation:
+2018-12-07 18:00:38,336 [abstractBrowser.py:39] element locationInfo: {'x': 294, 'y': 95, 'width': 448, 'height': 38}
+2018-12-07 18:00:40,139 [keywordInputFactory.py:16] 中
+2018-12-07 18:00:40,674 [keywordInputFactory.py:16] 建
+2018-12-07 18:00:41,339 [keywordInputFactory.py:16] 二
+2018-12-07 18:00:41,396 [keywordInputFactory.py:16] 局
+2018-12-07 18:00:42,053 [searchFactory.py:22] search: 74
+2018-12-07 18:00:42,055 [PCOperateTarget.py:241] wait
+2018-12-07 18:00:42,563 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:00:42,563 [util.py:357] 开始获得相关搜索的词
+2018-12-07 18:00:43,448 [util.py:435] 结束获得相关搜索的词: 中建一共有多少个局
+2018-12-07 18:00:43,449 [keywordInputFactory.py:241] 相关搜索词*中建一共有多少个局*
+2018-12-07 18:00:43,449 [keywordInputFactory.py:245] GlobalEnvStorage.searchText:#search-input
+2018-12-07 18:00:43,449 [keywordInputFactory.py:246] GlobalEnvStorage.searchButtom:.button-hook
+2018-12-07 18:00:43,449 [keywordInputFactory.py:251] inputDisturbString->relocation:
+2018-12-07 18:01:13,888 [util.py:26] 175.42.122.102
+2018-12-07 18:01:13,943 [util.py:29] 宁德
+2018-12-07 18:01:16,990 [main.py:315] Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2050.400 QQBrowser/9.5.10218.400
+2018-12-07 18:01:16,990 [main.py:318] GlobalEnvStorage.optimizeCount:0,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 18:01:22,162 [util.py:51] 拨号命令退出
+2018-12-07 18:01:22,177 [util.py:53] connect successful
+2018-12-07 18:01:22,177 [serviceProxy.py:30] 中建
+2018-12-07 18:01:22,177 [util.py:564] 加入host的url:[]
+2018-12-07 18:01:32,177 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x030B1670>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 18:01:32,177 [main.py:245] 开始执行processFactory...
+2018-12-07 18:01:32,177 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 18:01:32,177 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 18:01:35,896 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x031551B0>
+2018-12-07 18:01:36,823 [urlInputFactory.py:97] url: None
+2018-12-07 18:01:36,823 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 18:01:39,280 [urlInputFactory.py:104] profileID: 298
+2018-12-07 18:01:39,281 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 18:01:40,281 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 18:01:40,281 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 18:01:40,281 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 18:01:40,375 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 18:01:42,185 [keywordInputFactory.py:16] 中
+2018-12-07 18:01:42,237 [keywordInputFactory.py:16] 建
+2018-12-07 18:01:42,302 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 18:01:42,905 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 18:01:42,905 [searchFactory.py:22] search: 34
+2018-12-07 18:01:43,754 [abstractBrowser.py:39] element locationInfo: {'x': 561, 'y': 11, 'width': 100, 'height': 34}
+2018-12-07 18:01:44,593 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:01:44,593 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 18:01:47,151 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-7")>
+2018-12-07 18:01:47,259 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-8")>
+2018-12-07 18:01:47,359 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-9")>
+2018-12-07 18:01:47,375 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-10")>
+2018-12-07 18:01:47,484 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-11")>
+2018-12-07 18:01:47,562 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-12")>
+2018-12-07 18:01:47,656 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-13")>
+2018-12-07 18:01:47,765 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-14")>
+2018-12-07 18:01:47,859 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-15")>
+2018-12-07 18:01:48,016 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-16")>
+2018-12-07 18:01:48,125 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:01:48,158 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:01:48,236 [PCOperateTarget.py:208] moving down
+2018-12-07 18:01:48,236 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:01:48,262 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:01:48,312 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:01:48,350 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:01:48,401 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:01:49,794 [PCOperateTarget.py:208] moving down
+2018-12-07 18:01:49,794 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:01:49,859 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:01:49,875 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:01:50,987 [PCOperateTarget.py:208] moving down
+2018-12-07 18:01:50,987 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:01:51,003 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:01:51,067 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:01:52,033 [PCOperateTarget.py:208] moving down
+2018-12-07 18:01:52,033 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:01:52,119 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:01:52,202 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:01:52,272 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:01:53,633 [abstractBrowser.py:39] element locationInfo: {'x': 166, 'y': 530, 'width': 36, 'height': 66}
+2018-12-07 18:01:57,403 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-38")>
+2018-12-07 18:01:57,637 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-39")>
+2018-12-07 18:01:57,879 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-40")>
+2018-12-07 18:01:58,119 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-41")>
+2018-12-07 18:01:58,369 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-42")>
+2018-12-07 18:01:58,603 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-43")>
+2018-12-07 18:01:58,822 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-44")>
+2018-12-07 18:01:59,176 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-45")>
+2018-12-07 18:01:59,412 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-46")>
+2018-12-07 18:01:59,630 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-47")>
+2018-12-07 18:01:59,818 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:01:59,849 [PCOperateTarget.py:474] pageNo:3
+2018-12-07 18:01:59,849 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:01:59,927 [PCOperateTarget.py:208] moving down
+2018-12-07 18:01:59,927 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:01:59,972 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:02:00,049 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:02:00,077 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:02:00,160 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:02:02,162 [PCOperateTarget.py:208] moving down
+2018-12-07 18:02:02,162 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:02:02,199 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:02:02,231 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:02:02,324 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:02:02,407 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:02:04,199 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 18:02:07,912 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-70")>
+2018-12-07 18:02:08,005 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-71")>
+2018-12-07 18:02:08,099 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-72")>
+2018-12-07 18:02:08,193 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-73")>
+2018-12-07 18:02:08,341 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-74")>
+2018-12-07 18:02:08,463 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-75")>
+2018-12-07 18:02:08,557 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-76")>
+2018-12-07 18:02:08,671 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-77")>
+2018-12-07 18:02:08,765 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-78")>
+2018-12-07 18:02:08,859 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-79")>
+2018-12-07 18:02:08,953 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:02:08,968 [PCOperateTarget.py:474] pageNo:4
+2018-12-07 18:02:08,968 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:02:08,996 [PCOperateTarget.py:208] moving down
+2018-12-07 18:02:08,997 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:02:09,019 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:02:09,080 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:02:10,348 [PCOperateTarget.py:208] moving down
+2018-12-07 18:02:10,348 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:02:10,364 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:02:10,444 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:02:11,777 [PCOperateTarget.py:208] moving down
+2018-12-07 18:02:11,777 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:02:11,875 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:02:11,894 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:02:13,640 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 18:02:17,070 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-102")>
+2018-12-07 18:02:17,218 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-103")>
+2018-12-07 18:02:17,312 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-104")>
+2018-12-07 18:02:17,441 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-105")>
+2018-12-07 18:02:17,550 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-106")>
+2018-12-07 18:02:17,660 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="272f8b101e4176c5165c91c808760a53", element="0.32886682385780364-107")>
+2018-12-07 18:02:17,738 [abstractOperateTarget.py:183] url找到--
+2018-12-07 18:02:17,738 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:02:17,738 [abstractOperateTarget.py:135] 当前排名是:36
+2018-12-07 18:02:17,738 [abstractOperateTarget.py:136] 找到
+2018-12-07 18:02:17,753 [PCOperateTarget.py:147] 找到_______
+2018-12-07 18:02:17,753 [PCOperateTarget.py:158] clickNum 2
+2018-12-07 18:02:17,817 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 18:02:17,848 [PCOperateTarget.py:208] moving down
+2018-12-07 18:02:17,848 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:02:17,935 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:02:18,017 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:02:18,089 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:02:19,331 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 293, 'width': 160, 'height': 18}
+2018-12-07 18:02:24,476 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 18:02:24,541 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 293, 'width': 160, 'height': 18}
+2018-12-07 18:02:30,638 [util.py:249] 随机清除cookies
+2018-12-07 18:02:30,710 [util.py:26] 175.42.123.195
+2018-12-07 18:02:30,802 [util.py:29] 宁德
+2018-12-07 18:02:33,846 [main.py:315] Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+2018-12-07 18:02:33,846 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 18:02:39,018 [util.py:51] 拨号命令退出
+2018-12-07 18:02:39,018 [util.py:53] connect successful
+2018-12-07 18:02:39,018 [serviceProxy.py:30] 中建
+2018-12-07 18:02:39,018 [util.py:564] 加入host的url:[]
+2018-12-07 18:02:49,034 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x031CF5B0>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 18:02:49,034 [main.py:245] 开始执行processFactory...
+2018-12-07 18:02:49,049 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 18:02:49,049 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 18:02:53,276 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x031CFB50>
+2018-12-07 18:02:54,301 [urlInputFactory.py:97] url: None
+2018-12-07 18:02:54,301 [urlInputFactory.py:98] entryUrl: http://www.hao123.com
+2018-12-07 18:03:01,023 [urlInputFactory.py:104] profileID: 299
+2018-12-07 18:03:01,023 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 18:03:02,023 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:03:02,023 [util.py:265] 开始获得下拉相关的词
+2018-12-07 18:03:02,537 [util.py:352] 结束获得下拉相关的词: 中建八局
+2018-12-07 18:03:02,537 [keywordInputFactory.py:217] 下拉词*中建八局*
+2018-12-07 18:03:02,537 [keywordInputFactory.py:245] GlobalEnvStorage.searchText:#search-input
+2018-12-07 18:03:02,537 [keywordInputFactory.py:246] GlobalEnvStorage.searchButtom:.button-hook
+2018-12-07 18:03:02,537 [keywordInputFactory.py:251] inputDisturbString->relocation:
+2018-12-07 18:03:02,610 [abstractBrowser.py:39] element locationInfo: {'x': 294, 'y': 95, 'width': 448, 'height': 38}
+2018-12-07 18:03:04,243 [keywordInputFactory.py:16] 中
+2018-12-07 18:03:04,757 [keywordInputFactory.py:16] 建
+2018-12-07 18:03:05,277 [keywordInputFactory.py:16] 八
+2018-12-07 18:03:05,369 [keywordInputFactory.py:16] 局
+2018-12-07 18:03:05,882 [searchFactory.py:22] search: 44
+2018-12-07 18:03:05,885 [PCOperateTarget.py:241] wait
+2018-12-07 18:03:06,399 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:03:06,400 [util.py:357] 开始获得相关搜索的词
+2018-12-07 18:03:07,251 [util.py:435] 结束获得相关搜索的词: 建筑公司网站
+2018-12-07 18:03:07,252 [keywordInputFactory.py:241] 相关搜索词*建筑公司网站*
+2018-12-07 18:03:07,252 [keywordInputFactory.py:245] GlobalEnvStorage.searchText:#search-input
+2018-12-07 18:03:07,252 [keywordInputFactory.py:246] GlobalEnvStorage.searchButtom:.button-hook
+2018-12-07 18:03:07,253 [keywordInputFactory.py:251] inputDisturbString->relocation:
+2018-12-07 18:03:37,771 [util.py:26] 112.111.217.217
+2018-12-07 18:03:37,849 [util.py:29] 宁德
+2018-12-07 18:03:40,865 [main.py:315] Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0
+2018-12-07 18:03:40,865 [main.py:318] GlobalEnvStorage.optimizeCount:0,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 18:03:46,052 [util.py:51] 拨号命令退出
+2018-12-07 18:03:46,052 [util.py:53] connect successful
+2018-12-07 18:03:46,052 [serviceProxy.py:30] 中建
+2018-12-07 18:03:46,052 [util.py:564] 加入host的url:[]
+2018-12-07 18:03:56,052 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x031CF6B0>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 18:03:56,052 [main.py:245] 开始执行processFactory...
+2018-12-07 18:03:56,052 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 18:03:56,052 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 18:04:00,489 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x031CFBD0>
+2018-12-07 18:04:01,675 [urlInputFactory.py:97] url: None
+2018-12-07 18:04:01,675 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 18:04:03,201 [urlInputFactory.py:104] profileID: 300
+2018-12-07 18:04:03,202 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 18:04:04,211 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 18:04:04,211 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 18:04:04,211 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 18:04:04,274 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 18:04:06,247 [keywordInputFactory.py:16] 中
+2018-12-07 18:04:06,318 [keywordInputFactory.py:16] 建
+2018-12-07 18:04:06,396 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 18:04:06,970 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 18:04:06,970 [searchFactory.py:22] search: 43
+2018-12-07 18:04:06,970 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:04:06,970 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 18:04:09,455 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-6")>
+2018-12-07 18:04:09,578 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-7")>
+2018-12-07 18:04:09,671 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-8")>
+2018-12-07 18:04:09,703 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-9")>
+2018-12-07 18:04:09,824 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-10")>
+2018-12-07 18:04:09,902 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-11")>
+2018-12-07 18:04:09,996 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-12")>
+2018-12-07 18:04:10,109 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-13")>
+2018-12-07 18:04:10,218 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-14")>
+2018-12-07 18:04:10,360 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-15")>
+2018-12-07 18:04:10,510 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:04:10,526 [PCOperateTarget.py:474] pageNo:2
+2018-12-07 18:04:10,526 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:04:10,588 [PCOperateTarget.py:208] moving down
+2018-12-07 18:04:10,588 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:04:10,635 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:04:10,698 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:04:10,760 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:04:10,823 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:04:13,441 [PCOperateTarget.py:208] moving down
+2018-12-07 18:04:13,441 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:04:13,500 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:04:13,566 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:04:13,645 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:04:14,660 [PCOperateTarget.py:208] moving down
+2018-12-07 18:04:14,660 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:04:14,692 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:04:14,733 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:04:14,828 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:04:14,872 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:04:16,662 [PCOperateTarget.py:208] moving down
+2018-12-07 18:04:16,662 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:04:16,706 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:04:16,752 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:04:16,773 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:04:18,305 [abstractBrowser.py:39] element locationInfo: {'x': 571, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 18:04:22,324 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-36")>
+2018-12-07 18:04:22,417 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-37")>
+2018-12-07 18:04:22,527 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-38")>
+2018-12-07 18:04:22,624 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-39")>
+2018-12-07 18:04:22,733 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-40")>
+2018-12-07 18:04:22,846 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-41")>
+2018-12-07 18:04:22,940 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-42")>
+2018-12-07 18:04:23,081 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-43")>
+2018-12-07 18:04:23,174 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-44")>
+2018-12-07 18:04:23,268 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-45")>
+2018-12-07 18:04:23,362 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:04:23,377 [PCOperateTarget.py:474] pageNo:3
+2018-12-07 18:04:23,377 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:04:23,409 [PCOperateTarget.py:208] moving down
+2018-12-07 18:04:23,409 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:04:23,494 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:04:23,579 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:04:23,603 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:04:23,646 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:04:24,943 [PCOperateTarget.py:208] moving down
+2018-12-07 18:04:24,943 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:04:25,039 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:04:25,063 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:04:25,129 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:04:26,316 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 18:04:29,922 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-68")>
+2018-12-07 18:04:30,016 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-69")>
+2018-12-07 18:04:30,117 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-70")>
+2018-12-07 18:04:30,226 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-71")>
+2018-12-07 18:04:30,320 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-72")>
+2018-12-07 18:04:30,414 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-73")>
+2018-12-07 18:04:30,507 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-74")>
+2018-12-07 18:04:30,601 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-75")>
+2018-12-07 18:04:30,695 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-76")>
+2018-12-07 18:04:30,789 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-77")>
+2018-12-07 18:04:30,898 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:04:30,898 [PCOperateTarget.py:474] pageNo:4
+2018-12-07 18:04:30,898 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:04:30,966 [PCOperateTarget.py:208] moving down
+2018-12-07 18:04:30,966 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:04:31,000 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:04:31,028 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:04:31,052 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:04:31,071 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:04:32,532 [PCOperateTarget.py:208] moving down
+2018-12-07 18:04:32,532 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:04:32,563 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:04:32,655 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:04:32,678 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:04:34,297 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 18:04:38,235 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-100")>
+2018-12-07 18:04:38,357 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-101")>
+2018-12-07 18:04:38,501 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-102")>
+2018-12-07 18:04:38,611 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-103")>
+2018-12-07 18:04:38,720 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-104")>
+2018-12-07 18:04:38,830 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="96032546cb6376cf7ade61cc5b67bd2c", element="0.8052067234462814-105")>
+2018-12-07 18:04:38,939 [abstractOperateTarget.py:183] url找到--
+2018-12-07 18:04:38,939 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:04:38,939 [abstractOperateTarget.py:135] 当前排名是:36
+2018-12-07 18:04:38,939 [abstractOperateTarget.py:136] 找到
+2018-12-07 18:04:38,939 [PCOperateTarget.py:147] 找到_______
+2018-12-07 18:04:38,939 [PCOperateTarget.py:158] clickNum 1
+2018-12-07 18:04:39,001 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 18:04:39,033 [PCOperateTarget.py:208] moving down
+2018-12-07 18:04:39,033 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:04:39,121 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:04:39,184 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:04:39,221 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:04:40,428 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 293, 'width': 160, 'height': 18}
+2018-12-07 18:04:47,746 [util.py:249] 随机清除cookies
+2018-12-07 18:04:47,880 [util.py:26] 175.42.68.67
+2018-12-07 18:04:50,990 [main.py:315] Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.4033.400 QQBrowser/9.7.12622.400
+2018-12-07 18:04:50,990 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 18:04:56,255 [util.py:51] 拨号命令退出
+2018-12-07 18:04:56,255 [util.py:53] connect successful
+2018-12-07 18:04:56,255 [serviceProxy.py:30] 中建
+2018-12-07 18:04:56,255 [util.py:564] 加入host的url:[]
+2018-12-07 18:05:06,271 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x033427B0>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 18:05:06,271 [main.py:245] 开始执行processFactory...
+2018-12-07 18:05:06,271 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 18:05:06,271 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 18:05:09,995 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x03342ED0>
+2018-12-07 18:05:11,148 [urlInputFactory.py:97] url: None
+2018-12-07 18:05:11,148 [urlInputFactory.py:98] entryUrl: http://www.114la.com
+2018-12-07 18:05:16,279 [urlInputFactory.py:104] profileID: 0
+2018-12-07 18:05:16,279 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 18:05:17,289 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#tsrcInp
+2018-12-07 18:05:17,289 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#topSearchBtn
+2018-12-07 18:05:17,289 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 18:05:17,351 [abstractBrowser.py:39] element locationInfo: {'x': 206, 'y': 557, 'width': 500, 'height': 40}
+2018-12-07 18:05:19,153 [keywordInputFactory.py:16] 中
+2018-12-07 18:05:19,212 [keywordInputFactory.py:16] 建
+2018-12-07 18:05:19,289 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 18:05:19,874 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 18:05:19,889 [searchFactory.py:22] search: 49
+2018-12-07 18:05:19,889 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:05:19,889 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 18:05:19,889 [abstractOperateTarget.py:80] wait
+2018-12-07 18:05:20,396 [util.py:249] 随机清除cookies
+2018-12-07 18:05:20,485 [util.py:26] 112.111.217.57
+2018-12-07 18:05:20,559 [util.py:29] 宁德
+2018-12-07 18:05:23,641 [main.py:315] Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.71 Safari/537.1 LBBROWSER
+2018-12-07 18:05:23,641 [main.py:318] GlobalEnvStorage.optimizeCount:0,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 18:05:28,829 [util.py:51] 拨号命令退出
+2018-12-07 18:05:28,829 [util.py:53] connect successful
+2018-12-07 18:05:28,829 [serviceProxy.py:30] 中建
+2018-12-07 18:05:28,829 [util.py:564] 加入host的url:[]
+2018-12-07 18:05:38,844 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x031CF870>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 18:05:38,844 [main.py:245] 开始执行processFactory...
+2018-12-07 18:05:38,844 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 18:05:38,844 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 18:05:42,509 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x031CF6D0>
+2018-12-07 18:05:43,682 [urlInputFactory.py:97] url: None
+2018-12-07 18:05:43,682 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 18:05:44,243 [urlInputFactory.py:104] profileID: 1
+2018-12-07 18:05:44,243 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 18:05:45,256 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:05:45,256 [util.py:265] 开始获得下拉相关的词
+2018-12-07 18:05:45,319 [util.py:352] 结束获得下拉相关的词: 中建二局
+2018-12-07 18:05:45,319 [keywordInputFactory.py:217] 下拉词*中建二局*
+2018-12-07 18:05:45,319 [keywordInputFactory.py:245] GlobalEnvStorage.searchText:#kw
+2018-12-07 18:05:45,319 [keywordInputFactory.py:246] GlobalEnvStorage.searchButtom:#su
+2018-12-07 18:05:45,319 [keywordInputFactory.py:251] inputDisturbString->relocation:
+2018-12-07 18:05:45,381 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 18:05:47,400 [keywordInputFactory.py:16] 中
+2018-12-07 18:05:47,977 [keywordInputFactory.py:16] 建
+2018-12-07 18:05:48,055 [keywordInputFactory.py:16] 二
+2018-12-07 18:05:48,461 [keywordInputFactory.py:16] 局
+2018-12-07 18:05:48,529 [searchFactory.py:22] search: 45
+2018-12-07 18:05:49,277 [PCOperateTarget.py:290] Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=49.0.2623.112)
+  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 6.1 SP1 x86)
+
+2018-12-07 18:05:49,277 [PCOperateTarget.py:380] 开始删除字
+2018-12-07 18:05:49,318 [PCOperateTarget.py:385] len: 4
+2018-12-07 18:05:49,410 [abstractBrowser.py:39] element locationInfo: {'x': 129, 'y': 18, 'width': 395, 'height': 22}
+2018-12-07 18:05:50,500 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:05:50,500 [util.py:357] 开始获得相关搜索的词
+2018-12-07 18:05:51,050 [util.py:435] 结束获得相关搜索的词: 中建集团有哪些分公司
+2018-12-07 18:05:51,050 [keywordInputFactory.py:241] 相关搜索词*中建集团有哪些分公司*
+2018-12-07 18:05:51,051 [keywordInputFactory.py:245] GlobalEnvStorage.searchText:#kw
+2018-12-07 18:05:51,051 [keywordInputFactory.py:246] GlobalEnvStorage.searchButtom:#su
+2018-12-07 18:05:51,051 [keywordInputFactory.py:16] 中
+2018-12-07 18:05:51,126 [keywordInputFactory.py:16] 建
+2018-12-07 18:05:51,826 [keywordInputFactory.py:16] 集
+2018-12-07 18:05:52,480 [keywordInputFactory.py:16] 团
+2018-12-07 18:05:52,537 [keywordInputFactory.py:16] 有
+2018-12-07 18:05:52,608 [keywordInputFactory.py:16] 哪
+2018-12-07 18:05:53,243 [keywordInputFactory.py:16] 些
+2018-12-07 18:05:53,310 [keywordInputFactory.py:16] 分
+2018-12-07 18:05:53,825 [keywordInputFactory.py:16] 公
+2018-12-07 18:05:53,903 [keywordInputFactory.py:16] 司
+2018-12-07 18:05:53,966 [searchFactory.py:22] search: 53
+2018-12-07 18:05:54,557 [PCOperateTarget.py:266] idx: 0
+2018-12-07 18:05:54,808 [PCOperateTarget.py:537] 随机点的目标没有标题或者url argument of type 'NoneType' is not iterable
+2018-12-07 18:05:54,900 [PCOperateTarget.py:540] 最终目标 <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-22")>
+2018-12-07 18:05:55,041 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 497, 'width': 233, 'height': 18}
+2018-12-07 18:06:00,502 [PCOperateTarget.py:275] 是第1个window
+2018-12-07 18:06:00,503 [PCOperateTarget.py:380] 开始删除字
+2018-12-07 18:06:00,573 [PCOperateTarget.py:385] len: 10
+2018-12-07 18:06:00,636 [abstractBrowser.py:39] element locationInfo: {'x': 129, 'y': 18, 'width': 395, 'height': 22}
+2018-12-07 18:06:02,089 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 18:06:02,089 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 18:06:02,089 [keywordInputFactory.py:16] 中
+2018-12-07 18:06:02,145 [keywordInputFactory.py:16] 建
+2018-12-07 18:06:02,223 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 18:06:02,641 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 18:06:02,641 [searchFactory.py:22] search: 7
+2018-12-07 18:06:04,243 [abstractBrowser.py:39] element locationInfo: {'x': 561, 'y': 11, 'width': 100, 'height': 34}
+2018-12-07 18:06:04,796 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:06:04,796 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 18:06:07,797 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-30")>
+2018-12-07 18:06:07,907 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-31")>
+2018-12-07 18:06:08,047 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-32")>
+2018-12-07 18:06:08,079 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-33")>
+2018-12-07 18:06:08,250 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-34")>
+2018-12-07 18:06:08,346 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-35")>
+2018-12-07 18:06:08,440 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-36")>
+2018-12-07 18:06:08,558 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-37")>
+2018-12-07 18:06:08,683 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-38")>
+2018-12-07 18:06:08,839 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-39")>
+2018-12-07 18:06:09,011 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:06:09,058 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:06:09,105 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:09,105 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:09,140 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:09,209 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:09,234 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:06:10,317 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:10,318 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:10,370 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:10,452 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:11,813 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:11,813 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:11,876 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:11,990 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:12,037 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:06:12,108 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:06:13,095 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:13,095 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:13,128 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:13,179 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:14,455 [abstractBrowser.py:39] element locationInfo: {'x': 166, 'y': 541, 'width': 36, 'height': 66}
+2018-12-07 18:06:17,981 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-61")>
+2018-12-07 18:06:18,256 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-62")>
+2018-12-07 18:06:18,429 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-63")>
+2018-12-07 18:06:18,649 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-64")>
+2018-12-07 18:06:18,805 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-65")>
+2018-12-07 18:06:18,915 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-66")>
+2018-12-07 18:06:19,071 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-67")>
+2018-12-07 18:06:19,290 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-68")>
+2018-12-07 18:06:19,415 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-69")>
+2018-12-07 18:06:19,641 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-70")>
+2018-12-07 18:06:19,854 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:06:19,870 [PCOperateTarget.py:474] pageNo:3
+2018-12-07 18:06:19,870 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:06:19,916 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:19,916 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:19,952 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:20,001 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:20,062 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:06:20,081 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:06:21,098 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:21,098 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:21,201 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:21,227 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:22,861 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 633, 'width': 88, 'height': 36}
+2018-12-07 18:06:26,935 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-93")>
+2018-12-07 18:06:27,044 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-94")>
+2018-12-07 18:06:27,138 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-95")>
+2018-12-07 18:06:27,254 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-96")>
+2018-12-07 18:06:27,348 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-97")>
+2018-12-07 18:06:27,442 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-98")>
+2018-12-07 18:06:27,551 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-99")>
+2018-12-07 18:06:27,629 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-100")>
+2018-12-07 18:06:27,750 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-101")>
+2018-12-07 18:06:27,877 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-102")>
+2018-12-07 18:06:28,055 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:06:28,071 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:06:28,102 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:28,102 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:28,191 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:28,210 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:30,203 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:30,203 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:30,285 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:30,329 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:30,373 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:06:32,001 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:32,001 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:32,084 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:32,112 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:32,195 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:06:32,246 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:06:33,780 [abstractBrowser.py:39] element locationInfo: {'x': 353, 'y': 530, 'width': 36, 'height': 66}
+2018-12-07 18:06:36,772 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-126")>
+2018-12-07 18:06:36,897 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-127")>
+2018-12-07 18:06:36,991 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-128")>
+2018-12-07 18:06:37,084 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-129")>
+2018-12-07 18:06:37,176 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-130")>
+2018-12-07 18:06:37,270 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-131")>
+2018-12-07 18:06:37,364 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-132")>
+2018-12-07 18:06:37,458 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-133")>
+2018-12-07 18:06:37,551 [abstractOperateTarget.py:183] url找到--
+2018-12-07 18:06:37,551 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:06:37,551 [abstractOperateTarget.py:135] 当前排名是:38
+2018-12-07 18:06:37,551 [abstractOperateTarget.py:136] 找到
+2018-12-07 18:06:37,614 [abstractOperateTarget.py:141] 前往下一页再返回
+2018-12-07 18:06:37,614 [PCOperateTarget.py:474] pageNo:5
+2018-12-07 18:06:37,614 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:06:37,661 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:37,661 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:37,752 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:37,842 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:39,480 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:39,480 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:39,589 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:39,650 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:39,735 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:06:39,764 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:06:41,200 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 18:06:43,370 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:06:43,401 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:43,401 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:43,417 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:43,473 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:43,511 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:06:45,709 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:45,709 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:45,746 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:45,781 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:45,795 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:06:45,828 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:06:47,353 [abstractBrowser.py:39] element locationInfo: {'x': 353, 'y': 530, 'width': 36, 'height': 66}
+2018-12-07 18:06:49,823 [abstractOperateTarget.py:153] 10
+2018-12-07 18:06:49,823 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-157")>
+2018-12-07 18:06:49,980 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-158")>
+2018-12-07 18:06:50,085 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-159")>
+2018-12-07 18:06:50,195 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-160")>
+2018-12-07 18:06:50,318 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-161")>
+2018-12-07 18:06:50,493 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-162")>
+2018-12-07 18:06:50,602 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-163")>
+2018-12-07 18:06:50,693 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="8debc28814ba952845ad3b3411c7545e", element="0.4345615148081159-164")>
+2018-12-07 18:06:50,911 [abstractOperateTarget.py:183] url找到--
+2018-12-07 18:06:50,911 [PCOperateTarget.py:147] 找到_______
+2018-12-07 18:06:50,911 [PCOperateTarget.py:158] clickNum 3
+2018-12-07 18:06:50,973 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 18:06:51,036 [PCOperateTarget.py:208] moving down
+2018-12-07 18:06:51,036 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:06:51,069 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:06:51,082 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:06:51,118 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:06:52,341 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 432, 'width': 160, 'height': 18}
+2018-12-07 18:06:58,783 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 18:06:58,849 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 432, 'width': 160, 'height': 18}
+2018-12-07 18:07:05,201 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 18:07:05,334 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 432, 'width': 160, 'height': 18}
+2018-12-07 18:07:12,541 [util.py:249] 随机清除cookies
+2018-12-07 18:07:12,625 [util.py:26] 36.248.129.84
+2018-12-07 18:07:12,707 [util.py:29] 宁德
+2018-12-07 18:07:15,753 [main.py:315] Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+2018-12-07 18:07:15,753 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 18:07:20,910 [util.py:51] 拨号命令退出
+2018-12-07 18:07:20,910 [util.py:53] connect successful
+2018-12-07 18:07:20,910 [serviceProxy.py:30] 中建
+2018-12-07 18:07:20,910 [util.py:564] 加入host的url:[]
+2018-12-07 18:07:30,910 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x031CF450>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 18:07:30,910 [main.py:245] 开始执行processFactory...
+2018-12-07 18:07:30,910 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 18:07:30,910 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 18:07:34,520 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x031E8930>
+2018-12-07 18:07:35,382 [urlInputFactory.py:97] url: None
+2018-12-07 18:07:35,382 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 18:07:37,951 [urlInputFactory.py:104] profileID: 2
+2018-12-07 18:07:37,951 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 18:07:38,965 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 18:07:38,965 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 18:07:38,965 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 18:07:39,012 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 18:07:40,772 [keywordInputFactory.py:16] 中
+2018-12-07 18:07:40,828 [keywordInputFactory.py:16] 建
+2018-12-07 18:07:40,895 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 18:07:41,521 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 18:07:41,521 [searchFactory.py:22] search: 12
+2018-12-07 18:07:42,836 [abstractBrowser.py:39] element locationInfo: {'x': 561, 'y': 11, 'width': 100, 'height': 34}
+2018-12-07 18:07:43,349 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:07:43,349 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 18:07:45,814 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-7")>
+2018-12-07 18:07:45,925 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-8")>
+2018-12-07 18:07:46,019 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-9")>
+2018-12-07 18:07:46,050 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-10")>
+2018-12-07 18:07:46,144 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-11")>
+2018-12-07 18:07:46,239 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-12")>
+2018-12-07 18:07:46,333 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-13")>
+2018-12-07 18:07:46,447 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-14")>
+2018-12-07 18:07:46,541 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-15")>
+2018-12-07 18:07:46,652 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-16")>
+2018-12-07 18:07:46,746 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:07:46,777 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:07:46,850 [PCOperateTarget.py:208] moving down
+2018-12-07 18:07:46,850 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:07:46,881 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:07:46,930 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:07:48,412 [PCOperateTarget.py:208] moving down
+2018-12-07 18:07:48,412 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:07:48,427 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:07:48,538 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:07:48,570 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:07:48,589 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:07:50,239 [PCOperateTarget.py:208] moving down
+2018-12-07 18:07:50,239 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:07:50,279 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:07:50,371 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:07:51,547 [PCOperateTarget.py:208] moving down
+2018-12-07 18:07:51,547 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:07:51,621 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:07:51,671 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:07:51,737 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:07:51,782 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:07:53,222 [abstractBrowser.py:39] element locationInfo: {'x': 166, 'y': 530, 'width': 36, 'height': 66}
+2018-12-07 18:07:56,971 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-38")>
+2018-12-07 18:07:57,221 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-39")>
+2018-12-07 18:07:57,424 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-40")>
+2018-12-07 18:07:57,659 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-41")>
+2018-12-07 18:07:57,893 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-42")>
+2018-12-07 18:07:58,112 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-43")>
+2018-12-07 18:07:58,347 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-44")>
+2018-12-07 18:07:58,597 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-45")>
+2018-12-07 18:07:58,847 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-46")>
+2018-12-07 18:07:59,144 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-47")>
+2018-12-07 18:07:59,378 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:07:59,394 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:07:59,488 [PCOperateTarget.py:208] moving down
+2018-12-07 18:07:59,488 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:07:59,532 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:07:59,554 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:08:00,989 [PCOperateTarget.py:208] moving down
+2018-12-07 18:08:00,989 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:08:01,042 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:08:01,136 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:08:01,160 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:08:02,294 [PCOperateTarget.py:208] moving down
+2018-12-07 18:08:02,295 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:08:02,402 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:08:02,426 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:08:03,637 [abstractBrowser.py:39] element locationInfo: {'x': 308, 'y': 530, 'width': 36, 'height': 66}
+2018-12-07 18:08:06,682 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-71")>
+2018-12-07 18:08:06,801 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-72")>
+2018-12-07 18:08:06,895 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-73")>
+2018-12-07 18:08:06,973 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-74")>
+2018-12-07 18:08:07,083 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-75")>
+2018-12-07 18:08:07,205 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-76")>
+2018-12-07 18:08:07,323 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-77")>
+2018-12-07 18:08:07,416 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-78")>
+2018-12-07 18:08:07,510 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-79")>
+2018-12-07 18:08:07,645 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-80")>
+2018-12-07 18:08:07,763 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:08:07,763 [PCOperateTarget.py:474] pageNo:4
+2018-12-07 18:08:07,763 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:08:07,794 [PCOperateTarget.py:208] moving down
+2018-12-07 18:08:07,794 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:08:07,904 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:08:07,956 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:08:08,037 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:08:09,617 [PCOperateTarget.py:208] moving down
+2018-12-07 18:08:09,617 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:08:09,635 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:08:09,696 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:08:10,534 [PCOperateTarget.py:208] moving down
+2018-12-07 18:08:10,534 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:08:10,572 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:08:10,618 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:08:10,705 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:08:10,751 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:08:12,153 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 18:08:15,434 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-103")>
+2018-12-07 18:08:15,543 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-104")>
+2018-12-07 18:08:15,637 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-105")>
+2018-12-07 18:08:15,747 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-106")>
+2018-12-07 18:08:15,840 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-107")>
+2018-12-07 18:08:15,934 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-108")>
+2018-12-07 18:08:16,028 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-109")>
+2018-12-07 18:08:16,122 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="a10f353cd912f1c049b710463ee70681", element="0.5959922228850707-110")>
+2018-12-07 18:08:16,231 [abstractOperateTarget.py:183] url找到--
+2018-12-07 18:08:16,231 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:08:16,231 [abstractOperateTarget.py:135] 当前排名是:38
+2018-12-07 18:08:16,231 [abstractOperateTarget.py:136] 找到
+2018-12-07 18:08:16,247 [PCOperateTarget.py:147] 找到_______
+2018-12-07 18:08:16,247 [PCOperateTarget.py:158] clickNum 1
+2018-12-07 18:08:16,262 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 18:08:16,309 [PCOperateTarget.py:208] moving down
+2018-12-07 18:08:16,309 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:08:16,385 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:08:16,470 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:08:16,566 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:08:17,490 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 432, 'width': 160, 'height': 18}
+2018-12-07 18:08:24,292 [util.py:249] 随机清除cookies
+2018-12-07 18:08:24,441 [util.py:26] 112.111.217.92
+2018-12-07 18:08:24,514 [util.py:29] 宁德
+2018-12-07 18:08:27,557 [main.py:315] Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36 Core/1.47.277.400 QQBrowser/9.4.7658.400
+2018-12-07 18:08:27,557 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...
+正在网络上注册您的计算机...
+已连接 宽带连接。
+命令已完成。
+2018-12-07 18:08:32,713 [util.py:51] 拨号命令退出
+2018-12-07 18:08:32,713 [util.py:53] connect successful
+2018-12-07 18:08:32,713 [serviceProxy.py:30] 中建
+2018-12-07 18:08:32,713 [util.py:564] 加入host的url:[]
+2018-12-07 18:08:42,713 [serviceProxy.py:77] 负面清单获取失败 HTTPConnectionPool(host='pcsskj.shunshikj.com', port=80): Max retries exceeded with url: /external/negativelist/getSpecifiedKeywordNegativeLists?username=query&password=shunshihello&keyword=%E4%B8%AD%E5%BB%BA (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x031CF1B0>, 'Connection to pcsskj.shunshikj.com timed out. (connect timeout=10)'))
+2018-12-07 18:08:42,713 [main.py:245] 开始执行processFactory...
+2018-12-07 18:08:42,729 [abstractBrowser.py:28] exe: C:\working\chrome_installer.exe
+2018-12-07 18:08:42,729 [abstractBrowser.py:29] dirver: C:\working\chromedriver.exe
+2018-12-07 18:08:46,562 [abstractBrowser.py:31] <splinter.driver.webdriver.chrome.WebDriver object at 0x03342B90>
+2018-12-07 18:08:47,623 [urlInputFactory.py:97] url: None
+2018-12-07 18:08:47,623 [urlInputFactory.py:98] entryUrl: https://www.baidu.com
+2018-12-07 18:08:49,564 [urlInputFactory.py:104] profileID: 3
+2018-12-07 18:08:49,565 [urlInputFactory.py:105] sleeptime: 1.0
+2018-12-07 18:08:50,572 [keywordInputFactory.py:64] GlobalEnvStorage.searchText:#kw
+2018-12-07 18:08:50,572 [keywordInputFactory.py:65] GlobalEnvStorage.searchButtom:#su
+2018-12-07 18:08:50,572 [keywordInputFactory.py:70] inputKeyword->relocation:
+2018-12-07 18:08:50,712 [abstractBrowser.py:39] element locationInfo: {'x': 199, 'y': 229, 'width': 500, 'height': 22}
+2018-12-07 18:08:52,271 [keywordInputFactory.py:16] 中
+2018-12-07 18:08:52,340 [keywordInputFactory.py:16] 建
+2018-12-07 18:08:52,394 [keywordInputFactory.py:47] 开始下拉框的操作。
+2018-12-07 18:08:53,059 [keywordInputFactory.py:54] 下拉没找到,继续
+2018-12-07 18:08:53,059 [searchFactory.py:22] search: 57
+2018-12-07 18:08:53,059 [operateTargetFactory.py:17] OperateTargetFactory
+2018-12-07 18:08:53,059 [abstractOperateTarget.py:73] AbstractOperateTarget-->operate
+2018-12-07 18:08:56,180 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-6")>
+2018-12-07 18:08:56,415 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-7")>
+2018-12-07 18:08:56,619 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-8")>
+2018-12-07 18:08:56,681 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-9")>
+2018-12-07 18:08:56,924 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-10")>
+2018-12-07 18:08:57,097 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-11")>
+2018-12-07 18:08:57,332 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-12")>
+2018-12-07 18:08:57,610 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-13")>
+2018-12-07 18:08:57,829 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-14")>
+2018-12-07 18:08:58,032 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-15")>
+2018-12-07 18:08:58,338 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:08:58,385 [PCOperateTarget.py:474] pageNo:2
+2018-12-07 18:08:58,385 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:08:58,510 [PCOperateTarget.py:208] moving down
+2018-12-07 18:08:58,510 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:08:58,538 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:08:58,560 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:08:58,628 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:08:58,641 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:08:59,743 [PCOperateTarget.py:208] moving down
+2018-12-07 18:08:59,743 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:08:59,765 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:08:59,836 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:08:59,868 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:09:01,050 [PCOperateTarget.py:208] moving down
+2018-12-07 18:09:01,050 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:09:01,130 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:09:01,224 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:09:01,295 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:09:01,371 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:09:02,593 [abstractBrowser.py:39] element locationInfo: {'x': 571, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 18:09:06,100 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-36")>
+2018-12-07 18:09:06,194 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-37")>
+2018-12-07 18:09:06,303 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-38")>
+2018-12-07 18:09:06,397 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-39")>
+2018-12-07 18:09:06,491 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-40")>
+2018-12-07 18:09:06,584 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-41")>
+2018-12-07 18:09:06,663 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-42")>
+2018-12-07 18:09:06,788 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-43")>
+2018-12-07 18:09:06,897 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-44")>
+2018-12-07 18:09:06,999 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-45")>
+2018-12-07 18:09:07,108 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:09:07,124 [PCOperateTarget.py:474] pageNo:3
+2018-12-07 18:09:07,124 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:09:07,170 [PCOperateTarget.py:208] moving down
+2018-12-07 18:09:07,170 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:09:07,214 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:09:07,289 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:09:08,311 [PCOperateTarget.py:208] moving down
+2018-12-07 18:09:08,311 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:09:08,422 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:09:08,488 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:09:10,021 [PCOperateTarget.py:208] moving down
+2018-12-07 18:09:10,021 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:09:10,041 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:09:10,127 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:09:10,149 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:09:10,206 [dmFactory.py:81] 滚动down 4 1
+2018-12-07 18:09:11,936 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 18:09:15,207 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-68")>
+2018-12-07 18:09:15,327 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-69")>
+2018-12-07 18:09:15,458 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-70")>
+2018-12-07 18:09:15,583 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-71")>
+2018-12-07 18:09:15,688 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-72")>
+2018-12-07 18:09:15,782 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-73")>
+2018-12-07 18:09:15,897 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-74")>
+2018-12-07 18:09:15,991 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-75")>
+2018-12-07 18:09:16,101 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-76")>
+2018-12-07 18:09:16,210 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-77")>
+2018-12-07 18:09:16,320 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:09:16,335 [PCOperateTarget.py:474] pageNo:4
+2018-12-07 18:09:16,335 [PCOperateTarget.py:51] 下一页
+2018-12-07 18:09:16,351 [PCOperateTarget.py:208] moving down
+2018-12-07 18:09:16,351 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:09:16,372 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:09:16,395 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:09:16,478 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:09:17,587 [PCOperateTarget.py:208] moving down
+2018-12-07 18:09:17,587 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:09:17,683 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:09:17,718 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:09:18,844 [PCOperateTarget.py:208] moving down
+2018-12-07 18:09:18,844 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:09:18,883 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:09:18,944 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:09:19,039 [dmFactory.py:81] 滚动down 3 1
+2018-12-07 18:09:20,820 [abstractBrowser.py:39] element locationInfo: {'x': 668, 'y': 560, 'width': 88, 'height': 36}
+2018-12-07 18:09:24,241 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-100")>
+2018-12-07 18:09:24,350 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-101")>
+2018-12-07 18:09:24,444 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-102")>
+2018-12-07 18:09:24,553 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-103")>
+2018-12-07 18:09:24,647 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-104")>
+2018-12-07 18:09:24,756 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-105")>
+2018-12-07 18:09:24,850 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-106")>
+2018-12-07 18:09:24,959 [abstractOperateTarget.py:172] <selenium.webdriver.remote.webelement.WebElement (session="b116eeab3c75d604177628e40f653a58", element="0.40398110035328316-107")>
+2018-12-07 18:09:25,069 [abstractOperateTarget.py:183] url找到--
+2018-12-07 18:09:25,069 [abstractOperateTarget.py:70] Please implement closeApp
+2018-12-07 18:09:25,069 [abstractOperateTarget.py:135] 当前排名是:38
+2018-12-07 18:09:25,069 [abstractOperateTarget.py:136] 找到
+2018-12-07 18:09:25,069 [PCOperateTarget.py:147] 找到_______
+2018-12-07 18:09:25,069 [PCOperateTarget.py:158] clickNum 2
+2018-12-07 18:09:25,116 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 18:09:25,131 [PCOperateTarget.py:208] moving down
+2018-12-07 18:09:25,131 [dmFactory.py:81] 滚动down 0 1
+2018-12-07 18:09:25,233 [dmFactory.py:81] 滚动down 1 1
+2018-12-07 18:09:25,307 [dmFactory.py:81] 滚动down 2 1
+2018-12-07 18:09:26,895 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 532, 'width': 160, 'height': 18}
+2018-12-07 18:09:34,533 [PCOperateTarget.py:192] 不存在图片
+2018-12-07 18:09:34,658 [abstractBrowser.py:39] element locationInfo: {'x': 121, 'y': 532, 'width': 160, 'height': 18}
+2018-12-07 18:09:41,771 [util.py:249] 随机清除cookies
+2018-12-07 18:09:41,931 [util.py:26] 175.42.68.40
+2018-12-07 18:09:42,003 [util.py:29] 宁德
+2018-12-07 18:09:45,050 [main.py:315] Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0
+2018-12-07 18:09:45,050 [main.py:318] GlobalEnvStorage.optimizeCount:1,中建
+命令已完成。
+正在连接到 宽带连接...
+正在验证用户名及密码...^C
+2018-12-07 18:09:55,816 [main.py:327] 没取词,不更新

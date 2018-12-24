@@ -74,25 +74,26 @@ if __name__ == '__main__':
         customerKeyword = None
         text = """
         {
-          "keyword" : "为什么拍照是个坏习惯",
+          "keyword" : "怎么做奶茶好喝",
           "uuid" : 2118603,
-          "url" : "yinwang.org",
+          "url" : "www.coozhi.com",
           "group" : "sogou_pm_paiming",
           "entryType" : "qz",
           "operationType" : "pc",
           "relatedKeyword" : "",
-          "currentPosition" : 10,
-          "originalUrl" : "www.yinwang.org/",
-          "title" : "",
+          "currentPosition" : 3,
+          "originalUrl" : "www.wafflebant.cn",
+          "title" : "什么奶茶比较好喝",
           "baiduAdUrl" : "",
-          "page" : 10,
+          "page" : 1,
           "pageSize" : 0,
+		  "limitTime": 3,
           "kuaizhaoPercent" : 0,
           "baiduSemPercent" : 0,
           "dragPercent" : 0,
           "multiBrowser" : 1,
-          "clearCookie" : 0,
-          "zhanneiPercent" : 0,
+          "clearCookie" : 2,
+          "zhanneiPercent" : 99,
           "zhanwaiPercent" : 4,
           "openStatistics" : 1,
           "disableStatistics" : 0,
@@ -139,22 +140,23 @@ if __name__ == '__main__':
           "remarks" : ""
         }
         """
+
         if GlobalEnvStorage.env != "Development":
             startClear()
         GlobalEnvStorage.optimizeCount = 0
         GlobalEnvStorage.optimizeStatus = "fail"
         GlobalEnvStorage.alive = datetime.now()
-        # if 2 <= datetime.now().hour <= 6:
-        #     time.sleep(5 * 60)
-        #     GlobalEnvStorage.alive = datetime.now()
-        #     time.sleep(5 * 60)
-        #     GlobalEnvStorage.alive = datetime.now()
-        #     time.sleep(5 * 60)
-        #     GlobalEnvStorage.alive = datetime.now()
-        #     time.sleep(5 * 60)
-        #     GlobalEnvStorage.alive = datetime.now()
-        #     time.sleep(5 * 60)
-        #     GlobalEnvStorage.alive = datetime.now()
+        if 2 <= datetime.now().hour <= 6:
+            time.sleep(5 * 60)
+            GlobalEnvStorage.alive = datetime.now()
+            time.sleep(5 * 60)
+            GlobalEnvStorage.alive = datetime.now()
+            time.sleep(5 * 60)
+            GlobalEnvStorage.alive = datetime.now()
+            time.sleep(5 * 60)
+            GlobalEnvStorage.alive = datetime.now()
+            time.sleep(5 * 60)
+            GlobalEnvStorage.alive = datetime.now()
         try:
             if GlobalEnvStorage.env == "Development":
                 # 1. 拨号  isOnline() 0联网,1断网

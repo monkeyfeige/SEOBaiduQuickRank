@@ -91,6 +91,18 @@ def changeCustomerKeyword(customerKeyword):
         customerKeyword.pageSize = 20
     else:
         customerKeyword.pageSize = 50
+
+    if customerKeyword.limitTime == 1:
+        customerKeyword.limitTime = "天"
+    elif customerKeyword.limitTime == 2:
+        customerKeyword.limitTime = "周"
+    elif customerKeyword.limitTime == 3:
+        customerKeyword.limitTime = "月"
+    elif customerKeyword.limitTime == 4:
+        customerKeyword.limitTime = "年"
+    else:
+        customerKeyword.limitTime = "全部"
+
     customerKeyword.pageRemainMinTime = customerKeyword.pageRemainMinTime / 1000
     customerKeyword.pageRemainMaxTime = customerKeyword.pageRemainMaxTime / 1000
     customerKeyword.inputDelayMinTime = customerKeyword.inputDelayMinTime / 1000

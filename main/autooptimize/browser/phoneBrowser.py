@@ -15,7 +15,7 @@ class PhoneBrowser(AbstractBrowser):
         phoneUA = None
         try:
             cf = ConfigParser()
-            if GlobalEnvStorage.env == 'Development':
+            if GlobalEnvStorage.env != 'Development':
                 cf.read('../config/dev/PhoneUA.conf', encoding='utf-8-sig')
             else:
                 cf.read('C:\\working' + '\\PhoneUA.conf', encoding='utf-8-sig')
@@ -32,15 +32,16 @@ class PhoneBrowser(AbstractBrowser):
         except BaseException as e:
             GlobalEnvStorage.infoLogger.info('%s', e)
         finally:
+            GlobalEnvStorage.infoLogger.info("Phone UA: %s", phoneUA['userAgent'])
             GlobalEnvStorage.UA = phoneUA['userAgent']
             GlobalEnvStorage.innerHeight = phoneUA['deviceMetrics']['height']
             GlobalEnvStorage.innerWidth = phoneUA['deviceMetrics']['width']
-            if GlobalEnvStorage.env == 'Development':
+            if GlobalEnvStorage.env != 'Development':
                 cf.write(open('../config/dev/PhoneUA.conf', 'w'))
             else:
                 cf.write(open('C:\\working' + '\\PhoneUA.conf', 'w'))
 
-        self.chrome_options.add_experimental_option('mobileEmulation', phoneUA)
+            self.chrome_options.add_experimental_option('mobileEmulation', phoneUA)
 
     def locateAndClick(self, element, minTime=0.2, maxTime=0.5, click=True):
         info = self.getElementLocationInfo(element)

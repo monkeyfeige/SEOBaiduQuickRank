@@ -395,6 +395,8 @@ class PCOperatetarget(AbstractOperateTarget):
                 KeywordInputFactory.Delete()
                 time.sleep(uniform(0.01, 0.1))
                 i = i - 1
+            else:
+                break
 
     def xialaOperate(self):
         profileIDKeywordCount()
@@ -535,6 +537,7 @@ class PCOperatetarget(AbstractOperateTarget):
             GlobalEnvStorage.infoLogger.info('随机点的目标没有标题或者url %s', e)
             element = self.decideClickElement(targetRowObject)
         finally:
+            GlobalEnvStorage.infoLogger.info('最终目标 %s', element)
             return element
 
     def mapNextPage(self):

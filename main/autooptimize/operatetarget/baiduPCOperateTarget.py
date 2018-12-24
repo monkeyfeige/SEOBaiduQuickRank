@@ -54,19 +54,19 @@ class BaiduPCOperateTarget(PCOperatetarget):
                 title = title[0:-3]
             title = title.strip()
             url = ''
-            if GlobalEnvStorage.customerKeyword.title == None or GlobalEnvStorage.customerKeyword.title == '':
+            if GlobalEnvStorage.customerKeyword.title != None and GlobalEnvStorage.customerKeyword.title != '':
                 urlObjs = rowObject.find_elements_by_css_selector('.c-showurl .c-showurl')
                 if len(urlObjs) == 0:
                     urlObjs = rowObject.find_elements_by_css_selector('.c-showurl')
                 if len(urlObjs) > 0:
                     url = urlObjs[0].text
-                    url = url.strip()
-                    if url.endswith('...'):
-                        url = url[0:-3]
-                    url = url.strip()
-                    if url.endswith('/'):
-                        url = url[0:-1]
-                    url = url.strip()
+                url = url.strip()
+                if url.endswith('...'):
+                    url = url[0:-3]
+                url = url.strip()
+                if url.endswith('/'):
+                    url = url[0:-1]
+                url = url.strip()
                 rowSummaryInfo = RowSummaryInfo()
                 rowSummaryInfo.title = title
                 rowSummaryInfo.url = url
@@ -107,6 +107,17 @@ class BaiduPCOperateTarget(PCOperatetarget):
                  By.CSS_SELECTOR, '.bdpfmenu >a')))[1]
                 GlobalEnvStorage.browserWrapper.locateAndClick(advancedSearch)
                 time.sleep(uniform(1, 2))
+
+                gpc = GlobalEnvStorage.browser.evaluate_script('$("#adv-setting-4 >select[name=gpc]")')[0]
+                GlobalEnvStorage.browserWrapper.locateAndClick(gpc)
+                options = gpc.find_elements_by_tag_name('option')
+                info = GlobalEnvStorage.browserWrapper.getElementLocationInfo(gpc)
+                for idx in range(len(options)):
+                    if str(GlobalEnvStorage.customerKeyword.limitTime) in options[idx].text:
+                        GlobalEnvStorage.infoLogger.info('idx:%d, x:%s, y:%s, bar:%s', idx, info['x'], info['y'], GlobalEnvStorage.toolBarHeight)
+                        GlobalEnvStorage.dmFactory.simulateTrajectory(info['x'] + randint(int(info['width'] * 0.2), int(info['width'] * 0.8)), info['y'] + GlobalEnvStorage.toolBarHeight + randint(int(info['height'] * 0.2), int(info['height'] * 0.5)) + (idx + 1) * info['height'])
+                        break
+
                 adv_keyword = WebDriverWait(GlobalEnvStorage.browser.driver, 10).until(expected_conditions.presence_of_all_elements_located((
                  By.CSS_SELECTOR, '#adv_keyword')))[0]
                 if adv_keyword.get_attribute('value') == '':
