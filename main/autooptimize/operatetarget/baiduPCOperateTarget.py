@@ -16,7 +16,8 @@ from autooptimize.util.util import zhangneiUrl
 class BaiduPCOperateTarget(PCOperatetarget):
 
     def initPageSize(self):
-        if GlobalEnvStorage.customerKeyword.pageSize != GlobalEnvStorage.profileIDCountList[str(GlobalEnvStorage.profileID)]['pageSize']:
+        GlobalEnvStorage.infoLogger.info('设置pageSize:%s, %s', GlobalEnvStorage.customerKeyword.pageSize, GlobalEnvStorage.profileIDCountList[str(GlobalEnvStorage.profileID)]['pageSize'])
+        if GlobalEnvStorage.customerKeyword.pageSize != 10:
             if GlobalEnvStorage.entryUrl == 'https://www.baidu.com':
                 pf = WebDriverWait(GlobalEnvStorage.browser.driver, 30).until(expected_conditions.presence_of_all_elements_located((By.CSS_SELECTOR, '.pf')))[-1]
             else:
